@@ -14,11 +14,11 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>
         
-          [Hexo] Theme BeanTech - CH Blog | 기술 블로그
+          [백준] 1152번_단어의 개수 - CH Blog | 기술 블로그
         
     </title>
 
-    <link rel="canonical" href="http://yoursite-url/2017/03/18/hexo-theme-beantech/">
+    <link rel="canonical" href="http://yoursite-url/2019/04/22/2019-04-22-[백준]-1152번/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
@@ -90,16 +90,18 @@
                     <div class="post-heading">
                         <div class="tags">
                             
-                              <a class="tag" href="/tags/#Hexo" title="Hexo">Hexo</a>
+                              <a class="tag" href="/tags/#백준" title="백준">백준</a>
                             
-                              <a class="tag" href="/tags/#Blog" title="Blog">Blog</a>
+                              <a class="tag" href="/tags/#알고리즘" title="알고리즘">알고리즘</a>
+                            
+                              <a class="tag" href="/tags/#C++" title="C++">C++</a>
                             
                         </div>
-                        <h1>[Hexo] Theme BeanTech</h1>
-                        <h2 class="subheading">This is hexo theme Demo.</h2>
+                        <h1>[백준] 1152번_단어의 개수</h1>
+                        <h2 class="subheading">백준 1152번</h2>
                         <span class="meta">
                             Posted by Chaehyeon Lee on
-                            2017-03-18
+                            2019-04-22
                         </span>
                     </div>
                 
@@ -216,60 +218,48 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <blockquote>
-<p>Ported Theme of <a href="https://github.com/Huxpro/huxpro.github.io" target="_blank" rel="noopener">Hux Blog</a>, Thank <a href="https://github.com/Huxpro" target="_blank" rel="noopener">Huxpro</a> for designing such a flawless theme.</p>
-<p>This BeanTech theme created by <a href="http://beantech.org" target="_blank" rel="noopener">YuHsuan</a> modified from the original Porter <a href="http://kaijun.rocks/hexo-theme-huxblog/" target="_blank" rel="noopener">Kaijun</a></p>
-</blockquote>
-<h1><span id="live-demo"></span></h1>
+                <h3><span id="백준_1152번"></span></h3>
 <hr>
-<p><img src="http://beantech.org/img/beantech-desktop.png" alt="BeanTech Desktop"></p>
-<h1><span id="usage">Usage</span></h1>
+<h1><span id="단어의-개수">단어의 개수</span></h1>
 <hr>
-<p>I publish the whole project for your convenience, so you can just follow the instruction down below, then you can easily customiz your own blog!</p>
-<p>Let’s begin!!!</p>
-<h2><span id="init">Init</span></h2>
+<h2><span id="문제">문제</span></h2>
+<p>영어 대소문자와 띄어쓰기만으로 이루어진 문자열이 주어진다. 이 문자열에는 몇 개의 단어가 있을까? 이를 구하는 프로그램을 작성하시오. 단, 한 단어가 여러 번 등장하면 등장한 횟수만큼 모두 세어야 한다.</p>
 <hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/YenYuHsuan/hexo-theme-beantech.git ./hexo-beantech</span><br><span class="line"><span class="built_in">cd</span> hexo-beantech</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
-<h2><span id="modify">Modify</span></h2>
+<h2><span id="입력">입력</span></h2>
+<p>첫 줄에 영어 대소문자와 띄어쓰기로 이루어진 문자열이 주어진다. 이 문자열의 길이는 1,000,000을 넘지 않는다. 단어는 띄어쓰기 한 개로 구분되며, 공백이 연속해서 나오는 경우는 없다. 또한 문자열의 앞과 뒤에는 공백이 있을 수도 있다.</p>
 <hr>
-<p>Modify <code>_config.yml</code> file with your own info.<br>
-Especially the section:</p>
-<h3><span id="deployment">Deployment</span></h3>
-<p>Replace to your own repo!</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/&lt;yourAccount&gt;/&lt;repo&gt;</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">&lt;your-branch&gt;</span></span><br></pre></td></tr></table></figure>
-<h3><span id="sidebar-settings">Sidebar settings</span></h3>
-<p>Copy your avatar image to <code>&lt;root&gt;/img/</code> and modify the <code>_config.yml</code>:</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">sidebar:</span> <span class="literal">true</span> <span class="comment"># whether or not using Sidebar.</span></span><br><span class="line"><span class="attr">sidebar-about-description:</span> <span class="string">"&lt;your description&gt;"</span></span><br><span class="line"><span class="attr">sidebar-avatar:</span> <span class="string">img/&lt;your</span> <span class="string">avatar</span> <span class="string">path&gt;</span></span><br></pre></td></tr></table></figure>
-<p>and activate your personal widget you like</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">widgets:</span> <span class="comment"># here are widget you can use, you can comment out</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">featured-tags</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">short-about</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">recent-posts</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">friends-blog</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">archive</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">category</span></span><br></pre></td></tr></table></figure>
-<p>if you want to add sidebar widget, please add at <code>layout/_widget</code>.</p>
-<h3><span id="signature-setup">Signature Setup</span></h3>
-<p>Copy your signature image to <code>&lt;root&gt;/img/signature</code> and modify the <code>_config.yml</code>:</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">signature:</span> <span class="literal">true</span> <span class="comment"># show signature</span></span><br><span class="line"><span class="attr">signature-img:</span> <span class="string">img/signature/&lt;your-signature-ID&gt;</span></span><br></pre></td></tr></table></figure>
-<h3><span id="go-to-top-icon-setup">Go to top icon Setup</span></h3>
-<p>My icon is using iron man, you can change to your own icon at <code>css/image</code>.</p>
-<h3><span id="post-tag">Post tag</span></h3>
-<p>You can decide to show post tags or not.</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">home_posts_tag:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-<p><img src="home_posts_tag-true.png" alt="home_posts_tag-true"></p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">home_posts_tag:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-<p><img src="home_posts_tag-false.png" alt="home_posts_tag-false"></p>
-<h3><span id="markdown-render">Markdown render</span></h3>
-<p>My markdown render engine plugin is <a href="https://github.com/celsomiranda/hexo-renderer-markdown-it" target="_blank" rel="noopener">hexo-renderer-markdown-it</a>.</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Markdown-it config</span></span><br><span class="line"><span class="comment">## Docs: https://github.com/celsomiranda/hexo-renderer-markdown-it/wiki</span></span><br><span class="line"><span class="attr">markdown:</span></span><br><span class="line">  <span class="attr">render:</span></span><br><span class="line">    <span class="attr">html:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">xhtmlOut:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">breaks:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">linkify:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">typographer:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">quotes:</span> <span class="string">"“”‘’"</span></span><br></pre></td></tr></table></figure>
-<p>and if you want to change the header anchor ‘ℬ’, you can go to <code>layout/post.ejs</code> to change it.</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span>(<span class="string">"https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js"</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        anchors.options = &#123;</span><br><span class="line">          visible: <span class="string">'hover'</span>,</span><br><span class="line">          placement: <span class="string">'left'</span>,</span><br><span class="line">          icon: ℬ <span class="comment">// this is the header anchor "unicode" icon</span></span><br><span class="line">        &#125;;</span><br></pre></td></tr></table></figure>
-<h2><span id="hexo-basics">Hexo Basics</span></h2>
+<h2><span id="출력">출력</span></h2>
+<p>첫째 줄에 단어의 개수를 출력한다.</p>
 <hr>
-<p>Some hexo command:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo new post <span class="string">"&lt;post name&gt;"</span> <span class="comment"># you can change post to another layout if you want</span></span><br><span class="line">hexo clean &amp;&amp; hexo generate <span class="comment"># generate the static file</span></span><br><span class="line">hexo server <span class="comment"># run hexo in local environment</span></span><br><span class="line">hexo deploy <span class="comment"># hexo will push the static files automatically into the specific branch(gh-pages) of your repo!</span></span><br></pre></td></tr></table></figure>
-<h1><span id="have-fun-_">Have fun ^_^</span></h1>
+<h2><span id="예제-입력-1">예제 입력 1</span></h2>
+<figure class="highlight hsp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">The Curious <span class="keyword">Case</span> of Benjamin <span class="keyword">Button</span></span><br></pre></td></tr></table></figure>
+<h2><span id="예제-출력-1">예제 출력 1</span></h2>
+<figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">6</span></span><br></pre></td></tr></table></figure>
+<h2><span id="예제-입력-2">예제 입력 2</span></h2>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">Mazatneunde Wae Teullyeoyo</span></span><br></pre></td></tr></table></figure>
+<h2><span id="예제-출력-2">예제 출력 2</span></h2>
+<figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">3</span></span><br></pre></td></tr></table></figure>
+<h2><span id="예제-입력-3">예제 입력 3</span></h2>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">Teullinika Teullyeotzi</span></span><br></pre></td></tr></table></figure>
+<h2><span id="예제-출력-3-복사">예제 출력 3 복사</span></h2>
+<figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">2</span></span><br></pre></td></tr></table></figure>
 <hr>
-<!-- Place this tag in your head or just before your close body tag. -->
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-<!-- Place this tag where you want the button to render. -->
-<p>Please <a class="github-button" href="https://github.com/YenYuHsuan/hexo-theme-beantech" data-icon="octicon-star" aria-label="Star YenYuHsuan/hexo-theme-beantech on GitHub" target="_blank" rel="noopener">Star</a> this Project if you like it! <a class="github-button" href="https://github.com/YenYuHsuan" aria-label="Follow @YenYuHsuan on GitHub" target="_blank" rel="noopener">Follow</a> would also be appreciated!<br>
-Peace!</p>
+<h2><span id="출처">출처</span></h2>
+<ul>
+<li>문제를 만든 사람: <a href="https://www.acmicpc.net/user/author5" target="_blank" rel="noopener">author5</a></li>
+<li>빠진 조건을 찾은 사람: <a href="https://www.acmicpc.net/user/djm03178" target="_blank" rel="noopener">djm03178</a> <a href="https://www.acmicpc.net/user/his130" target="_blank" rel="noopener">his130</a></li>
+<li>데이터를 추가한 사람: <a href="https://www.acmicpc.net/user/jh05013" target="_blank" rel="noopener">jh05013</a></li>
+<li>내용을 추가한 사람: <a href="https://www.acmicpc.net/user/jh05013" target="_blank" rel="noopener">jh05013</a></li>
+</ul>
+<hr>
+<h2><span id="알고리즘-분류">알고리즘 분류</span></h2>
+<ul>
+<li>[문자열 처리](<a href="https://www.acmicpc.net/problem/tag/%EB%AC%B8%EC%9E%90%EC%97%B4" target="_blank" rel="noopener">https://www.acmicpc.net/problem/tag/문자열</a> 처리)</li>
+</ul>
+<hr>
+<hr>
+<h2><span id="소스코드">소스코드</span></h2>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">using</span> <span class="built_in">std</span>::<span class="built_in">string</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">string</span> str=&#123;&#125;;</span><br><span class="line">    <span class="keyword">int</span> wordCnt=<span class="number">0</span>; <span class="comment">// 단어 갯수</span></span><br><span class="line"></span><br><span class="line">    getline(<span class="built_in">cin</span>,str);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;str.length(); i++) &#123;</span><br><span class="line">        <span class="keyword">if</span>(str[i] == <span class="string">' '</span>)</span><br><span class="line">            wordCnt++;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(str.at(<span class="number">0</span>) == <span class="string">' '</span>)</span><br><span class="line">        wordCnt--;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(str.at(str.length()<span class="number">-1</span>)==<span class="string">' '</span>)</span><br><span class="line">        wordCnt--;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; wordCnt+<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
                 
 
@@ -278,9 +268,13 @@ Peace!</p>
                 <ul class="pager">
                     
                         <li class="previous">
-                            <a href="/2019/04/18/2019-04-17-40-Useful-JavaScript-Tips,-Tricks-and-Best-Practices/" data-toggle="tooltip" data-placement="top" title="[JS] [번역] 40가지의 유용한 JavaScript팁, 트릭과 모범사례">&larr; Previous Post</a>
+                            <a href="/2019/04/23/2019-04-23-[백준]-8958번/" data-toggle="tooltip" data-placement="top" title="[백준] 8958번_OX퀴즈">&larr; Previous Post</a>
                         </li>
                     
+                    
+                        <li class="next">
+                            <a href="/2019/04/19/2019-04-19-참고-사이트-모음/" data-toggle="tooltip" data-placement="top" title="참고 사이트 모음">Next Post &rarr;</a>
+                        </li>
                     
                 </ul>
 
@@ -307,7 +301,7 @@ Peace!</p>
 <aside id="sidebar">
   <div id="toc" class="toc-article">
     <strong class="toc-title">Contents</strong>
-     <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.</span> <span class="toc-nav-text"></span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">Usage</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">Init</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">Modify</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.2.1.</span> <span class="toc-nav-text">Deployment</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.2.2.</span> <span class="toc-nav-text">Sidebar settings</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.2.3.</span> <span class="toc-nav-text">Signature Setup</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.2.4.</span> <span class="toc-nav-text">Go to top icon Setup</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.2.5.</span> <span class="toc-nav-text">Post tag</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.2.6.</span> <span class="toc-nav-text">Markdown render</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.3.</span> <span class="toc-nav-text">Hexo Basics</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">Have fun ^_^</span></a></li></ol> 
+     <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.</span> <span class="toc-nav-text"></span></a></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number"></span> <span class="toc-nav-text">단어의 개수</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number"></span> <span class="toc-nav-text">문제</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number"></span> <span class="toc-nav-text">입력</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number"></span> <span class="toc-nav-text">출력</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number"></span> <span class="toc-nav-text">예제 입력 1</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number"></span> <span class="toc-nav-text">예제 출력 1</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number"></span> <span class="toc-nav-text">예제 입력 2</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number"></span> <span class="toc-nav-text">예제 출력 2</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number"></span> <span class="toc-nav-text">예제 입력 3</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number"></span> <span class="toc-nav-text">예제 출력 3 복사</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number"></span> <span class="toc-nav-text">출처</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number"></span> <span class="toc-nav-text">알고리즘 분류</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number"></span> <span class="toc-nav-text">소스코드</span></a> 
   </div>
 </aside>
  
@@ -326,9 +320,11 @@ Peace!</p>
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
                        
-                          <a class="tag" href="/tags/#Hexo" title="Hexo">Hexo</a>
+                          <a class="tag" href="/tags/#백준" title="백준">백준</a>
                         
-                          <a class="tag" href="/tags/#Blog" title="Blog">Blog</a>
+                          <a class="tag" href="/tags/#알고리즘" title="알고리즘">알고리즘</a>
+                        
+                          <a class="tag" href="/tags/#C++" title="C++">C++</a>
                         
                     </div>
                 </section>
@@ -348,8 +344,8 @@ Peace!</p>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = "chlee1001";
-    var disqus_identifier = "http://yoursite-url/2017/03/18/hexo-theme-beantech/";
-    var disqus_url = "http://yoursite-url/2017/03/18/hexo-theme-beantech/";
+    var disqus_identifier = "http://yoursite-url/2019/04/22/2019-04-22-[백준]-1152번/";
+    var disqus_url = "http://yoursite-url/2019/04/22/2019-04-22-[백준]-1152번/";
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

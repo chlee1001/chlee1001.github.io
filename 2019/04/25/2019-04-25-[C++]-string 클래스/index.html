@@ -14,11 +14,11 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>
         
-          [Hexo] Theme BeanTech - CH Blog | 기술 블로그
+          [C++] String 클래스 - CH Blog | 기술 블로그
         
     </title>
 
-    <link rel="canonical" href="http://yoursite-url/2017/03/18/hexo-theme-beantech/">
+    <link rel="canonical" href="http://yoursite-url/2019/04/25/2019-04-25-[C++]-string 클래스/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="../../../../css/bootstrap.min.css">
@@ -69,7 +69,7 @@
 <style type="text/css">
     header.intro-header{
         
-            background-image: url('Demo.png')
+            background-image: url('undefined')
             /*post*/
         
     }
@@ -90,16 +90,16 @@
                     <div class="post-heading">
                         <div class="tags">
                             
-                              <a class="tag" href="/tags/#Hexo" title="Hexo">Hexo</a>
+                              <a class="tag" href="/tags/#C++" title="C++">C++</a>
                             
-                              <a class="tag" href="/tags/#Blog" title="Blog">Blog</a>
+                              <a class="tag" href="/tags/#String" title="String">String</a>
                             
                         </div>
-                        <h1>[Hexo] Theme BeanTech</h1>
-                        <h2 class="subheading">This is hexo theme Demo.</h2>
+                        <h1>[C++] String 클래스</h1>
+                        <h2 class="subheading"></h2>
                         <span class="meta">
                             Posted by Chaehyeon Lee on
-                            2017-03-18
+                            2019-04-25
                         </span>
                     </div>
                 
@@ -216,60 +216,80 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <blockquote>
-<p>Ported Theme of <a href="https://github.com/Huxpro/huxpro.github.io" target="_blank" rel="noopener">Hux Blog</a>, Thank <a href="https://github.com/Huxpro" target="_blank" rel="noopener">Huxpro</a> for designing such a flawless theme.</p>
-<p>This BeanTech theme created by <a href="http://beantech.org" target="_blank" rel="noopener">YuHsuan</a> modified from the original Porter <a href="http://kaijun.rocks/hexo-theme-huxblog/" target="_blank" rel="noopener">Kaijun</a></p>
-</blockquote>
-<h1><span id="live-demo"></span></h1>
+                <p><a href="http://blog.naver.com/vosej_v/50176084445" target="_blank" rel="noopener">출처</a></p>
+<h2><span id="string-class"><strong>string class</strong></span></h2>
+<p>Header : <string></string></p>
 <hr>
-<p><img src="http://beantech.org/img/beantech-desktop.png" alt="BeanTech Desktop"></p>
-<h1><span id="usage">Usage</span></h1>
+<p><strong>.assign :</strong> 문자열을 할당</p>
+<p>( 문자열 ) : 문자열을 할당한다.</p>
+<p>( 개수, 문자 ) : 문자를 개수만큼 할당한다</p>
+<p>( 문자열, 시작위치, 개수 ) : 매개변수 문자열의 시작위치부터 개수만큼을 호출한 문자열에 할당</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">string</span> s1, s2, s3 ;</span><br><span class="line">s1.assign( <span class="string">"ABCDEFG"</span> ) ;     <span class="comment">// s1 = "ABCDEFG"</span></span><br><span class="line">s2.assign( <span class="number">3</span>, <span class="string">'a'</span> ) ;        <span class="comment">// s2 = "aaa"</span></span><br><span class="line">s3.assign( s, <span class="number">2</span>, <span class="number">4</span> ) ;       <span class="comment">// s3 = "CDEF" ( 문자열 s의 2부터 4개를 복사하여 할당 )</span></span><br></pre></td></tr></table></figure>
 <hr>
-<p>I publish the whole project for your convenience, so you can just follow the instruction down below, then you can easily customiz your own blog!</p>
-<p>Let’s begin!!!</p>
-<h2><span id="init">Init</span></h2>
+<p><strong>.append :</strong> +연산자의 역할처럼 문자열을 끝에 더한다.</p>
+<p>( 문자열 ) : 문자열을 더한다</p>
+<p>( 개수, 문자 ) : 문자를 개수만큼 끝에 더한다</p>
+<p>( 문자열, 시작위치, 개수 ) :</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">string</span> s, s2 ;</span><br><span class="line">s.append( <span class="string">"ABCDEF"</span> ) ;      <span class="comment">// s = "ABCDEF"</span></span><br><span class="line">s.append( <span class="number">3</span>, <span class="string">'x'</span> ) ;        <span class="comment">// s = "ABCDEFxxx"</span></span><br><span class="line">s2.append( s, <span class="number">2</span>, <span class="number">4</span> ) ;      <span class="comment">// s2 = "CDEF"</span></span><br><span class="line">s2 += <span class="string">"x"</span> ;                 <span class="comment">// s2 = "CDEFx"</span></span><br></pre></td></tr></table></figure>
 <hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/YenYuHsuan/hexo-theme-beantech.git ./hexo-beantech</span><br><span class="line"><span class="built_in">cd</span> hexo-beantech</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
-<h2><span id="modify">Modify</span></h2>
+<p><strong>.clear :</strong> 문자열의 내용을 모두 삭제</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s.<span class="built_in">clear</span>() ;</span><br></pre></td></tr></table></figure>
 <hr>
-<p>Modify <code>_config.yml</code> file with your own info.<br>
-Especially the section:</p>
-<h3><span id="deployment">Deployment</span></h3>
-<p>Replace to your own repo!</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/&lt;yourAccount&gt;/&lt;repo&gt;</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">&lt;your-branch&gt;</span></span><br></pre></td></tr></table></figure>
-<h3><span id="sidebar-settings">Sidebar settings</span></h3>
-<p>Copy your avatar image to <code>&lt;root&gt;/img/</code> and modify the <code>_config.yml</code>:</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">sidebar:</span> <span class="literal">true</span> <span class="comment"># whether or not using Sidebar.</span></span><br><span class="line"><span class="attr">sidebar-about-description:</span> <span class="string">"&lt;your description&gt;"</span></span><br><span class="line"><span class="attr">sidebar-avatar:</span> <span class="string">img/&lt;your</span> <span class="string">avatar</span> <span class="string">path&gt;</span></span><br></pre></td></tr></table></figure>
-<p>and activate your personal widget you like</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">widgets:</span> <span class="comment"># here are widget you can use, you can comment out</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">featured-tags</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">short-about</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">recent-posts</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">friends-blog</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">archive</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">category</span></span><br></pre></td></tr></table></figure>
-<p>if you want to add sidebar widget, please add at <code>layout/_widget</code>.</p>
-<h3><span id="signature-setup">Signature Setup</span></h3>
-<p>Copy your signature image to <code>&lt;root&gt;/img/signature</code> and modify the <code>_config.yml</code>:</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">signature:</span> <span class="literal">true</span> <span class="comment"># show signature</span></span><br><span class="line"><span class="attr">signature-img:</span> <span class="string">img/signature/&lt;your-signature-ID&gt;</span></span><br></pre></td></tr></table></figure>
-<h3><span id="go-to-top-icon-setup">Go to top icon Setup</span></h3>
-<p>My icon is using iron man, you can change to your own icon at <code>css/image</code>.</p>
-<h3><span id="post-tag">Post tag</span></h3>
-<p>You can decide to show post tags or not.</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">home_posts_tag:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-<p><img src="home_posts_tag-true.png" alt="home_posts_tag-true"></p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">home_posts_tag:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-<p><img src="home_posts_tag-false.png" alt="home_posts_tag-false"></p>
-<h3><span id="markdown-render">Markdown render</span></h3>
-<p>My markdown render engine plugin is <a href="https://github.com/celsomiranda/hexo-renderer-markdown-it" target="_blank" rel="noopener">hexo-renderer-markdown-it</a>.</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Markdown-it config</span></span><br><span class="line"><span class="comment">## Docs: https://github.com/celsomiranda/hexo-renderer-markdown-it/wiki</span></span><br><span class="line"><span class="attr">markdown:</span></span><br><span class="line">  <span class="attr">render:</span></span><br><span class="line">    <span class="attr">html:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">xhtmlOut:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">breaks:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">linkify:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">typographer:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">quotes:</span> <span class="string">"“”‘’"</span></span><br></pre></td></tr></table></figure>
-<p>and if you want to change the header anchor ‘ℬ’, you can go to <code>layout/post.ejs</code> to change it.</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span>(<span class="string">"https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js"</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        anchors.options = &#123;</span><br><span class="line">          visible: <span class="string">'hover'</span>,</span><br><span class="line">          placement: <span class="string">'left'</span>,</span><br><span class="line">          icon: ℬ <span class="comment">// this is the header anchor "unicode" icon</span></span><br><span class="line">        &#125;;</span><br></pre></td></tr></table></figure>
-<h2><span id="hexo-basics">Hexo Basics</span></h2>
+<p><strong>.compare :</strong> 문자열을 비교 ( 사전순으로 비교 )</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s.compare( s2 ) ;  <span class="comment">// s == s2이면 0,  s&lt;s2이면 음수,  s&gt;s2이면 양수를 반환</span></span><br></pre></td></tr></table></figure>
 <hr>
-<p>Some hexo command:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo new post <span class="string">"&lt;post name&gt;"</span> <span class="comment"># you can change post to another layout if you want</span></span><br><span class="line">hexo clean &amp;&amp; hexo generate <span class="comment"># generate the static file</span></span><br><span class="line">hexo server <span class="comment"># run hexo in local environment</span></span><br><span class="line">hexo deploy <span class="comment"># hexo will push the static files automatically into the specific branch(gh-pages) of your repo!</span></span><br></pre></td></tr></table></figure>
-<h1><span id="have-fun-_">Have fun ^_^</span></h1>
+<p><strong>.empty</strong> <strong>:</strong> 문자열이 비었는지 확인</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">s.empty() ;</span><br></pre></td></tr></table></figure>
 <hr>
-<!-- Place this tag in your head or just before your close body tag. -->
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-<!-- Place this tag where you want the button to render. -->
-<p>Please <a class="github-button" href="https://github.com/YenYuHsuan/hexo-theme-beantech" data-icon="octicon-star" aria-label="Star YenYuHsuan/hexo-theme-beantech on GitHub" target="_blank" rel="noopener">Star</a> this Project if you like it! <a class="github-button" href="https://github.com/YenYuHsuan" aria-label="Follow @YenYuHsuan on GitHub" target="_blank" rel="noopener">Follow</a> would also be appreciated!<br>
-Peace!</p>
+<p><strong>.erase :</strong> 문자열을 지운다</p>
+<p>( 시작위치, 개수 ) : 시작위치부터 개수만큼의 문자를 지운다.</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">string</span> s = <span class="string">"ABCDEF"</span> ;</span><br><span class="line">s.erase( <span class="number">0</span>, <span class="number">3</span> ) ;   <span class="comment">// s = "DEF" ( 인덱스 0부터 3개의 문자를 지운다 )</span></span><br></pre></td></tr></table></figure>
+<hr>
+<p><strong>.find</strong> : 특정 문자열을 찾고, 그 시작위치를 반환</p>
+<p>( 문자 ) : 인덱스 0부터 해당 문자를 찾고, 시작위치를 반환한다.</p>
+<p>( 문자열 ) : 인덱스 0부터 해당 문자열을 찾고, 그 시작위치를 반환한다.</p>
+<p>( 문자열, 시작위치 ) : 시작위치부터 문자열을 찾고, 시작위치를 반환한다.</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">string</span> s1 = <span class="string">"abcd"</span> ;</span><br><span class="line"><span class="built_in">string</span> s2 = <span class="string">"b"</span> ;</span><br><span class="line">**<span class="keyword">int</span>** location = s1.<span class="built_in">find</span>( s2 ) ;</span><br><span class="line">location = s1.<span class="built_in">find</span>( s2, x ) ;</span><br><span class="line">location = s1.find_first_of( s2, x ) ;</span><br><span class="line">location = s1.find_first_not_of( s2, x ) ;   location = s1.find_last_of  s1.find_last_not_of</span><br></pre></td></tr></table></figure>
+<p><strong>.replace :</strong> 문자열을 대체</p>
+<p>( 시작위치, 개수, 문자열 ) : 호출한 문자열의 시작위치부터 개수만큼의 문자를 매개변수 문자열로 대체한다.</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">   <span class="built_in">string</span> s = <span class="string">"abc_def"</span> ;</span><br><span class="line">s.replace( <span class="number">4</span>, <span class="number">3</span>, <span class="string">"zzz"</span> ) ;   <span class="comment">// s = "abc_zzz"  ( 인덱스 4부터 3개의 문자를 "zzz"로 대체 )</span></span><br></pre></td></tr></table></figure>
+<hr>
+<p><strong>.insert :</strong> 문자열을 지정한 위치에 삽입</p>
+<p>( 시작위치, 문자열 ) : 시작위치에 문자열을 삽입한다.</p>
+<p>string s = “ABCDEF” ; s.insert( 2, “xx” ) ; // s = “ABxxCDEF”</p>
+<p><strong>.pop_back :</strong> 문자열에서 가장 뒤의 문자 하나를 빼낸다.</p>
+<p><strong>.push_back :</strong> 문자열의 가장 뒤에 문자 하나를 추가한다.</p>
+<p>string s = “ABCDEF” ; s.pop_back() ; // s = “ABCDE” s.push_back( ‘x’ ) ; // s = “ABCDEx”</p>
+<p><strong>.resize :</strong> 문자열의 크기를 재설정</p>
+<p>s</p>
+<p><strong>.size</strong>, <strong>.length :</strong> 문자열의 크기를 반환</p>
+<p><strong>.max_size :</strong> 문자열이 최대로 가질수 있는 길이를 반환한다.</p>
+<p>string s = “ABCDEF” ; <strong>int</strong> size = s.size() ; // size = 6 ( 실제 사용되고 있는 크기 ) <strong>int</strong> length = s.length() ; // length = 6 ( 문자열의 길이 )</p>
+<p><strong>.capacity :</strong> 할당된 메모리의 크기를 반환 ( reallocation 없이 사용할 수 있는 문자수를 반환 )</p>
+<p>string s = “ABCDEF” ; <strong>int</strong> capacity = s.capacity() ; // size = 6, capacity = 15</p>
+<p><strong>★ capacity가 size보다 클때, 속도는 더 빠르다 !</strong></p>
+<p>= capacity가 size보다 크면, 기존 공간에 문자를 추가하면 되지만</p>
+<p>​ 그 반대의 경우에는 문자를 추가하기 위해 새로운 메모리를 할당해야 하기 때문이다.</p>
+<p><strong>.reserve :</strong> reallocation을 피하기 위해, 메모리의 최소용량을 지정</p>
+<p>( 크기 ) : 크기만큼의 여유 메모리를 할당한다.</p>
+<p>** 이때, 매개변수의 크기는 현재 capacity보다 크지않으면 의미도 효과도 없다.</p>
+<p>string s = “ABCDEF” ; // size = 6, capacity = 15 s.reserve( 100 ) ; // size = 6, capacity = 111 s.reserve( 1000 ) ; // size = 6, capacity = 1007</p>
+<p><strong>.substr :</strong> 문자열의 일부분을 문자열로 반환</p>
+<p>( 시작위치 ) : 시작위치부터 끝까지의 문자들을 문자열로 반환</p>
+<p>( 시작위치, 개수 ) : 시작위치부터 개수만큼의 문자를 문자열로 반환</p>
+<p>string s = “ABCDEF” ; <strong>string</strong> s2 = s.substr( 4 ) ; // s2 = “EF” ( 인덱스 4부터 끝까지의 문자열을 반환 ) string s3 = s.substr( 1, 3 ) ; // s3 = “BCD” ( 인덱스 1부터 3까지의 문자열을 반환 )</p>
+<p><strong>.swap :</strong> 문자열을 서로 바꾼다</p>
+<p>string a = “ABCD” ; string b = “WXYZ” ; a.swap( b ) ; // a = “WXYZ”, b = “ABCD” b.swap( a ) ; // a = “ABCD”, b = “WXYZ”</p>
+<p><strong>.at :</strong> 문자열에서 특정위치의 문자를 액세스</p>
+<p>string s = “ABCDEF” ; <strong>char</strong> c = <a href="http://s.at" target="_blank" rel="noopener">s.at</a>(3) ; // c = ‘D’</p>
+<p><strong>.c_str :</strong> string 문자열을 char* 형으로 바꾸어 반환한다.</p>
+<p>string s = “ABCDEF” ; int length = strlen( s.c_str() ) ;</p>
+<p>.date</p>
+<p>.copy</p>
+<p>.back</p>
+<p>.front</p>
+<p>.begin</p>
+<p>.end</p>
 
                 
 
@@ -277,10 +297,10 @@ Peace!</p>
                 <!-- Pager -->
                 <ul class="pager">
                     
-                        <li class="previous">
-                            <a href="/2019/04/18/2019-04-17-40-Useful-JavaScript-Tips,-Tricks-and-Best-Practices/" data-toggle="tooltip" data-placement="top" title="[JS] [번역] 40가지의 유용한 JavaScript팁, 트릭과 모범사례">&larr; Previous Post</a>
-                        </li>
                     
+                        <li class="next">
+                            <a href="/2019/04/24/2019-04-24-[백준]-2920번/" data-toggle="tooltip" data-placement="top" title="[백준] 2920번_음계">Next Post &rarr;</a>
+                        </li>
                     
                 </ul>
 
@@ -303,14 +323,7 @@ Peace!</p>
             
             <!-- Tabe of Content -->
             <!-- Table of Contents -->
- 
-<aside id="sidebar">
-  <div id="toc" class="toc-article">
-    <strong class="toc-title">Contents</strong>
-     <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">1.</span> <span class="toc-nav-text"></span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">Usage</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">Init</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">Modify</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.2.1.</span> <span class="toc-nav-text">Deployment</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.2.2.</span> <span class="toc-nav-text">Sidebar settings</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.2.3.</span> <span class="toc-nav-text">Signature Setup</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.2.4.</span> <span class="toc-nav-text">Go to top icon Setup</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.2.5.</span> <span class="toc-nav-text">Post tag</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.2.6.</span> <span class="toc-nav-text">Markdown render</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">2.3.</span> <span class="toc-nav-text">Hexo Basics</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#null"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">Have fun ^_^</span></a></li></ol> 
-  </div>
-</aside>
- 
+
 
                 
             <!-- Sidebar Container -->
@@ -326,9 +339,9 @@ Peace!</p>
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
                        
-                          <a class="tag" href="/tags/#Hexo" title="Hexo">Hexo</a>
+                          <a class="tag" href="/tags/#C++" title="C++">C++</a>
                         
-                          <a class="tag" href="/tags/#Blog" title="Blog">Blog</a>
+                          <a class="tag" href="/tags/#String" title="String">String</a>
                         
                     </div>
                 </section>
@@ -348,8 +361,8 @@ Peace!</p>
 <script type="text/javascript">
     /* * * CONFIGURATION VARIABLES * * */
     var disqus_shortname = "chlee1001";
-    var disqus_identifier = "http://yoursite-url/2017/03/18/hexo-theme-beantech/";
-    var disqus_url = "http://yoursite-url/2017/03/18/hexo-theme-beantech/";
+    var disqus_identifier = "http://yoursite-url/2019/04/25/2019-04-25-[C++]-string 클래스/";
+    var disqus_url = "http://yoursite-url/2019/04/25/2019-04-25-[C++]-string 클래스/";
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
