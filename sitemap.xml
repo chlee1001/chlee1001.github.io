@@ -2,22 +2,22 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <sitemap>
-        <loc>http://yoursite-url/post-sitemap.xml</loc>
+        <loc>https://chlee1001.github.io/post-sitemap.xml</loc>
         <lastmod>2021-03-08T04:53:42.101Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>http://yoursite-url/page-sitemap.xml</loc>
+        <loc>https://chlee1001.github.io/page-sitemap.xml</loc>
         <lastmod>2021-03-08T04:20:12.526Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>http://yoursite-url/category-sitemap.xml</loc>
+        <loc>https://chlee1001.github.io/category-sitemap.xml</loc>
         <lastmod>2021-03-08T04:46:23.680Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>http://yoursite-url/tag-sitemap.xml</loc>
+        <loc>https://chlee1001.github.io/tag-sitemap.xml</loc>
         <lastmod>2021-03-08T04:42:42.846Z</lastmod>
     </sitemap>
 
