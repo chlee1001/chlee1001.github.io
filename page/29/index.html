@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>CH Blog | 기술 블로그</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="CH Blog | 기술 블로그"><meta name="msapplication-TileImage" content="/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="CH Blog | 기술 블로그"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="Chaehyeon&amp;#39;s Dev Blog"><meta property="og:type" content="blog"><meta property="og:title" content="CH Blog | 기술 블로그"><meta property="og:url" content="https://devch.co.kr/"><meta property="og:site_name" content="CH Blog | 기술 블로그"><meta property="og:description" content="Chaehyeon&amp;#39;s Dev Blog"><meta property="og:locale" content="ko_KR"><meta property="og:image" content="https://devch.co.kr/og_image.png"><meta property="article:author" content="Chaehyeon Lee"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://devch.co.kr/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://devch.co.kr"},"headline":"CH Blog | 기술 블로그","image":["https://devch.co.kr/img/og_image.png"],"author":{"@type":"Person","name":"Chaehyeon Lee"},"publisher":{"@type":"Organization","name":"CH Blog | 기술 블로그","logo":{"@type":"ImageObject","url":"https://devch.co.kr/logo.svg"}},"description":"Chaehyeon&#39;s Dev Blog"}</script><link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link data-pjax rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link data-pjax rel="stylesheet" href="/css/default.css"><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=UA-130636151-1" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-130636151-1');</script><!--!--><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/logo.svg" alt="CH Blog | 기술 블로그" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" target="_blank" rel="noopener" href="https://www.rallit.com/resumes/213269@lch50484084/%EC%9D%B4%EC%B1%84%ED%98%84?theme=STANDARD">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="GitHub" href="https://github.com/chlee1001"><i class="fab fa-github"></i></a><a class="navbar-item search" title="검색" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-9 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><div>2021-03-31</div></span><span class="level-item"><a class="link-muted" href="/categories/IT%EC%A0%95%EB%B3%B4/">IT정보</a><span> / </span><a class="link-muted" href="/categories/IT%EC%A0%95%EB%B3%B4/%EB%A7%A4%EC%9D%BC30%EB%B6%84-IT%EB%89%B4%EC%8A%A4/">매일30분 IT뉴스</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/categories/IT%EC%A0%95%EB%B3%B4/%EB%A7%A4%EC%9D%BC30%EB%B6%84%20IT%EB%89%B4%EC%8A%A4/21-03-31-IT_News/">2021년 3월 31일 수요일 IT뉴스</a></p><div class="content"><h2 id="1-KAIST-딥페이크-탐지-모바일-앱-‘카이캐치-KaiCatch-’-서비스-개시"><a href="#1-KAIST-딥페이크-탐지-모바일-앱-‘카이캐치-KaiCatch-’-서비스-개시" class="headerlink" title="1. KAIST, 딥페이크 탐지 모바일 앱 ‘카이캐치(KaiCatch)’ 서비스 개시"></a>1. KAIST, 딥페이크 탐지 모바일 앱 ‘카이캐치(KaiCatch)’ 서비스 개시</h2><p><a target="_blank" rel="noopener" href="https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=105&oid=009&aid=0004771581">KAIST, 딥페이크 탐지 모바일 앱 ‘카이캐치(KaiCatch)’ 서비스 개시 : 네이버 뉴스 (naver.com)</a></p>
+<p><img src="https://imgnews.pstatic.net/image/009/2021/03/30/0004771581_001_20210330164819968.jpg?type=w647" alt="img"></p>
+<p><em>이흥규 KAIST 전산학부 교수팀이 개발한 딥페이크 및 사진 위변조 탐지 소프트웨어 <code>카이캐치</code> 앱의 첫 화면. [사진 제공 &#x3D; KAIST]</em></p>
+<p>30일 KAIST는 전산학부 이흥규 교수 연구팀이 인공신경망 기반 딥페이크(deepfake) 탐지와 사진 위변조 탐지 소프트웨어인 ‘카이캐치(KaiCatch)’를 모바일 앱 형태로 개발해 서비스를 시작한다고 밝혔다.</p>
+<p>연구팀이 개발한 기술은 딥페이크 생성 유형에 상관없이 딥페이크 여부를 탐지하기 위해 영상의 미세 변형 신호 흔적과 미세 이상 신호 흔적 탐지 기술을 적용한 신호처리 및 인공지능 기술로 개발됐으며, 이러한 핵심 기술들을 사용해, 얼굴 영역의 미세 변형과 코, 입, 얼굴 윤곽 등 얼굴 내 기하학적 왜곡 발생 가능 영역의 이상 신호 흔적을 분석해 딥페이크를 탐지한다.</p>
+<h2 id="2-‘멜론’-추격하는-‘유튜브뮤직’…1년새-122만→261만-급증"><a href="#2-‘멜론’-추격하는-‘유튜브뮤직’…1년새-122만→261만-급증" class="headerlink" title="2. ‘멜론’ 추격하는 ‘유튜브뮤직’…1년새 122만→261만 급증"></a>2. ‘멜론’ 추격하는 ‘유튜브뮤직’…1년새 122만→261만 급증</h2><p><a target="_blank" rel="noopener" href="https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=105&oid=421&aid=0005256805">‘멜론’ 추격하는 ‘유튜브뮤직’…1년새 122만→261만 급증 : 네이버 뉴스 (naver.com)</a></p>
+<p><img src="https://imgnews.pstatic.net/image/421/2021/03/31/0005256805_001_20210331091051282.jpg?type=w647" alt="img"></p>
+<p>​	<em>(와이즈앱 제공)© 뉴스1</em></p>
+<p>‘글로벌 IT 골리앗’ 구글의 음원 스트리밍 앱 ‘유튜브뮤직’이 토종 음원 앱 ‘멜론’을 빠르게 추격하고 있는 것으로 나타났다.</p>
+<p>가장 많이 사용한 음악 스트리밍 앱은 멜론(510만명)이었고, 그 뒤로는 유튜브 뮤직에 이어 지니뮤직(257만명), 플로(162만명), 네이버 바이브(87만명), 카카오뮤직(46만명), 스포티파이(42만명), 벅스(37만명) 순이었다.</p>
+<h2 id="3-“비싼-요금제-쓰는데”…’먹통-5G’에-결국-소송전-돌입하나"><a href="#3-“비싼-요금제-쓰는데”…’먹통-5G’에-결국-소송전-돌입하나" class="headerlink" title="3. “비싼 요금제 쓰는데”…’먹통 5G’에 결국 소송전 돌입하나"></a>3. “비싼 요금제 쓰는데”…’먹통 5G’에 결국 소송전 돌입하나</h2><p><a target="_blank" rel="noopener" href="https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=105&oid=015&aid=0004522067">“비싼 요금제 쓰는데”…’먹통 5G’에 결국 소송전 돌입하나 : 네이버 뉴스 (naver.com)</a></p>
+<p><img src="https://imgnews.pstatic.net/image/015/2021/03/31/0004522067_001_20210331092751028.jpg?type=w647" alt="img"></p>
+<p><em>배민라이더스 배달 오토바이가 줄지어 서있다. 사진&#x3D;강은구 한국경제신문 기자 <a href="mailto:&#x65;&#103;&#x6b;&#x61;&#x6e;&#x67;&#64;&#x68;&#97;&#x6e;&#x6b;&#x79;&#117;&#x6e;&#103;&#x2e;&#99;&#111;&#x6d;">egkang@hankyung.com</a></em></p>
+<p>31일 이동통신 업계에 따르면 5G 일부 소비자들은 현재 이동통신 3사를 대상으로 집단 소송을 준비 중이고, 집단소송 플랫폼 ‘화난사람들’과 네이버카페 ‘5G 피해자모임’ 등에 따르면 현재까지 집단소송 의사를 밝힌 소비자는 약 1만명에 이르며, 이들은 5G 끊김현상, 빠른 배터리 소진, 일부 지역에서만 이용 가능, 4G 대비 고가 요금제 등에 대해 불만을 제기하고 있다.</p>
+<p>한 이통사 관계자는 “지난해 코로나 타격 등으로 다소 더디긴 했지만 지난해 서울과 6대 광역시를 시작으로 5G 기지국 구축에 속도를 내고 있다”며 “트래픽이 적은 도서 산간이나 농어촌 지역도 이통사간 공동 기지국 구축으로 커버리지를 빠르게 확대해 계획대로 2022년까지 끊김없는 5G 전국망을 구축할 계획”이라고 말했다.</p>
+<h2 id="4-카카오에-집결한-‘한게임-사단’…5000억-장전하고-M-A·신사업-‘승부수’"><a href="#4-카카오에-집결한-‘한게임-사단’…5000억-장전하고-M-A·신사업-‘승부수’" class="headerlink" title="4. 카카오에 집결한 ‘한게임 사단’…5000억 장전하고 M&amp;A·신사업 ‘승부수’"></a>4. 카카오에 집결한 ‘한게임 사단’…5000억 장전하고 M&amp;A·신사업 ‘승부수’</h2><p><a target="_blank" rel="noopener" href="https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=105&oid=421&aid=0005256631">카카오에 집결한 ‘한게임 사단’…5000억 장전하고 M&amp;A·신사업 ‘승부수’ : 네이버 뉴스 (naver.com)</a></p>
+<p><img src="https://imgnews.pstatic.net/image/421/2021/03/31/0005256631_001_20210331064518241.jpg?type=w647" alt="img"></p>
+<p><em>카카오게임즈 제공 © 뉴스1</em></p>
+<p> 카카오게임즈가 국내 게임 포털 시장을 장악했던 ‘한게임’ 출신 경영자들을 끌어모으고 있으며, 한게임 창립멤버 및 역대 수장을 요직에 앉혀 과거 한게임 성공신화를 재현하겠다는 김범수 카카오 의장의 청사진으로 풀이된다.</p>
+<p>게임과 결합되고 있는 메타버스는 물론, 정욱 대표가 평소 관심이 깊은 소셜카지노 사업도 강화할 것으로 보이며, 카카오게임즈는 이번 주주총회에서 사업목적에 ‘블록체인 기반 응용 소프트웨어 개발 및 공급업’을 추가했다.</p>
+<h2 id="5-“노조-만들어-쟁취한다”…IT업계-성과급-논란-‘노조-설립’으로-번졌다"><a href="#5-“노조-만들어-쟁취한다”…IT업계-성과급-논란-‘노조-설립’으로-번졌다" class="headerlink" title="5. “노조 만들어 쟁취한다”…IT업계 성과급 논란 ‘노조 설립’으로 번졌다"></a>5. “노조 만들어 쟁취한다”…IT업계 성과급 논란 ‘노조 설립’으로 번졌다</h2><p><a target="_blank" rel="noopener" href="https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=105&oid=081&aid=0003174906">“노조 만들어 쟁취한다”…IT업계 성과급 논란 ‘노조 설립’으로 번졌다 : 네이버 뉴스 (naver.com)</a></p>
+<p>코로나19 사태가 ‘IT업계 호황→개발자 부족→연봉 인상→연봉·성과급 충분치 않은 직원 불만 토로’를 촉발했는데 이것이 이제는 노조 설립으로까지 이어지는 것이며,  ‘한국의 실리콘밸리’라 불리는 판교의 IT기업들은 업종 특성상 노조 설립이 활발하지는 않았는데 봄바람처럼 살살 불기 시작한 노조 설립 기조가 강풍으로 변하고 있다.</p>
+<p>이에 앞서 지난 25일에는 ‘카카오뱅크’에 인터넷은행 최초로 노조가 설립됐고, 지난 23일 소프트웨어 업체 ‘한글과컴퓨터’에도 2004년 해산된 이후 17년 만에 노조가 재설립됐다는 소식이 알려졌고, LG전자에서도 지난달 25일 사무직 중심의 제3노조가 만들어져 3000명이 넘는 조합원을 모았다.</p>
+<h2 id="6-단독-한컴-아마존-‘클라우드PC’-연합군-뜬다"><a href="#6-단독-한컴-아마존-‘클라우드PC’-연합군-뜬다" class="headerlink" title="6. [단독] 한컴-아마존 ‘클라우드PC’ 연합군 뜬다"></a>6. [단독] 한컴-아마존 ‘클라우드PC’ 연합군 뜬다</h2><p>[<a target="_blank" rel="noopener" href="https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=105&oid=015&aid=0004521802">단독] 한컴-아마존 ‘클라우드PC’ 연합군 뜬다 : 네이버 뉴스 (naver.com)</a></p>
+<p><img src="https://imgnews.pstatic.net/image/015/2021/03/30/0004521802_001_20210331032614876.jpg?type=w647" alt="img"></p>
+<p>30일 정보기술(IT)업계에 따르면, 한글과컴퓨터그룹(한컴그룹)은 그룹운영실·해외사업 총괄을 주축으로 아마존웹서비스(AWS)와 DaaS(Desktop as a Service) 기반의 클라우드PC 사업 진출을 추진하고 있으며, 성사된다면 글로벌 클라우드 업체와 국내 소프트웨어 업체가 ‘연합군’을 꾸린 첫 사례가 된다.</p>
+<p>클라우드PC 시장은 새롭게 떠오르는 ‘블루오션’이고, 운영체제(OS)와 응용프로그램, 저장 공간 등 컴퓨터 기능의 대부분을 클라우드 환경으로 옮겨버린다는 개념이어서, 솔루션과 저장공간이 중심인 일반 클라우드 서비스와는 다르다. 최소한의 장치만 있는 태블릿이나 스마트폰을 클라우드에 연결해 내 사무실 데스크톱PC처럼 쓰는 게 가능한 반면 비용은 PC 네트워크 구축 금액의 30~40% 수준이라는 게 강점이다.</p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-9 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><div>2021-03-30</div></span><span class="level-item"><a class="link-muted" href="/categories/IT%EC%A0%95%EB%B3%B4/">IT정보</a><span> / </span><a class="link-muted" href="/categories/IT%EC%A0%95%EB%B3%B4/%EB%A7%A4%EC%9D%BC30%EB%B6%84-IT%EB%89%B4%EC%8A%A4/">매일30분 IT뉴스</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/categories/IT%EC%A0%95%EB%B3%B4/%EB%A7%A4%EC%9D%BC30%EB%B6%84%20IT%EB%89%B4%EC%8A%A4/21-03-30-IT_News/">2021년 3월 30일 화요일 IT뉴스</a></p><div class="content"><h2 id="1-카카오-“주식가치-올릴-것”-500원→100원-액면분할-승인"><a href="#1-카카오-“주식가치-올릴-것”-500원→100원-액면분할-승인" class="headerlink" title="1. 카카오 “주식가치 올릴 것”..500원→100원 액면분할 승인"></a>1. 카카오 “주식가치 올릴 것”..500원→100원 액면분할 승인</h2><p><a target="_blank" rel="noopener" href="https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=105&oid=008&aid=0004564353">카카오 “주식가치 올릴 것”..500원→100원 액면분할 승인 : 네이버 뉴스 (naver.com)</a></p>
+<p>카카오가 29일 정기 주주총회에서 1주당 가액을 500원에서 100원으로 액면분할 하기로 결정했고,국내 최대 음원 플랫폼 멜론의 사업 분할 안건도 승인했다.</p>
+<p>여 대표는 “카카오는 앞으로 다양한 사업의 성장동력 지속과 사업모델 수익화에 힘쓰며 재무적인 개선을 보여 드릴 뿐 아니라 더 나아가 환경, 사회, 지배구조를 중시하는 ESG(환경·사회·지배구조) 경영에도 힘쓰며 기업가치를 높여갈 것”이라고 강조했다.</p>
+<h2 id="2-삼성-스마트폰-세계-1위-수성-‘고군분투’"><a href="#2-삼성-스마트폰-세계-1위-수성-‘고군분투’" class="headerlink" title="2. 삼성, 스마트폰 세계 1위 수성 ‘고군분투’"></a>2. 삼성, 스마트폰 세계 1위 수성 ‘고군분투’</h2><p><a target="_blank" rel="noopener" href="https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=105&oid=032&aid=0003066357">삼성, 스마트폰 세계 1위 수성 ‘고군분투’ : 네이버 뉴스 (naver.com)</a></p>
+<p><img src="https://imgnews.pstatic.net/image/032/2021/03/28/0003066357_001_20210328215610788.jpg?type=w647" alt="img"></p>
+<p>삼성전자는 갤럭시S21 출시를 앞당기면서 지난달 ‘점유율 1위’ 탈환에 성공했지만, 애플과의 차이는 매우 근소하다. 삼성전자는 가성비 높은 갤럭시A 라인업을 갖추고 하반기 폴더블폰(접는 스마트폰) 대거 출시를 준비하는 등 격차를 벌리기 위한 전략에 매진하고 있다.</p>
+<h2 id="3-카톡-닮은-‘카카오워크’-일상-속-스마트워크-야심"><a href="#3-카톡-닮은-‘카카오워크’-일상-속-스마트워크-야심" class="headerlink" title="3. 카톡 닮은 ‘카카오워크’, 일상 속 스마트워크 야심"></a>3. 카톡 닮은 ‘카카오워크’, 일상 속 스마트워크 야심</h2><p><a target="_blank" rel="noopener" href="https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=105&oid=018&aid=0004887954">카톡 닮은 ‘카카오워크’, 일상 속 스마트워크 야심 : 네이버 뉴스 (naver.com)</a></p>
+<p><img src="https://imgnews.pstatic.net/image/018/2021/03/30/0004887954_001_20210330064253285.jpg?type=w647" alt="img"></p>
+<p>국민 메신저 카카오톡(카톡)을 닮은 비대면 업무용 협업 플랫폼인 카카오엔터프라이즈의 ‘카카오워크(Kakao Work)’ 본격적인 시장 공략을 시작했다.</p>
+<p>백상엽 카카오엔터프라이즈 대표는 “‘카카오워크’에서는 내 업무를 도와주는 진정한 AI 어시스턴트를 만날 수 있다”며 “우수한 벤처기업들과 상생하는 마켓플레이스를 구축하고 기존에 사용하던 IT 시스템과 내게 필요한 다양한 기능을 직접 커스텀할 수 있는 쉬운 IT 환경을 제공해 나가고 있다”고 밝혔다.</p>
+<ul>
+<li><p>카카오워크는 카톡을 닮은 편리한 사용성, 다양한 정보기술(IT) 서비스와의 유연한 연결, 인공지능(AI) 통합 검색 기술 등이 핵심이다. 화상회의, 전자결재. 근태관리 등 업무 플랫폼으로서 필수적인 기능이 무료 탑재돼 대기업뿐만 아니라 작은 중소기업이나 자영업자 등 다양한 규모의 기업에서 활용할 수 있다.</p>
+<p>최근엔 메시지 삭제, 워크스페이스 봇 관리 기능 등을 추가했고 ‘프리미엄 플랜’ 이상부터 화상회의 시 100명까지 입장할 수 있게 했다. 아울러 화상회의의 품질을 업데이트해 전반적인 성능과 연결 안정성을 향상시켰다.</p>
+</li>
+</ul>
+<h2 id="4-‘AI’로-무장한-네이버웍스-외국인-직원과-협업도-거뜬"><a href="#4-‘AI’로-무장한-네이버웍스-외국인-직원과-협업도-거뜬" class="headerlink" title="4. ‘AI’로 무장한 네이버웍스, 외국인 직원과 협업도 거뜬"></a>4. ‘AI’로 무장한 네이버웍스, 외국인 직원과 협업도 거뜬</h2><p><a target="_blank" rel="noopener" href="https://news.naver.com/main/read.nhn?mode=LSD&mid=sec&sid1=105&oid=018&aid=0004887956">‘AI’로 무장한 네이버웍스, 외국인 직원과 협업도 거뜬 : 네이버 뉴스 (naver.com)</a></p>
+<p><img src="https://imgnews.pstatic.net/image/018/2021/03/30/0004887956_001_20210330064440078.jpg?type=w647" alt="img">네이버웍스 메시지 화면 (사진&#x3D;네이버클라우드)</p>
+<p>신종 코로나바이러스 감염증(코로나19)로 원격근무 시대가 열리면서 해외 협업툴이 밀려 들어오고 있는 가운데 네이버는 외산 제품의 공세에 맞서 국내외 시장을 확장해 나가고 있다.</p>
+<p>이미 네이버웍스는 일본에선 ‘라인웍스’라는 이름으로 유료 업무용 메신저 시장 1위를 차지하고 있으며,  대웅제약, 웅진씽크빅 등 10만개가 넘는 기업의 직원들이 네이버웍스로 업무를 본다.</p>
+<ul>
+<li>네이버웍스의 강점은 네이버, 라인 서비스와 유사한 화면으로 누구나 쉽게 사용할 수 있다는 것이다. 메시지 기능은 읽은 사람 수를 넘어 읽은 사람이 누구인지까지 확인이 가능하며, 최대 200명까지 동시 접속할 수 있다.<br>인공지능 기술 - AI번역서비스(파파고), OCR서비스</li>
+</ul>
+<h2 id="5-“사람-대신-사물·서비스-이동…패러다임-바꾸겠다”"><a href="#5-“사람-대신-사물·서비스-이동…패러다임-바꾸겠다”" class="headerlink" title="5. “사람 대신 사물·서비스 이동…패러다임 바꾸겠다”"></a>5. “사람 대신 사물·서비스 이동…패러다임 바꾸겠다”</h2><p><a target="_blank" rel="noopener" href="https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=105&oid=366&aid=0000692402">“사람 대신 사물·서비스 이동…패러다임 바꾸겠다” : 네이버 뉴스 (naver.com)</a></p>
+<p><img src="https://imgnews.pstatic.net/image/366/2021/03/30/0000692402_002_20210330061118430.png?type=w647" alt="img"><em>카카오모빌리티가 그리는 미래 속 소비자는 구매 희망하는 상품을 원하는 장소까지 교통 수단을 활용해 이동시킬 수 있다. 카카오모빌리티 플랫폼을 통해 차량이 아닌 물건을 호출하는 것이다. &#x2F; 카카오모빌리티</em></p>
+<p>경기도 판교 사무실에서 만난 신동훈 카카오모빌리티 MaaS(통합교통서비스)사업실 실장(상무)은 ‘사람의 이동’ 효율화에 초점을 맞추고 있는 현재 모빌리티 사업을 ‘사물과 서비스의 이동’으로 바꾸겠다고 밝혔다. </p>
+<p>“카카오모빌리티는 택시, 바이크, 시외버스, 기차 등 다양한 이동 수단을 통해 방대한 데이터를 축적했고, 이를 기반으로 A에서 B까지 이동할 때 소비자가 어떤 상품과 서비스를 필요로 하는지, 어떻게 하면 다양한 이동 수단을 최적화해 연결할지에 대한 노하우를 많이 쌓아왔기 때문에 앞으로는 사람이 교통 수단을 이용해 이동할 필요 없이, 사물과 서비스가 교통 수단을 통해 고객 앞으로 직접 찾아오는 서비스를 제공하겠다.”</p>
+</div></article></div><div class="card"><div class="card-image"><a class="image is-7by3" href="/categories/Algorithm/Python/BAEKJOON-1874-21-03-29/"><img class="fill" src="/images/posts/thumb/baekjoon.png" alt="[백준] 1874번 스택 수열"></a></div><article class="card-content article" role="article"><div class="article-meta is-size-9 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><div>2021-03-29</div></span><span class="level-item"><a class="link-muted" href="/categories/Algorithm/">Algorithm</a><span> / </span><a class="link-muted" href="/categories/Algorithm/Python/">Python</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/categories/Algorithm/Python/BAEKJOON-1874-21-03-29/">[백준] 1874번 스택 수열</a></p><div class="content"><p>출처: <a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/1874">[백준] 1874번 스택 수열</a> </p>
+<hr>
+<h3 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h3><p>스택 (stack)은 기본적인 자료구조 중 하나로, 컴퓨터 프로그램을 작성할 때 자주 이용되는 개념이다. 스택은 자료를 넣는 (push) 입구와 자료를 뽑는 (pop) 입구가 같아 제일 나중에 들어간 자료가 제일 먼저 나오는 (LIFO, Last in First out) 특성을 가지고 있다.</p>
+<p>1부터 n까지의 수를 스택에 넣었다가 뽑아 늘어놓음으로써, 하나의 수열을 만들 수 있다. 이때, 스택에 push하는 순서는 반드시 오름차순을 지키도록 한다고 하자. 임의의 수열이 주어졌을 때 스택을 이용해 그 수열을 만들 수 있는지 없는지, 있다면 어떤 순서로 push와 pop 연산을 수행해야 하는지를 알아낼 수 있다. 이를 계산하는 프로그램을 작성하라.</p>
+<hr>
+<h3 id="입력"><a href="#입력" class="headerlink" title="입력"></a>입력</h3><p>첫 줄에 n (1 ≤ n ≤ 100,000)이 주어진다. 둘째 줄부터 n개의 줄에는 수열을 이루는 1이상 n이하의 정수가 하나씩 순서대로 주어진다. 물론 같은 정수가 두 번 나오는 일은 없다.</p>
+<hr>
+<h3 id="출력"><a href="#출력" class="headerlink" title="출력"></a>출력</h3><p>입력된 수열을 만들기 위해 필요한 연산을 한 줄에 한 개씩 출력한다. push연산은 +로, pop 연산은 -로 표현하도록 한다. 불가능한 경우 NO를 출력한다.</p>
+<hr>
+<h3 id="예제-입력-1"><a href="#예제-입력-1" class="headerlink" title="예제 입력 1"></a>예제 입력 1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">8</span><br><span class="line">4</span><br><span class="line">3</span><br><span class="line">6</span><br><span class="line">8</span><br><span class="line">7</span><br><span class="line">5</span><br><span class="line">2</span><br><span class="line">1</span><br></pre></td></tr></table></figure>
+
+<h3 id="예제-출력-1"><a href="#예제-출력-1" class="headerlink" title="예제 출력 1"></a>예제 출력 1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">+</span><br><span class="line">+</span><br><span class="line">+</span><br><span class="line">+</span><br><span class="line">-</span><br><span class="line">-</span><br><span class="line">+</span><br><span class="line">+</span><br><span class="line">-</span><br><span class="line">+</span><br><span class="line">+</span><br><span class="line">-</span><br><span class="line">-</span><br><span class="line">-</span><br><span class="line">-</span><br><span class="line">-</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="예제-입력2"><a href="#예제-입력2" class="headerlink" title="예제 입력2"></a>예제 입력2</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">5</span><br><span class="line">1</span><br><span class="line">2</span><br><span class="line">5</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td></tr></table></figure>
+
+<h3 id="예제-출력2"><a href="#예제-출력2" class="headerlink" title="예제 출력2"></a>예제 출력2</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">NO</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="힌트"><a href="#힌트" class="headerlink" title="힌트"></a>힌트</h3><p>1부터 n까지에 수에 대해 차례로 [push, push, push, push, pop, pop, push, push, pop, push, push, pop, pop, pop, pop, pop] 연산을 수행하면 수열 [4, 3, 6, 8, 7, 5, 2, 1]을 얻을 수 있다.</p>
+<hr>
+<h3 id="출처"><a href="#출처" class="headerlink" title="출처"></a>출처</h3><ul>
+<li>문제를 만든 사람: <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/author5">author5</a></li>
+<li>문제의 오타를 찾은 사람: <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/bgjuw12">bgjuw12</a></li>
+<li>데이터를 추가한 사람: <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/djm03178">djm03178</a></li>
+</ul>
+<hr>
+<h3 id="알고리즘-분류"><a href="#알고리즘-분류" class="headerlink" title="알고리즘 분류"></a>알고리즘 분류</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/175">자료 구조</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/71">스택</a></li>
+</ul>
+<hr>
+<h3 id="시간-제한"><a href="#시간-제한" class="headerlink" title="시간 제한"></a>시간 제한</h3><ul>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="풀이"><a href="#풀이" class="headerlink" title="풀이"></a>풀이</h3><ul>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="소스코드"><a href="#소스코드" class="headerlink" title="소스코드"></a>소스코드</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="built_in">input</span> = sys.stdin.readline</span><br><span class="line"></span><br><span class="line">N = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line"></span><br><span class="line">stack = []</span><br><span class="line">count = <span class="number">0</span></span><br><span class="line">result = []</span><br><span class="line">flag = <span class="number">1</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(N):</span><br><span class="line">    temp = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> count &lt; temp:</span><br><span class="line">        count += <span class="number">1</span></span><br><span class="line">        stack.append(count)</span><br><span class="line">        result.append(<span class="string">&#x27;+&#x27;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> stack[-<span class="number">1</span>] == temp:</span><br><span class="line">        stack.pop()</span><br><span class="line">        result.append(<span class="string">&#x27;-&#x27;</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        flag = <span class="number">0</span></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;NO&#x27;</span>)</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> flag:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;\n&#x27;</span>.join(result))</span><br><span class="line"></span><br></pre></td></tr></table></figure></div></article></div><div class="card"><div class="card-image"><a class="image is-7by3" href="/categories/Algorithm/Python/BAEKJOON-4949-21-03-29/"><img class="fill" src="/images/posts/thumb/baekjoon.png" alt="[백준] 4949번 균형잡힌 세상"></a></div><article class="card-content article" role="article"><div class="article-meta is-size-9 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><div>2021-03-29</div></span><span class="level-item"><a class="link-muted" href="/categories/Algorithm/">Algorithm</a><span> / </span><a class="link-muted" href="/categories/Algorithm/Python/">Python</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/categories/Algorithm/Python/BAEKJOON-4949-21-03-29/">[백준] 4949번 균형잡힌 세상</a></p><div class="content"><p>출처: <a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/4949">[백준] 4949번 균형잡힌 세상</a> </p>
+<hr>
+<h3 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h3><p>세계는 균형이 잘 잡혀있어야 한다. 양과 음, 빛과 어둠 그리고 왼쪽 괄호와 오른쪽 괄호처럼 말이다.</p>
+<p>정민이의 임무는 어떤 문자열이 주어졌을 때, 괄호들의 균형이 잘 맞춰져 있는지 판단하는 프로그램을 짜는 것이다.</p>
+<p>문자열에 포함되는 괄호는 소괄호(“()”) 와 대괄호(“[]”)로 2종류이고, 문자열이 균형을 이루는 조건은 아래와 같다.</p>
+<ul>
+<li>모든 왼쪽 소괄호(“(“)는 오른쪽 소괄호(“)”)와만 짝을 이뤄야 한다.</li>
+<li>모든 왼쪽 대괄호(“[“)는 오른쪽 대괄호(“]”)와만 짝을 이뤄야 한다.</li>
+<li>모든 오른쪽 괄호들은 자신과 짝을 이룰 수 있는 왼쪽 괄호가 존재한다.</li>
+<li>모든 괄호들의 짝은 1:1 매칭만 가능하다. 즉, 괄호 하나가 둘 이상의 괄호와 짝지어지지 않는다.</li>
+<li>짝을 이루는 두 괄호가 있을 때, 그 사이에 있는 문자열도 균형이 잡혀야 한다.</li>
+</ul>
+<p>정민이를 도와 문자열이 주어졌을 때 균형잡힌 문자열인지 아닌지를 판단해보자.</p>
+<hr>
+<h3 id="입력"><a href="#입력" class="headerlink" title="입력"></a>입력</h3><p>하나 또는 여러줄에 걸쳐서 문자열이 주어진다. 각 문자열은 영문 알파벳, 공백, 소괄호(“( )”) 대괄호(“[ ]”)등으로 이루어져 있으며, 길이는 100글자보다 작거나 같다.</p>
+<p>입력의 종료조건으로 맨 마지막에 점 하나(“.”)가 들어온다.</p>
+<hr>
+<h3 id="출력"><a href="#출력" class="headerlink" title="출력"></a>출력</h3><p>각 줄마다 해당 문자열이 균형을 이루고 있으면 “yes”를, 아니면 “no”를 출력한다.</p>
+<hr>
+<h3 id="예제-입력-1"><a href="#예제-입력-1" class="headerlink" title="예제 입력 1"></a>예제 입력 1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">So when I die (the [first] I will see in (heaven) is a score list).</span><br><span class="line">[ first in ] ( first out ).</span><br><span class="line">Half Moon tonight (At least it is better than no Moon at all].</span><br><span class="line">A rope may form )( a trail in a maze.</span><br><span class="line">Help( I[m being held prisoner in a fortune cookie factory)].</span><br><span class="line">([ (([( [ ] ) ( ) (( ))] )) ]).</span><br><span class="line"> .</span><br><span class="line">.</span><br></pre></td></tr></table></figure>
+
+<h3 id="예제-출력-1"><a href="#예제-출력-1" class="headerlink" title="예제 출력 1"></a>예제 출력 1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">yes</span><br><span class="line">yes</span><br><span class="line">no</span><br><span class="line">no</span><br><span class="line">no</span><br><span class="line">yes</span><br><span class="line">yes</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="힌트"><a href="#힌트" class="headerlink" title="힌트"></a>힌트</h3><p>7번째의 “ .”와 같이 괄호가 하나도 없는 경우도 균형잡힌 문자열로 간주할 수 있다.</p>
+<hr>
+<h3 id="출처"><a href="#출처" class="headerlink" title="출처"></a>출처</h3><p><a target="_blank" rel="noopener" href="https://www.acmicpc.net/category/1">ICPC</a> &gt; <a target="_blank" rel="noopener" href="https://www.acmicpc.net/category/7">Regionals</a> &gt; <a target="_blank" rel="noopener" href="https://www.acmicpc.net/category/42">Asia Pacific</a> &gt; <a target="_blank" rel="noopener" href="https://www.acmicpc.net/category/43">Japan</a> &gt; <a target="_blank" rel="noopener" href="https://www.acmicpc.net/category/44">Japan Domestic Contest</a> &gt; <a target="_blank" rel="noopener" href="https://www.acmicpc.net/category/detail/201">2011 Japan Domestic Contest</a> B번</p>
+<ul>
+<li>문제의 오타를 찾은 사람: <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/chminoo">chminoo</a></li>
+<li>잘못된 번역을 찾은 사람: <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/jh05013">jh05013</a></li>
+<li>문제를 번역한 사람: <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/occidere">occidere</a></li>
+</ul>
+<hr>
+<h3 id="알고리즘-분류"><a href="#알고리즘-분류" class="headerlink" title="알고리즘 분류"></a>알고리즘 분류</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/175">자료 구조</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/158">문자열</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/71">스택</a></li>
+</ul>
+<hr>
+<h3 id="시간-제한"><a href="#시간-제한" class="headerlink" title="시간 제한"></a>시간 제한</h3><ul>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="풀이"><a href="#풀이" class="headerlink" title="풀이"></a>풀이</h3><ul>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="소스코드"><a href="#소스코드" class="headerlink" title="소스코드"></a>소스코드</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="built_in">input</span> = sys.stdin.readline</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    string = <span class="built_in">input</span>().rstrip()</span><br><span class="line">    <span class="keyword">if</span> string == <span class="string">&#x27;.&#x27;</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    stack = []</span><br><span class="line">    flag = <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> char <span class="keyword">in</span> string:</span><br><span class="line">        <span class="keyword">if</span> char == <span class="string">&#x27;(&#x27;</span> <span class="keyword">or</span> char == <span class="string">&#x27;[&#x27;</span>:</span><br><span class="line">            stack.append(char)</span><br><span class="line">        <span class="keyword">elif</span> char == <span class="string">&#x27;)&#x27;</span>:</span><br><span class="line">            <span class="keyword">if</span> <span class="keyword">not</span> stack <span class="keyword">or</span> stack[-<span class="number">1</span>] == <span class="string">&#x27;[&#x27;</span>:</span><br><span class="line">                flag = <span class="number">0</span></span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            <span class="keyword">elif</span> stack[-<span class="number">1</span>] == <span class="string">&#x27;(&#x27;</span>:</span><br><span class="line">                stack.pop()</span><br><span class="line">        <span class="keyword">elif</span> char == <span class="string">&#x27;]&#x27;</span>:</span><br><span class="line">            <span class="keyword">if</span> <span class="keyword">not</span> stack <span class="keyword">or</span> stack[-<span class="number">1</span>] == <span class="string">&#x27;(&#x27;</span>:</span><br><span class="line">                flag = <span class="number">0</span></span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            <span class="keyword">elif</span> stack[-<span class="number">1</span>] == <span class="string">&#x27;[&#x27;</span>:</span><br><span class="line">                stack.pop()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> flag == <span class="number">1</span> <span class="keyword">and</span> <span class="keyword">not</span> stack:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;yes&#x27;</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;no&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-9 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><div>2021-03-29</div></span><span class="level-item"><a class="link-muted" href="/categories/IT%EC%A0%95%EB%B3%B4/">IT정보</a><span> / </span><a class="link-muted" href="/categories/IT%EC%A0%95%EB%B3%B4/%EB%A7%A4%EC%9D%BC30%EB%B6%84-IT%EB%89%B4%EC%8A%A4/">매일30분 IT뉴스</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/categories/IT%EC%A0%95%EB%B3%B4/%EB%A7%A4%EC%9D%BC30%EB%B6%84%20IT%EB%89%B4%EC%8A%A4/21-03-29-IT_News/">2021년 3월 29일 월요일 IT뉴스</a></p><div class="content"><h2 id="1-“어차피-개발자들에게-‘평생직장’은-없다”"><a href="#1-“어차피-개발자들에게-‘평생직장’은-없다”" class="headerlink" title="1. “어차피 개발자들에게 ‘평생직장’은 없다”"></a>1. “어차피 개발자들에게 ‘평생직장’은 없다”</h2><p><a target="_blank" rel="noopener" href="https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=105&oid=022&aid=0003565896">“어차피 개발자들에게 ‘평생직장’은 없다” : 네이버 뉴스 (naver.com)</a></p>
+<p><img src="https://imgnews.pstatic.net/image/022/2021/03/29/20210329517734_20210329205634755.jpg?type=w647" alt="img"></p>
+<p>IT·게임업계 개발자 영입 경쟁이 불붙자 네이버가 ‘비전공자 공채 신설’과 ‘정기적 경력 공채’라는 새로운 전략을 내놓았다.</p>
+<p>29일 네이버는 올해 개발자 신규 채용 규모를 역대 최대인 900여명으로 정했다면서, 신입 공개 채용을 연 2회로 늘리고 비전공자 채용·육성 트랙을 신설한다고 밝혔다.</p>
+<ul>
+<li>비전공자 트랙이란 대학에서 컴퓨터공학 등 개발 관련 전공을 하지 않았어도 IT 개발자로 자질이 있으면 선발해 개발자로 육성하는 제도다.</li>
+<li>추가: 매월 1~10일 경력자를 뽑는 ‘월간 영입’ 프로그램을 신설해 매달 정기적으로 경력 사원을 모집한다. 첫 경력 사원 모집은 다음달 1일부터 시작한다.<br>7월에 입사 예정인 상반기 신입 개발자 공채는 다음달 2일부터 12일까지 네이버 채용 홈페이지에서 모집을 실시하고, 12월에 입사하는 하반기 공채는 9월에 모집을 실시한다.</li>
+</ul>
+<h2 id="2-‘국민비서’-카카오·네이버-건강검진·면허갱신-미리-알려준다"><a href="#2-‘국민비서’-카카오·네이버-건강검진·면허갱신-미리-알려준다" class="headerlink" title="2. ‘국민비서’ 카카오·네이버, 건강검진·면허갱신 미리 알려준다"></a>2. ‘국민비서’ 카카오·네이버, 건강검진·면허갱신 미리 알려준다</h2><p><a target="_blank" rel="noopener" href="https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=105&oid=008&aid=0004564329">‘국민비서’ 카카오·네이버, 건강검진·면허갱신 미리 알려준다 : 네이버 뉴스 (naver.com)</a></p>
+<p><img src="https://imgnews.pstatic.net/image/008/2021/03/29/0004564329_001_20210329120125890.jpg?type=w647" alt="img"></p>
+<p>카카오와 네이버가 29일부터 국민비서 알림 서비스를 시작하며, 이날부터 제공되는 서비스는 국민건강보험공단 건강검진 안내, 도로교통공단 운전면허 갱신 알림, 경찰청 교통 과태료 납부 안내 등 교통, 교육, 건강 등 3개 분야 8종이다.</p>
+<p>한성숙 네이버 대표이사는 “네이버 전자문서 서비스는 앞으로도 사용자가 내게 필요한 생활밀착형 정보를 빠짐 없이 확인할 수 있고 차질 없이 일정을 챙기는 데 도움을 주도록 최선을 다할 것”이라고 말했다.</p>
+<h2 id="3-하이닉스서-나온-매그나칩-중국에-매각-…-“여전한-中-반도체-굴기-야욕”"><a href="#3-하이닉스서-나온-매그나칩-중국에-매각-…-“여전한-中-반도체-굴기-야욕”" class="headerlink" title="3. 하이닉스서 나온 매그나칩 중국에 매각 … “여전한 中 반도체 굴기 야욕”"></a>3. 하이닉스서 나온 매그나칩 중국에 매각 … “여전한 中 반도체 굴기 야욕”</h2><p><a target="_blank" rel="noopener" href="https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=105&oid=469&aid=0000592452">하이닉스서 나온 매그나칩 중국에 매각 … “여전한 中 반도체 굴기 야욕” : 네이버 뉴스 (naver.com)</a></p>
+<p><img src="https://imgnews.pstatic.net/image/469/2021/03/29/0000592452_001_20210329210156902.jpg?type=w647" alt="img"><em>매그나칩반도체 회사 로고. 매그나칩반도체 제공</em></p>
+<p>2004년 하이닉스반도체(옛 SK하이닉스)에서 분사된 매그나칩반도체가 중국에 1조원대로 매각되며, 미국의 집중 견제로 반도체 자립이 어려워진 중국이 자금력을 앞세워 공격적인 해외 반도체 기업 인수에 나선 모양새다.</p>
+<p>안기현 한국반도체산업협회 전무는 “매그나칩 인수에 대해 가장 우려되는 부분은 대상이 중국이라는 점으로 결국 중국에 기술과 인력이 넘어가게 될 것”이라며 “이에 따라 디스플레이 쪽에서 중국의 추격이 더 빨라질 수 있다”고 우려했다.</p>
+<ul>
+<li>매그나칩: 매그나칩반도체 주요 제품으로는 유기발광다이오드(OLED) 디스플레이 드라이버 구동칩(DDI)과 자동차용 전력 반도체 등이다. <strong>매그나칩반도체의 DDI는 삼성전자에 이어 세계 2위에 올라 있다.</strong> 지난해 매출은 5억705만9,000달러(약 5,740억 원), 영업이익은 3,264만5,000달러(약 370억 원) 규모였다. 8,800여 명의 임직원 대부분이 한국인으로 구성된 매그나칩반도체 사업장은 모두 국내에 자리하고 있다.</li>
+<li>DDI: <strong>DDI</strong>는 디스플레이를 구성하는 수많은 화소들을 조정해 다양한 색을 구현토록 하는 디스플레이 구동칩이다.</li>
+</ul>
+<h2 id="4-화상회의-피로감에-가상-출퇴근-노-테크-데이-나선-기업들"><a href="#4-화상회의-피로감에-가상-출퇴근-노-테크-데이-나선-기업들" class="headerlink" title="4. 화상회의 피로감에 가상 출퇴근, 노 테크 데이 나선 기업들"></a>4. 화상회의 피로감에 가상 출퇴근, 노 테크 데이 나선 기업들</h2><p><a target="_blank" rel="noopener" href="https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=105&oid=011&aid=0003889732">화상회의 피로감에 가상 출퇴근, 노 테크 데이 나선 기업들 : 네이버 뉴스 (naver.com)</a></p>
+<p>최근 일부 기업들은 화상회의를 줄이려는 노력을 하고 있으며, 마이크로소프트는 다음 달부터 협업툴 ‘팀즈’ 내에 가상 출퇴근 기능(Virtual Commute)을 운영한다. </p>
+<p>글은 매주 화요일 밤을 전자기기를 사용하지 않는 날로 삼고 ‘테크기기 없는 화요일(No tech Tuesday)’ 캠페인을 진행하고 있으며, 원격근무가 장기화하고 화상회의 솔루션 등 기기를 통한 비대면 소통이 강조되면서 일과 사생활의 경계가 없어지는 직원들을 위한 처방이다.</p>
+<h2 id="5-클라우드-빌드·배포-등-단순업무-오픈소스로-한-번에-해결"><a href="#5-클라우드-빌드·배포-등-단순업무-오픈소스로-한-번에-해결" class="headerlink" title="5. 클라우드 빌드·배포 등 단순업무, 오픈소스로 한 번에 해결"></a>5. 클라우드 빌드·배포 등 단순업무, 오픈소스로 한 번에 해결</h2><p><a target="_blank" rel="noopener" href="https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=105&oid=092&aid=0002217488">클라우드 빌드·배포 등 단순업무, 오픈소스로 한 번에 해결 : 네이버 뉴스 (naver.com)</a></p>
+<p><img src="https://imgnews.pstatic.net/image/092/2021/03/29/0002217488_002_20210329171253479.jpg?type=w647" alt="img"><em>김동현 개발자가 깃허브에 공개한 SSM 샌드 커맨드(이미지&#x3D;깃허브)</em></p>
+<p>29일 만난 앰포의 김동현 개발자는 오픈소스 AWS SSM send-command(이하 샌드커맨드)를 깃허브를 통해 공개했으며, 이를 활용하면 개발자는 AWS 인스턴스에 접속하지 않고도 코드 테스트와 빌드, 배포 등의 업무를 자동으로 처리할 수 있다.</p>
+<p>샌드커맨드는 최근 깃허브에 추가된 깃허브 액션스를 활용해 제작됐으며, 김 개발자는 “액션스는 개인 깃허브 저장소에 발생하는 모든 이벤트에 알림을 보내는 일종의 자동화 도구로 아직 많이 알려지지 않았지만 활용범위는 상당히 크다고 생각한다”며 “기존에는 젠킨스를 사용하려 했는데 오래된 기술이라 인터페이스도 불편하고 사용하기 쉽지 않았다”라고 설명했다.</p>
+<ul>
+<li><strong>Github Action</strong>: 소프트웨어 workflow를 자동화할 수 있도록 도와주는 도구<br><a target="_blank" rel="noopener" href="https://github.com/features/actions">공식 홈페이지</a>, <a target="_blank" rel="noopener" href="https://help.github.com/en/actions">공식 문서</a></li>
+</ul>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-9 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><div>2021-03-28</div></span><span class="level-item"><a class="link-muted" href="/categories/IT%EC%A0%95%EB%B3%B4/">IT정보</a><span> / </span><a class="link-muted" href="/categories/IT%EC%A0%95%EB%B3%B4/%EB%A7%A4%EC%9D%BC30%EB%B6%84-IT%EB%89%B4%EC%8A%A4/">매일30분 IT뉴스</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/categories/IT%EC%A0%95%EB%B3%B4/%EB%A7%A4%EC%9D%BC30%EB%B6%84%20IT%EB%89%B4%EC%8A%A4/21-03-28-IT_News/">2021년 3월 28일 일요일 IT뉴스</a></p><div class="content"><h2 id="1-웨이브-“1조-투자”에-판-커진다-토종-OTT도-‘쩐의-전쟁’"><a href="#1-웨이브-“1조-투자”에-판-커진다-토종-OTT도-‘쩐의-전쟁’" class="headerlink" title="1. 웨이브 “1조 투자”에 판 커진다, 토종 OTT도 ‘쩐의 전쟁’"></a>1. 웨이브 “1조 투자”에 판 커진다, 토종 OTT도 ‘쩐의 전쟁’</h2><p><a target="_blank" rel="noopener" href="https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=105&oid=025&aid=0003088575">웨이브 “1조 투자”에 판 커진다, 토종 OTT도 ‘쩐의 전쟁’</a></p>
+<p>SK텔레콤은 26일 “웨이브의 콘텐트 경쟁력 강화를 위해 25년까지 총 1조원 규모의 투자를 진행할 예정”이라며“최고 콘텐트 책임자(CCO)를 영입하고, 상반기 내 콘텐트 기획·개발을 전문으로 하는 스튜디오를 설립할 예정”이라고 밝혔다.</p>
+<p>SK텔레콤은 당분간 독자적인 경쟁력을 강화하고, 글로벌 시장에 진출할 계획이며, 웨이브를 서비스하고 있는 콘텐츠웨이브의 이태현 대표는 “국내 방송사ㆍ제작사ㆍ지식재산권(IP) 보유 기업과 파트너십을 확대하고, 경쟁력 있는 중소 제작사를 발굴해 글로벌 OTT로 키울 것”이라고 말했다.</p>
+<h2 id="2-“삼성폰-가져와-아이폰-싸게-줄게”-애플-1위를-노린다-IT선빵"><a href="#2-“삼성폰-가져와-아이폰-싸게-줄게”-애플-1위를-노린다-IT선빵" class="headerlink" title="2. “삼성폰 가져와 아이폰 싸게 줄게” 애플 1위를 노린다 [IT선빵!]"></a>2. “삼성폰 가져와 아이폰 싸게 줄게” 애플 1위를 노린다 [IT선빵!]</h2><p><a target="_blank" rel="noopener" href="https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=105&oid=016&aid=0001813000">“삼성폰 가져와 아이폰 싸게 줄게” 애플 1위를 노린다 [IT선빵!]</a></p>
+<p>애플 아이폰이 본격적으로 점유율 확대를 꾀하고 있으며, 새로운 보급형 아이폰 출시와 함께 삼성 갤럭시로 대표되는 ‘안드로이드폰’ 이용자까지 노리고 있다.</p>
+<p>27일 업계에 따르면 애플은 그동안  자사 제품에 한해서만 보상프로그램을 제공해 왔지만, 안드로이드폰을 포함시켰고, 안드로이드폰으로 확대한 것은 아이폰의 시장 점유율을 더욱 확대하기 위한 것으로 보인다.</p>
+<h2 id="3-네이버도-“당근-”-‘이웃-톡’으로-지역커뮤니티-공략"><a href="#3-네이버도-“당근-”-‘이웃-톡’으로-지역커뮤니티-공략" class="headerlink" title="3. 네이버도 “당근?!” ‘이웃 톡’으로 지역커뮤니티 공략"></a>3. 네이버도 “당근?!” ‘이웃 톡’으로 지역커뮤니티 공략</h2><p><a target="_blank" rel="noopener" href="https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=105&oid=014&aid=0004608895">네이버도 “당근?!” ‘이웃 톡’으로 지역커뮤니티 공략 : 네이버 뉴스 (naver.com)</a></p>
+<p>네이버는 지역 이웃이라면 네이버 카페 내 누구나 자유롭게 글을 쓰고 소통할 수 있는 ‘이웃 톡’ 서비스를 출시했다고 27일 밝혔으며, 이웃 톡 서비스는 모바일 웹과 네이버 카페 애플리케이션(앱) ‘이웃’ 탭에서 이용할 수 있다. 현재 위치 기반으로 ‘이웃 인증’을 완료하면 게시글을 작성할 수 있다.</p>
+<p>네이버 그룹&amp;CIC(사내독립기업) 김정미 책임리더는 “코로나19 장기화로 취미, 소비 활동 등이 주변 지역 중심으로 이뤄지면서 이웃과 소통하고 싶은 사용자들이 많아지고 있다”며 “네이버 카페의 이웃 톡 서비스를 통해 더욱 자유롭게 주변 이웃들과 동네 정보를 교환하고 이야기를 나눌 수 있기를 기대한다”고 전했다.</p>
+<h2 id="4-야놀자-숙박예약-넘어-‘여가-플랫폼’-도약…-B2B로-글로벌-공략-K-유니콘"><a href="#4-야놀자-숙박예약-넘어-‘여가-플랫폼’-도약…-B2B로-글로벌-공략-K-유니콘" class="headerlink" title="4. 야놀자, 숙박예약 넘어 ‘여가 플랫폼’ 도약… B2B로 글로벌 공략 [K-유니콘]"></a>4. 야놀자, 숙박예약 넘어 ‘여가 플랫폼’ 도약… B2B로 글로벌 공략 [K-유니콘]</h2><p><a target="_blank" rel="noopener" href="https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=105&oid=014&aid=0004608260">야놀자, 숙박예약 넘어 ‘여가 플랫폼’ 도약… B2B로 글로벌 공략 [K-유니콘]</a></p>
+<p>글로벌 여가 플랫폼 기업 야놀자는 국내 기업공개(IPO)는 물론 해외상장도 모색 중이며,  특히 야놀자는 전 세계 170개국에서 운영되는 호텔, 레저시설, 레스토랑 등 2만6000여개 고객사에게 클라우드 기반 호텔관리 시스템(PMS) 등 SaaS(서비스형 소프트웨어)를 제공하며 글로벌 역량을 높이고 있다.</p>
+<p>야놀자는 또 올해 완전 통합된 호텔 자동화 솔루션 ‘와이플럭스(Y FLUX)’를 출시한고, 이는 SW를 서버에 직접 설치해 운영하는 기존 온프레미스 방식과 달리 와이플럭스는 호텔의 모든 운영 요소를 클라우드 기반으로 연결해 데이터를 실시간 공유하며,  야놀자 측은 “코로나 펜데믹이 끝나고 다시 여행 수요가 많아지는 시점에 야놀자는 여행의 모든 것을 하나의 플랫폼으로 연결하는 ‘슈퍼앱 전략’으로 해당 수요를 충분히 소화할 수 있다”며 “글로벌 클라우드 기반 PMS 사업자로서도 B2B영역에서 가파른 성장세를 이어갈 것”이라고 강조했다.</p>
+<ul>
+<li>PMS(Property Management System): 호텔 자산 관리 시스템- 숙박업소 운영 전반에 필요한 객실 판매, 예약, 고객, 재무, 수익률 등을 한 번에 관리</li>
+</ul>
+<h2 id="5-클라우드-속-내-데이터는-안전할까-…”컨피덴셜-컴퓨팅으로-신뢰-확보”"><a href="#5-클라우드-속-내-데이터는-안전할까-…”컨피덴셜-컴퓨팅으로-신뢰-확보”" class="headerlink" title="5. 클라우드 속 내 데이터는 안전할까?…”컨피덴셜 컴퓨팅으로 신뢰 확보”"></a>5. 클라우드 속 내 데이터는 안전할까?…”컨피덴셜 컴퓨팅으로 신뢰 확보”</h2><p><a target="_blank" rel="noopener" href="http://www.aitimes.com/news/articleView.html?idxno=137550">클라우드 속 내 데이터는 안전할까?…”컨피덴셜 컴퓨팅으로 신뢰 확보”</a></p>
+<p>힐러리 헌터(Hillery Hunter) IBM 클라우드 CTO는 컨피덴셜 컴퓨팅을 **”컨피덴셜 컴퓨팅(Confidential Computing)은 클라우드에서 신뢰성을 확보하게 해주는 기술”**이라고 설명하며, “기술적으로 컨피덴셜 컴퓨팅은 누군가 클라우드에서 업무를 하면서도 프라이버시를 지킬 수 있게 하는 것”이라고 말했다.</p>
+<p>즉 클라우드 위에서 독립적인 공간을 만든다는 것으로 여러 사람과 같이 클라우드에서 일을 하지만, 개인 또는 팀이 원하는 것에 대해서는 독립된 권한을 가지게 되는 것이고, 클라우드 제공자도 개입할 수 없다.</p>
+<ul>
+<li>온프레미스(On-Premiss):  클라우드가 아닌 기업이 직접 데이터 서버를 운영하는 것</li>
+</ul>
+</div></article></div><div class="card"><div class="card-image"><a class="image is-7by3" href="/categories/Algorithm/Python/BAEKJOON-9012-21-03-27/"><img class="fill" src="/images/posts/thumb/baekjoon.png" alt="[백준] 9012번 괄호"></a></div><article class="card-content article" role="article"><div class="article-meta is-size-9 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><div>2021-03-27</div></span><span class="level-item"><a class="link-muted" href="/categories/Algorithm/">Algorithm</a><span> / </span><a class="link-muted" href="/categories/Algorithm/Python/">Python</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/categories/Algorithm/Python/BAEKJOON-9012-21-03-27/">[백준] 9012번 괄호</a></p><div class="content"><p>출처: <a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/9012">[백준] 9012번 괄호</a> </p>
+<hr>
+<h3 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h3><p>괄호 문자열(Parenthesis String, PS)은 두 개의 괄호 기호인 ‘(’ 와 ‘)’ 만으로 구성되어 있는 문자열이다. 그 중에서 괄호의 모양이 바르게 구성된 문자열을 올바른 괄호 문자열(Valid PS, VPS)이라고 부른다. 한 쌍의 괄호 기호로 된 “( )” 문자열은 기본 VPS 이라고 부른다. 만일 x 가 VPS 라면 이것을 하나의 괄호에 넣은 새로운 문자열 “(x)”도 VPS 가 된다. 그리고 두 VPS x 와 y를 접합(concatenation)시킨 새로운 문자열 xy도 VPS 가 된다. 예를 들어 “(())()”와 “((()))” 는 VPS 이지만 “(()(”, “(())()))” , 그리고 “(()” 는 모두 VPS 가 아닌 문자열이다. </p>
+<p>여러분은 입력으로 주어진 괄호 문자열이 VPS 인지 아닌지를 판단해서 그 결과를 YES 와 NO 로 나타내어야 한다. </p>
+<hr>
+<h3 id="입력"><a href="#입력" class="headerlink" title="입력"></a>입력</h3><p>입력 데이터는 표준 입력을 사용한다. 입력은 T개의 테스트 데이터로 주어진다. 입력의 첫 번째 줄에는 입력 데이터의 수를 나타내는 정수 T가 주어진다. 각 테스트 데이터의 첫째 줄에는 괄호 문자열이 한 줄에 주어진다. 하나의 괄호 문자열의 길이는 2 이상 50 이하이다. </p>
+<hr>
+<h3 id="출력"><a href="#출력" class="headerlink" title="출력"></a>출력</h3><p>출력은 표준 출력을 사용한다. 만일 입력 괄호 문자열이 올바른 괄호 문자열(VPS)이면 “YES”, 아니면 “NO”를 한 줄에 하나씩 차례대로 출력해야 한다. </p>
+<hr>
+<h3 id="예제-입력-1"><a href="#예제-입력-1" class="headerlink" title="예제 입력 1"></a>예제 입력 1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">6</span><br><span class="line">(())())</span><br><span class="line">(((()())()</span><br><span class="line">(()())((()))</span><br><span class="line">((()()(()))(((())))()</span><br><span class="line">()()()()(()()())()</span><br><span class="line">(()((())()(</span><br></pre></td></tr></table></figure>
+
+<h3 id="예제-출력-1"><a href="#예제-출력-1" class="headerlink" title="예제 출력 1"></a>예제 출력 1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">NO</span><br><span class="line">NO</span><br><span class="line">YES</span><br><span class="line">NO</span><br><span class="line">YES</span><br><span class="line">NO</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="예제-입력-2"><a href="#예제-입력-2" class="headerlink" title="예제 입력 2"></a>예제 입력 2</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">3</span><br><span class="line">((</span><br><span class="line">))</span><br><span class="line">())(()</span><br></pre></td></tr></table></figure>
+
+<h3 id="예제-출력-2"><a href="#예제-출력-2" class="headerlink" title="예제 출력 2"></a>예제 출력 2</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">NO</span><br><span class="line">NO</span><br><span class="line">NO</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="힌트"><a href="#힌트" class="headerlink" title="힌트"></a>힌트</h3><ul>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="출처"><a href="#출처" class="headerlink" title="출처"></a>출처</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/category/1">ICPC</a> &gt; <a target="_blank" rel="noopener" href="https://www.acmicpc.net/category/7">Regionals</a> &gt; <a target="_blank" rel="noopener" href="https://www.acmicpc.net/category/42">Asia Pacific</a> &gt; <a target="_blank" rel="noopener" href="https://www.acmicpc.net/category/211">Korea</a> &gt; <a target="_blank" rel="noopener" href="https://www.acmicpc.net/category/256">Nationwide Internet Competition</a> &gt; <a target="_blank" rel="noopener" href="https://www.acmicpc.net/category/detail/1081">Daejeon Nationalwide Internet Competition 2012</a> G번<ul>
+<li>데이터를 만든 사람: <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/baekjoon">baekjoon</a></li>
+<li>데이터를 추가한 사람: <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/jh05013">jh05013</a></li>
+<li>문제의 오타를 찾은 사람: <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/marona">marona</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="알고리즘-분류"><a href="#알고리즘-분류" class="headerlink" title="알고리즘 분류"></a>알고리즘 분류</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/175">자료 구조</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/158">문자열</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/71">스택</a></li>
+</ul>
+<hr>
+<h3 id="시간-제한"><a href="#시간-제한" class="headerlink" title="시간 제한"></a>시간 제한</h3><ul>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="풀이"><a href="#풀이" class="headerlink" title="풀이"></a>풀이</h3><ul>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="소스코드-1"><a href="#소스코드-1" class="headerlink" title="소스코드 1"></a>소스코드 1</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="built_in">input</span> = sys.stdin.readline</span><br><span class="line"></span><br><span class="line">T = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(T):</span><br><span class="line">    string = <span class="built_in">list</span>(<span class="built_in">input</span>().rstrip())</span><br><span class="line">    <span class="keyword">while</span> <span class="built_in">len</span>(string) != <span class="number">0</span>:</span><br><span class="line">        <span class="keyword">if</span> string[<span class="number">0</span>] == <span class="string">&#x27;)&#x27;</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;NO&quot;</span>)</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">if</span> <span class="string">&#x27;)&#x27;</span> <span class="keyword">in</span> string:</span><br><span class="line">                string.remove(<span class="string">&#x27;)&#x27;</span>)</span><br><span class="line">                string.remove(<span class="string">&#x27;(&#x27;</span>)</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">&quot;NO&quot;</span>)</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">len</span>(string) == <span class="number">0</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;YES&quot;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="소스코드-2"><a href="#소스코드-2" class="headerlink" title="소스코드 2"></a>소스코드 2</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="built_in">input</span> = sys.stdin.readline</span><br><span class="line"></span><br><span class="line">T = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(T):</span><br><span class="line">    string = <span class="built_in">list</span>(<span class="built_in">input</span>().rstrip())</span><br><span class="line"></span><br><span class="line">    vps_sum = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> x <span class="keyword">in</span> string:</span><br><span class="line">        <span class="keyword">if</span> x == <span class="string">&#x27;(&#x27;</span>:</span><br><span class="line">            vps_sum += <span class="number">1</span></span><br><span class="line">        <span class="keyword">elif</span> x == <span class="string">&#x27;)&#x27;</span>:</span><br><span class="line">            vps_sum -= <span class="number">1</span></span><br><span class="line">        <span class="keyword">if</span> vps_sum &lt; <span class="number">0</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;NO&quot;</span>)</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> vps_sum == <span class="number">0</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;YES&#x27;</span>)</span><br><span class="line">    <span class="keyword">elif</span> vps_sum &gt; <span class="number">0</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;NO&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+</div></article></div><div class="card"><div class="card-image"><a class="image is-7by3" href="/categories/Algorithm/Python/BAEKJOON-10773-21-03-27/"><img class="fill" src="/images/posts/thumb/baekjoon.png" alt="[백준] 10773번 제로"></a></div><article class="card-content article" role="article"><div class="article-meta is-size-9 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><div>2021-03-27</div></span><span class="level-item"><a class="link-muted" href="/categories/Algorithm/">Algorithm</a><span> / </span><a class="link-muted" href="/categories/Algorithm/Python/">Python</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/categories/Algorithm/Python/BAEKJOON-10773-21-03-27/">[백준] 10773번 제로</a></p><div class="content"><p>출처: <a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/10773">[백준] 10773번 제로</a> </p>
+<hr>
+<h3 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h3><p>나코더 기장 재민이는 동아리 회식을 준비하기 위해서 장부를 관리하는 중이다.</p>
+<p>재현이는 재민이를 도와서 돈을 관리하는 중인데, 애석하게도 항상 정신없는 재현이는 돈을 실수로 잘못 부르는 사고를 치기 일쑤였다.</p>
+<p>재현이는 잘못된 수를 부를 때마다 0을 외쳐서, 가장 최근에 재민이가 쓴 수를 지우게 시킨다.</p>
+<p>재민이는 이렇게 모든 수를 받아 적은 후 그 수의 합을 알고 싶어 한다. 재민이를 도와주자!</p>
+<hr>
+<h3 id="입력"><a href="#입력" class="headerlink" title="입력"></a>입력</h3><p>첫 번째 줄에 정수 K가 주어진다. (1 ≤ K ≤ 100,000)</p>
+<p>이후 K개의 줄에 정수가 1개씩 주어진다. 정수는 0에서 1,000,000 사이의 값을 가지며, 정수가 “0” 일 경우에는 가장 최근에 쓴 수를 지우고, 아닐 경우 해당 수를 쓴다.</p>
+<p>정수가 “0”일 경우에 지울 수 있는 수가 있음을 보장할 수 있다.출력</p>
+<p>출력은 표준 출력을 사용한다. 만일 입력 괄호 문자열이 올바른 괄호 문자열(VPS)이면 “YES”, 아니면 “NO”를 한 줄에 하나씩 차례대로 출력해야 한다. </p>
+<hr>
+<h3 id="출력"><a href="#출력" class="headerlink" title="출력"></a>출력</h3><p>재민이가 최종적으로 적어 낸 수의 합을 출력한다. 최종적으로 적어낸 수의 합은 231-1보다 작거나 같은 정수이다.</p>
+<hr>
+<h3 id="예제-입력-1"><a href="#예제-입력-1" class="headerlink" title="예제 입력 1"></a>예제 입력 1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">4</span><br><span class="line">3</span><br><span class="line">0</span><br><span class="line">4</span><br><span class="line">0</span><br></pre></td></tr></table></figure>
+
+<h3 id="예제-출력-1"><a href="#예제-출력-1" class="headerlink" title="예제 출력 1"></a>예제 출력 1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="예제-입력-2"><a href="#예제-입력-2" class="headerlink" title="예제 입력 2"></a>예제 입력 2</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">10</span><br><span class="line">1</span><br><span class="line">3</span><br><span class="line">5</span><br><span class="line">4</span><br><span class="line">0</span><br><span class="line">0</span><br><span class="line">7</span><br><span class="line">0</span><br><span class="line">0</span><br><span class="line">6</span><br></pre></td></tr></table></figure>
+
+<h3 id="예제-출력-2"><a href="#예제-출력-2" class="headerlink" title="예제 출력 2"></a>예제 출력 2</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">7</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="힌트"><a href="#힌트" class="headerlink" title="힌트"></a>힌트</h3><ul>
+<li><p>예제 2의 경우를 시뮬레이션 해보면,</p>
+<ul>
+<li>[1]</li>
+<li>[1,3]</li>
+<li>[1,3,5]</li>
+<li>[1,3,5,4]</li>
+<li>[1,3,5] (0을 불렀기 때문에 최근의 수를 지운다)</li>
+<li>[1,3] (0을 불렀기 때문에 그 다음 최근의 수를 지운다)</li>
+<li>[1,3,7]</li>
+<li>[1,3] (0을 불렀기 때문에 최근의 수를 지운다)</li>
+<li>[1] (0을 불렀기 때문에 그 다음 최근의 수를 지운다)</li>
+<li>[1,6]</li>
+</ul>
+<p>합은 7이다.</p>
+</li>
+</ul>
+<hr>
+<h3 id="출처"><a href="#출처" class="headerlink" title="출처"></a>출처</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/category/2">Olympiad</a> &gt; <a target="_blank" rel="noopener" href="https://www.acmicpc.net/category/173">Canadian Computing Competition &amp; Olympiad</a> &gt; <a target="_blank" rel="noopener" href="https://www.acmicpc.net/category/315">2015</a> &gt; <a target="_blank" rel="noopener" href="https://www.acmicpc.net/category/detail/1345">CCC 2015 Senior Division</a> 1번<ul>
+<li>문제의 오타를 찾은 사람: <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/busyhuman">busyhuman</a></li>
+<li>문제를 번역한 사람: <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/koosaga">koosaga</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="알고리즘-분류"><a href="#알고리즘-분류" class="headerlink" title="알고리즘 분류"></a>알고리즘 분류</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/102">구현</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/175">자료 구조</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/158">문자열</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/71">스택</a></li>
+</ul>
+<hr>
+<h3 id="시간-제한"><a href="#시간-제한" class="headerlink" title="시간 제한"></a>시간 제한</h3><ul>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="풀이"><a href="#풀이" class="headerlink" title="풀이"></a>풀이</h3><ul>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="소스코드"><a href="#소스코드" class="headerlink" title="소스코드"></a>소스코드</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="built_in">input</span> = sys.stdin.readline</span><br><span class="line"></span><br><span class="line">K = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line"></span><br><span class="line">stack_list = []</span><br><span class="line"><span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(K):</span><br><span class="line">    comm = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line">    <span class="keyword">if</span> comm == <span class="number">0</span>:</span><br><span class="line">        stack_list.pop()</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        stack_list.append(comm)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">sum</span>(stack_list))</span><br></pre></td></tr></table></figure>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-9 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><div>2021-03-27</div></span><span class="level-item"><a class="link-muted" href="/categories/IT%EC%A0%95%EB%B3%B4/">IT정보</a><span> / </span><a class="link-muted" href="/categories/IT%EC%A0%95%EB%B3%B4/%EC%A3%BC%EA%B0%84-IT%EC%A0%95%EB%A6%AC/">주간 IT정리</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/categories/IT%EC%A0%95%EB%B3%B4/%EC%A3%BC%EA%B0%84%20IT%EC%A0%95%EB%A6%AC/21-03-27-Weekly_IT_News/">2021년 3월 27일 토요일 주간 IT 뉴스 - 메타버스</a></p><div class="content"><h4 id="개요"><a href="#개요" class="headerlink" title="개요"></a>개요</h4><p>이번 한 주간 메타버스에 관한 많은 기사들이 올라왔다. 메타버스라는 단어는 이번에 처음들어봤고, 흥미로운 이야기가 많았다. 또 한, 개인적으로 앞으로 이 분야의 발전이 기대된다.<br>그래서 그동안 올라온 기사와 관련된 내용 정리와 내 생각을 정리해보았다.</p>
+<hr>
+<h4 id="메타버스란"><a href="#메타버스란" class="headerlink" title="메타버스란?"></a>메타버스란?</h4><p>메타버스는 가공·추상을 의미하는 ‘메타’(Meta)와 현실세계를 가리키는 ‘유니버스’(Universe)의 합성어로 ‘3차원(3D) 가상세계’를 일컫는 말이다.  사용자의 몸은 현실에 있지만 메타버스에 접속하면 무엇이든 현실처럼 누릴 수 있는 가상공간이 펼쳐진다. </p>
+<ul>
+<li>쉽게 VR, AR 등등 기술의 확장판 같다.</li>
+</ul>
+<p>그리고 기존의 단순 가상세계와도 구분된다. 플랫폼 제공자가 판매자, 사용자는 소비자의 역할만 하는 게 아니라 각각 서로 재화와 서비스를 사고팔 수 있다. 여기에 증강현실(AR)·확장현실(XR)·5세대(5G) 통신 같은 기술 발전이 더해져 가상과 현실 사이의 간극이 좁아지고 있다.</p>
+<hr>
+<h4 id="메타버스에-대한-관심"><a href="#메타버스에-대한-관심" class="headerlink" title="메타버스에 대한 관심"></a>메타버스에 대한 관심</h4><p>최근 메타버스에 대한 관심이 급증한 것은 미국의 메타버스 게임 플랫폼 기업 로블록스가 지난 10일 미국 증시에 상장하면서다. 로블록스는 아바타를 꾸미고 친구들과 각종 경험을 즐길 수 있는 플랫폼을 제공해 메타버스 대장주로 꼽힌다. </p>
+<h5 id="해외-로블록스"><a href="#해외-로블록스" class="headerlink" title="해외 - 로블록스"></a>해외 - 로블록스</h5><p>미국은 신종 코로나 바이러스 감염증(코로나19) 사태로 인한 거리두기로 집에서 게임하는 아이들이 증가하였고, 이에 로블록스에 접속하여 가상세계에서 친구들을 만나는 경우가 많아졌다. </p>
+<p>로블록스의 월간 활성 이용자 수(MAU)는 약 1억5000만 명에 달하고, 이 중 3분의 1은 16세 미만이다. 미국 9<del>12세 어린이의 3분의 2가 로블록스를 하는 것으로 알려졌다. 즉 미국의 Z세대(1990년대 중반</del>2000년대 초반 출생자) 중 절반 이상이 로블록스를 즐기는 것으로 알려졌다.</p>
+<p>미국인 이든 가브론스키(20)는 ‘로블록스’가 무료로 제공하는 개발도구를 이용하여 만든 게임을 통해 지난달 4만9000달러(약 5500만원)를 벌었다. 즉 가상세계에서 누구나 플레이어가 될 수 있고 동시에 게임 개발자가 될 수 있다. 친구들과 프라이빗 룸을 만드는 소셜미디어(SNS) 기능도 있다. 엔터테인먼트 기능도 빼놓을 수 없다. 미국의 유명 래퍼 릴 나스 엑스가 지난해 11월 로블록스에서 개최한 가상 콘서트에는 이틀 동안 약 3300만 명이 몰렸다.</p>
+<h5 id="국내"><a href="#국내" class="headerlink" title="국내"></a>국내</h5><p>네이버의 가상 세계 플랫폼인 ‘제페토’는 10대들을 겨냥한 국내 대표적인 아바타 플랫폼으로 자리 잡아가고 있다.</p>
+<p>SK텔레콤은 지난해 혼합현실(MR) 서비스 컴퍼니를 신설하는 등 메타버스 서비스 확장에 박차를 가하고 있다.</p>
+<p>LG전자는 닌텐도의 스위치 게임 ‘모여봐요 동물의 숲’을 활용한 올레드(OLED·유기발광다이오드) TV 마케팅을 시작한다고 했으며, 동물의 숲에 ‘올레드 섬’을 만들고, 게이머들에게 스포츠와 영화·게임 컨셉트로 꾸며진 올레드 TV의 체험 기회를 제공한다.</p>
+<h5 id="기타"><a href="#기타" class="headerlink" title="기타"></a>기타</h5><p>일본 애니메이션 ‘소드아트온라인’,  영화 ‘레디 플레이어 원’ 등 이미 메타버스라는 개념을 포함한 미디어도 등장했었고, 글로벌 회계·컨설팅 그룹인 프라이스워터하우스쿠퍼스(PwC)는 메타버스의 기술적 근간을 형성하는 확장현실(XR) 시장이 2025년 537조원에서 2030년 1천700조원으로 성장할 것으로 내다봤다.</p>
+<hr>
+<h4 id="기술적-기대"><a href="#기술적-기대" class="headerlink" title="기술적 기대"></a>기술적 기대</h4><ul>
+<li>VR, AR 등 기술, 5G네트워크, 클라우드 컴퓨팅</li>
+</ul>
+<p>실제 이미지와 유사한, 고성능의 텍스쳐를 구현하기 위한 그래픽성능이 필요할 것이다. 하지만, 일반 사용자에게 고성능 그래픽 성능을 요구하는 것은 요즘 추세와 맞지 않다고 생각한다. 이에 현재 지속적으로 성장중인 ‘클라우드 스트리밍 게임’의 기술이 이용될 것이다.<br>클라우드 컴퓨팅 기술의 발전으로 사용자가 고성능의 그래픽카드 없이 간단히 기기만 착용한 채, 고성능  클라우드 서버에 접속하여 스트리밍을 통해 메타버스 플랫폼 기술을 즐길 수 있을 것이다.</p>
+<p>위와 동시에 5G 네트워크 기술 또한 기반이 될것이다.</p>
+<h4 id="사업적-기대"><a href="#사업적-기대" class="headerlink" title="사업적 기대"></a>사업적 기대</h4><ul>
+<li>메타버스는 이를 구현할 기반 기술과 게임, 엔터, 교육, 의료 등의 영역에서 영향력을 확대해나가며 급성장할 것으로 예상</li>
+</ul>
+<p>메타버스의 수익모델은 게임 아이템 판매에서 마케팅 솔루션 제공, 이커머스·콘서트 개최 등 점점 현실세계와 연계하는 쪽으로 진화하고 있다.<br>이승환 소프트웨어정책연구소 지능데이터연구팀장은 “최근의 메타버스는 인공지능(AI)·XR·5G 등 신기술과 시너지를 내면서 현실과 가상의 경계를 허물어뜨리고 있다”며 “조만간 교육이나 의료 분야에도 적용될 것”이라고 내다봤다. </p>
+<hr>
+<h4 id="부정적-시선…-과연"><a href="#부정적-시선…-과연" class="headerlink" title="부정적 시선… 과연?"></a>부정적 시선… 과연?</h4><p>반면 호기심이나 흥밋거리에 그칠 수 있다고 비관론도 있다. 코로나19로 반사이익을 얻었을 뿐 ‘대세’가 될 수 없다는 지적이다. 이미 2003년 미국의 린든랩은 ‘세컨드 라이프’라는 3D 가상세계 서비스를 선보였으나 실패했다. 국내에는 1998년 등장했던 사이버 가수 ‘아담’이 있다. 당시 앨범 판매량 20만여 장, 광고수익으로 5억여 원을 벌었으나 반짝인기에 그쳤다.</p>
+<p>하지만, 과거에 비해 가격은 싸지고, 성능은 비약적으로 발전했다 .위에서 언급한 클라우드 스트리밍 기술은 PC와 모바일, 콘슬 등과 게임 플랫폼의 경계를 허물고 있다.  또한  메타버스를 지원하는 가상현실(VR)·AR 등 ‘몰입 기기’의 가격도 내려가고 있고, 몰입 기기의 평균 가격은 1991년 41만 달러(약 4억6000만원)에서 2020년 2만 달러(약 2200만원) 수준으로 감소했고, 10년 뒤에는 1700 달러(약 192만원)까지 하락할 전망이다.</p>
+<p>그렇기 때문에 일반 소비자들도 쉽게 즐길 수 있는 수준이 되어가고 있다. </p>
+<hr>
+<h4 id="기타-추가-생각"><a href="#기타-추가-생각" class="headerlink" title="기타 추가 생각"></a>기타 추가 생각</h4><p>로블록스를 생각하면, 메타버스라는 기술의 성장 방향은 무궁무진한 것 같다. 기술이 충분히 뒷받친다면 저 개념은 현실세계 모든 분야에 적용할 수 있다고 생각한다.</p>
+<p>LG전자가 동물의 숲에서 하는 OLED광고처럼 사람들은 광고를 공간과 시간의 제약없이 체험할 수 있을 것이다.</p>
+<p>콘서트나 연극 등과 같은 것 또한 충분히 집에서 즐길 수 있을 것이며, </p>
+<p>실시간 스포츠경기를 실제 경기장에 있는 것과 같은 느낌을 받으며 관람할 수 있을 것이다.</p>
+<p>가상현실을 이용한 심리치료 또한 충분히 가능하며…</p>
+<p>메타버스가 여러 기술과 복합적으로 작용하면 지금 우리가 생활하는 현실은 크게 바뀔 것으로 추측한다.</p>
+<hr>
+<hr>
+<h4 id="기사-출처"><a href="#기사-출처" class="headerlink" title="기사 출처"></a>기사 출처</h4><p><a target="_blank" rel="noopener" href="https://news.joins.com/article/24016445">출처: 중앙일보 반짝 유행 vs 1700조 성장···요즘 난리난 메타버스 미래는</a></p>
+<p><a target="_blank" rel="noopener" href="https://news.naver.com/main/read.nhn?mode=LSD&mid=shm&sid1=105&oid=366&aid=0000687793">42조원 가치 ‘로블록스’…게임 만들고 친구와 즐겨</a></p>
+</div></article></div><div class="card"><div class="card-image"><a class="image is-7by3" href="/categories/Algorithm/Python/BAEKJOON-10828-21-03-26/"><img class="fill" src="/images/posts/thumb/baekjoon.png" alt="[백준] 10828번 스택"></a></div><article class="card-content article" role="article"><div class="article-meta is-size-9 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><div>2021-03-26</div></span><span class="level-item"><a class="link-muted" href="/categories/Algorithm/">Algorithm</a><span> / </span><a class="link-muted" href="/categories/Algorithm/Python/">Python</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/categories/Algorithm/Python/BAEKJOON-10828-21-03-26/">[백준] 10828번 스택</a></p><div class="content"><p>출처: <a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/10828">[백준] 10828번 스택</a> </p>
+<hr>
+<h3 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h3><p>정수를 저장하는 스택을 구현한 다음, 입력으로 주어지는 명령을 처리하는 프로그램을 작성하시오.</p>
+<p>명령은 총 다섯 가지이다.</p>
+<ul>
+<li>push X: 정수 X를 스택에 넣는 연산이다.</li>
+<li>pop: 스택에서 가장 위에 있는 정수를 빼고, 그 수를 출력한다. 만약 스택에 들어있는 정수가 없는 경우에는 -1을 출력한다.</li>
+<li>size: 스택에 들어있는 정수의 개수를 출력한다.</li>
+<li>empty: 스택이 비어있으면 1, 아니면 0을 출력한다.</li>
+<li>top: 스택의 가장 위에 있는 정수를 출력한다. 만약 스택에 들어있는 정수가 없는 경우에는 -1을 출력한다.</li>
+</ul>
+<hr>
+<h3 id="입력"><a href="#입력" class="headerlink" title="입력"></a>입력</h3><p>첫째 줄에 주어지는 명령의 수 N (1 ≤ N ≤ 10,000)이 주어진다. 둘째 줄부터 N개의 줄에는 명령이 하나씩 주어진다. 주어지는 정수는 1보다 크거나 같고, 100,000보다 작거나 같다. 문제에 나와있지 않은 명령이 주어지는 경우는 없다.</p>
+<hr>
+<h3 id="출력"><a href="#출력" class="headerlink" title="출력"></a>출력</h3><p>출력해야하는 명령이 주어질 때마다, 한 줄에 하나씩 출력한다.</p>
+<hr>
+<h3 id="예제-입력-1"><a href="#예제-입력-1" class="headerlink" title="예제 입력 1"></a>예제 입력 1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">14</span><br><span class="line">push 1</span><br><span class="line">push 2</span><br><span class="line">top</span><br><span class="line">size</span><br><span class="line">empty</span><br><span class="line">pop</span><br><span class="line">pop</span><br><span class="line">pop</span><br><span class="line">size</span><br><span class="line">empty</span><br><span class="line">pop</span><br><span class="line">push 3</span><br><span class="line">empty</span><br><span class="line">top</span><br></pre></td></tr></table></figure>
+
+<h3 id="예제-출력-1"><a href="#예제-출력-1" class="headerlink" title="예제 출력 1"></a>예제 출력 1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">2</span><br><span class="line">2</span><br><span class="line">0</span><br><span class="line">2</span><br><span class="line">1</span><br><span class="line">-1</span><br><span class="line">0</span><br><span class="line">1</span><br><span class="line">-1</span><br><span class="line">0</span><br><span class="line">3</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="예제-입력-2"><a href="#예제-입력-2" class="headerlink" title="예제 입력 2"></a>예제 입력 2</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">7</span><br><span class="line">pop</span><br><span class="line">top</span><br><span class="line">push 123</span><br><span class="line">top</span><br><span class="line">pop</span><br><span class="line">top</span><br><span class="line">pop</span><br></pre></td></tr></table></figure>
+
+<h3 id="예제-출력-2"><a href="#예제-출력-2" class="headerlink" title="예제 출력 2"></a>예제 출력 2</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">-1</span><br><span class="line">-1</span><br><span class="line">123</span><br><span class="line">123</span><br><span class="line">-1</span><br><span class="line">-1</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="힌트"><a href="#힌트" class="headerlink" title="힌트"></a>힌트</h3><ul>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="출처"><a href="#출처" class="headerlink" title="출처"></a>출처</h3><ul>
+<li>문제를 만든 사람: <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/baekjoon">baekjoon</a></li>
+<li>데이터를 추가한 사람: <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/djm03178">djm03178</a></li>
+</ul>
+<hr>
+<h3 id="알고리즘-분류"><a href="#알고리즘-분류" class="headerlink" title="알고리즘 분류"></a>알고리즘 분류</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/175">자료 구조</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/71">스택</a></li>
+</ul>
+<hr>
+<h3 id="시간-제한"><a href="#시간-제한" class="headerlink" title="시간 제한"></a>시간 제한</h3><ul>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="풀이"><a href="#풀이" class="headerlink" title="풀이"></a>풀이</h3><ul>
+<li><ul>
+<li></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="소스코드"><a href="#소스코드" class="headerlink" title="소스코드"></a>소스코드</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="built_in">input</span> = sys.stdin.readline</span><br><span class="line"></span><br><span class="line">N = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line">stack = []</span><br><span class="line"><span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(N):</span><br><span class="line">    command = <span class="built_in">list</span>(<span class="built_in">input</span>().split())</span><br><span class="line">    <span class="keyword">if</span> command[<span class="number">0</span>] == <span class="string">&#x27;push&#x27;</span>:</span><br><span class="line">        stack.append(command[<span class="number">1</span>])</span><br><span class="line">    <span class="keyword">elif</span> command[<span class="number">0</span>] == <span class="string">&#x27;pop&#x27;</span>:</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> stack:</span><br><span class="line">            <span class="built_in">print</span>(-<span class="number">1</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(stack.pop())</span><br><span class="line">    <span class="keyword">elif</span> command[<span class="number">0</span>] == <span class="string">&#x27;size&#x27;</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="built_in">len</span>(stack))</span><br><span class="line">    <span class="keyword">elif</span> command[<span class="number">0</span>] == <span class="string">&#x27;empty&#x27;</span>:</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> stack:</span><br><span class="line">            <span class="built_in">print</span>(<span class="number">1</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="number">0</span>)</span><br><span class="line">    <span class="keyword">elif</span> command[<span class="number">0</span>] == <span class="string">&#x27;top&#x27;</span>:</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> stack:</span><br><span class="line">            <span class="built_in">print</span>(-<span class="number">1</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(stack[-<span class="number">1</span>])</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+</div></article></div><nav class="pagination" role="navigation" aria-label="pagination"><div class="pagination-previous"><a href="/page/28/">이전</a></div><div class="pagination-next"><a href="/page/30/">다음</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link" href="/">1</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/page/28/">28</a></li><li><a class="pagination-link is-current" href="/page/29/">29</a></li><li><a class="pagination-link" href="/page/30/">30</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/page/34/">34</a></li></ul></nav></div><div class="column column-left is-3-tablet is-3-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image mx-auto mb-2" style="width:256px;height:256px;"><img class="avatar is-rounded" src="https://avatars.githubusercontent.com/u/2025813?v=4" alt="이채현"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">이채현</p><p class="is-size-6 is-block">Software Engineer</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>서울시</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">포스트</p><a href="/archives/"><p class="title">331</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">카테고리</p><a href="/categories/"><p class="title">21</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">태그</p><a href="/tags/"><p class="title">619</p></a></div></div></nav><div class="level"><a class="level-item button is-info is-outlined is-rounded" href="https://github.com/chlee1001" target="_blank" rel="me noopener">팔로우</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Github" href="https://github.com/chlee1001"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="RSS" href="/feed.xml"><i class="fas fa-rss"></i></a></div></div></div><!--!--><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">카테고리</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/Algorithm/"><span class="level-start"><span class="level-item">Algorithm</span></span><span class="level-end"><span class="level-item tag">188</span></span></a><ul><li><a class="level is-mobile" href="/categories/Algorithm/C/"><span class="level-start"><span class="level-item">C++</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile" href="/categories/Algorithm/Javascript/"><span class="level-start"><span class="level-item">Javascript</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/Algorithm/Python/"><span class="level-start"><span class="level-item">Python</span></span><span class="level-end"><span class="level-item tag">182</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/DevOps/"><span class="level-start"><span class="level-item">DevOps</span></span><span class="level-end"><span class="level-item tag">9</span></span></a><ul><li><a class="level is-mobile" href="/categories/DevOps/AWS/"><span class="level-start"><span class="level-item">AWS</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/categories/DevOps/Fastlane/"><span class="level-start"><span class="level-item">Fastlane</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/DevOps/MySQL/"><span class="level-start"><span class="level-item">MySQL</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/DevOps/Raspberry-Pi/"><span class="level-start"><span class="level-item">Raspberry Pi</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/DevOps/Ubuntu/"><span class="level-start"><span class="level-item">Ubuntu</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/Essay/"><span class="level-start"><span class="level-item">Essay</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/IT%EC%A0%95%EB%B3%B4/"><span class="level-start"><span class="level-item">IT정보</span></span><span class="level-end"><span class="level-item tag">92</span></span></a><ul><li><a class="level is-mobile" href="/categories/IT%EC%A0%95%EB%B3%B4/%EB%A7%A4%EC%9D%BC30%EB%B6%84-IT%EB%89%B4%EC%8A%A4/"><span class="level-start"><span class="level-item">매일30분 IT뉴스</span></span><span class="level-end"><span class="level-item tag">85</span></span></a></li><li><a class="level is-mobile" href="/categories/IT%EC%A0%95%EB%B3%B4/%EC%A3%BC%EA%B0%84-IT%EC%A0%95%EB%A6%AC/"><span class="level-start"><span class="level-item">주간 IT정리</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/Programming/"><span class="level-start"><span class="level-item">Programming</span></span><span class="level-end"><span class="level-item tag">17</span></span></a><ul><li><a class="level is-mobile" href="/categories/Programming/Git-Github/"><span class="level-start"><span class="level-item">Git/Github</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/Programming/Spring-Boot/"><span class="level-start"><span class="level-item">Spring Boot</span></span><span class="level-end"><span class="level-item tag">14</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/Web-App/"><span class="level-start"><span class="level-item">Web/App</span></span><span class="level-end"><span class="level-item tag">24</span></span></a><ul><li><a class="level is-mobile" href="/categories/Web-App/CSS/"><span class="level-start"><span class="level-item">CSS</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/Web-App/Javascript/"><span class="level-start"><span class="level-item">Javascript</span></span><span class="level-end"><span class="level-item tag">22</span></span></a></li><li><a class="level is-mobile" href="/categories/Web-App/React/"><span class="level-start"><span class="level-item">React</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">최근 글</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2025-08-26T14:30:50.000Z">2025-08-26</time></p><p class="title"><a href="/categories/%EC%9D%BC%EC%83%81/essay-250826/">FECConf 2025 다녀와서, 드디어 블로그를 시작하기로 했다</a></p><p class="categories"><a href="/categories/Essay/">Essay</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-07-11T02:03:00.000Z">2022-07-11</time></p><p class="title"><a href="/categories/%EC%9B%B9%EC%95%B1/Javascript/JS-ES2022-1-22-07-11%20/">[JS] ES2022 신기능 중 4가지 </a></p><p class="categories"><a href="/categories/Web-App/">Web/App</a> / <a href="/categories/Web-App/Javascript/">Javascript</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-07-07T06:35:00.000Z">2022-07-07</time></p><p class="title"><a href="/categories/%EC%9B%B9%EC%95%B1/Javascript/JS-ESLint-1-22-07-07/">[JS] ESLint 알고쓰기 : 설정 설명</a></p><p class="categories"><a href="/categories/Web-App/">Web/App</a> / <a href="/categories/Web-App/Javascript/">Javascript</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-07-06T06:28:00.000Z">2022-07-06</time></p><p class="title"><a href="/categories/%EC%9B%B9%EC%95%B1/Javascript/JS-Babel-3-22-07-06/">[JS] 선언한 모듈로 이동하기 (alias) - Go to declaration</a></p><p class="categories"><a href="/categories/Web-App/">Web/App</a> / <a href="/categories/Web-App/Javascript/">Javascript</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-07-06T03:28:00.000Z">2022-07-06</time></p><p class="title"><a href="/categories/%EC%9B%B9%EC%95%B1/Javascript/JS-Babel-2-22-07-06/">[JS] babelrc와 webpack.config</a></p><p class="categories"><a href="/categories/Web-App/">Web/App</a> / <a href="/categories/Web-App/Javascript/">Javascript</a></p></div></article></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">태그</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"><span class="tag">알고리즘</span><span class="tag">190</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Python/"><span class="tag">Python</span><span class="tag">182</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%B0%B1%EC%A4%80/"><span class="tag">백준</span><span class="tag">172</span></a></div><div class="control"><a class="tags has-addons" href="/tags/IT%EB%89%B4%EC%8A%A4/"><span class="tag">IT뉴스</span><span class="tag">92</span></a></div><div class="control"><a class="tags has-addons" href="/tags/IT-Issues/"><span class="tag">IT Issues</span><span class="tag">92</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EA%B5%AC%ED%98%84/"><span class="tag">구현</span><span class="tag">65</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/"><span class="tag">자료구조</span><span class="tag">55</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%84%A4%EC%9D%B4%EB%B2%84/"><span class="tag">네이버</span><span class="tag">39</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%B9%B4%EC%B9%B4%EC%98%A4/"><span class="tag">카카오</span><span class="tag">30</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%8A%A4%ED%83%9D/"><span class="tag">스택</span><span class="tag">26</span></a></div><div class="control"><a class="tags has-addons" href="/tags/JS/"><span class="tag">JS</span><span class="tag">24</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Javascript/"><span class="tag">Javascript</span><span class="tag">24</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/"><span class="tag">자바스크립트</span><span class="tag">24</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%81%90/"><span class="tag">큐</span><span class="tag">22</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%AC%B8%EC%9E%90%EC%97%B4/"><span class="tag">문자열</span><span class="tag">20</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Programming/"><span class="tag">Programming</span><span class="tag">16</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%88%98%ED%95%99/"><span class="tag">수학</span><span class="tag">16</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%95%A0%ED%94%8C/"><span class="tag">애플</span><span class="tag">15</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EA%B7%B8%EB%9E%98%ED%94%84-%ED%83%90%EC%83%89/"><span class="tag">그래프 탐색</span><span class="tag">15</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%95%B4%EC%8B%9C/"><span class="tag">해시</span><span class="tag">15</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Spring-Boot/"><span class="tag">Spring Boot</span><span class="tag">14</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Java/"><span class="tag">Java</span><span class="tag">14</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%84%88%EB%B9%84-%EC%9A%B0%EC%84%A0-%ED%83%90%EC%83%89/"><span class="tag">너비 우선 탐색</span><span class="tag">14</span></a></div><div class="control"><a class="tags has-addons" href="/tags/BFS/"><span class="tag">BFS</span><span class="tag">14</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"><span class="tag">프로그래머스</span><span class="tag">14</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%95%80%ED%85%8C%ED%81%AC/"><span class="tag">핀테크</span><span class="tag">14</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EA%B7%B8%EB%9E%98%ED%94%84/"><span class="tag">그래프</span><span class="tag">13</span></a></div><div class="control"><a class="tags has-addons" href="/tags/DFS/"><span class="tag">DFS</span><span class="tag">13</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Spring/"><span class="tag">Spring</span><span class="tag">12</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EA%B5%AC%EA%B8%80/"><span class="tag">구글</span><span class="tag">12</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/logo.svg" alt="CH Blog | 기술 블로그" height="28"></a><p class="is-size-7">© 2022 Chaehyeon Lee</p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("ko");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script data-pjax src="/js/column.js"></script><a id="back-to-top" title="맨 위로" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script data-pjax src="/js/back_to_top.js" defer></script><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "이 웹 사이트는 귀하의 경험을 향상시키기 위해 Cookie를 사용합니다.",
+          dismiss: "무시",
+          allow: "허용",
+          deny: "거부",
+          link: "더 알아보기",
+          policy: "Cookie 정책",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/mhchem.min.js" defer></script><script>window.addEventListener("load", function() {
+            document.querySelectorAll('[role="article"] > .content').forEach(function(element) {
+                renderMathInElement(element);
+            });
+        });</script><script type="text/javascript" id="MathJax-script" async>MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      },
+      chtml: {
+        matchFontHeight: false
+      }
+    };</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script src="/js/pjax.js"></script><!--!--><script data-pjax src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="입력 하세요..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script data-pjax src="/js/insight.js" defer></script><script data-pjax>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"입력 하세요...","untitled":"(제목 없음)","posts":"포스트","pages":"페이지","categories":"카테고리","tags":"태그"});
+        });</script></body></html>

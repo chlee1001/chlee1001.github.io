@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>CH Blog | 기술 블로그</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="CH Blog | 기술 블로그"><meta name="msapplication-TileImage" content="/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="CH Blog | 기술 블로그"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="Chaehyeon&amp;#39;s Dev Blog"><meta property="og:type" content="blog"><meta property="og:title" content="CH Blog | 기술 블로그"><meta property="og:url" content="https://devch.co.kr/"><meta property="og:site_name" content="CH Blog | 기술 블로그"><meta property="og:description" content="Chaehyeon&amp;#39;s Dev Blog"><meta property="og:locale" content="ko_KR"><meta property="og:image" content="https://devch.co.kr/og_image.png"><meta property="article:author" content="Chaehyeon Lee"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://devch.co.kr/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://devch.co.kr"},"headline":"CH Blog | 기술 블로그","image":["https://devch.co.kr/img/og_image.png"],"author":{"@type":"Person","name":"Chaehyeon Lee"},"publisher":{"@type":"Organization","name":"CH Blog | 기술 블로그","logo":{"@type":"ImageObject","url":"https://devch.co.kr/logo.svg"}},"description":"Chaehyeon&#39;s Dev Blog"}</script><link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link data-pjax rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link data-pjax rel="stylesheet" href="/css/default.css"><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=UA-130636151-1" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-130636151-1');</script><!--!--><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/logo.svg" alt="CH Blog | 기술 블로그" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" target="_blank" rel="noopener" href="https://www.rallit.com/resumes/213269@lch50484084/%EC%9D%B4%EC%B1%84%ED%98%84?theme=STANDARD">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="GitHub" href="https://github.com/chlee1001"><i class="fab fa-github"></i></a><a class="navbar-item search" title="검색" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-9-widescreen"><div class="card"><div class="card-image"><a class="image is-7by3" href="/categories/Algorithm/Python/BAEKJOON-20301-21-07-23/"><img class="fill" src="/images/posts/thumb/baekjoon.png" alt="[백준] 20301번 반전 요세푸스"></a></div><article class="card-content article" role="article"><div class="article-meta is-size-9 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><div>2021-07-23</div></span><span class="level-item"><a class="link-muted" href="/categories/Algorithm/">Algorithm</a><span> / </span><a class="link-muted" href="/categories/Algorithm/Python/">Python</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/categories/Algorithm/Python/BAEKJOON-20301-21-07-23/">[백준] 20301번 반전 요세푸스</a></p><div class="content"><p>출처: <a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/20301">[백준] 20301번 반전 요세푸스</a> </p>
+<hr>
+<table>
+<thead>
+<tr>
+<th align="left">시간 제한</th>
+<th align="left">메모리 제한</th>
+<th align="left">제출</th>
+<th align="left">정답</th>
+<th align="left">맞은 사람</th>
+<th align="left">정답 비율</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1 초 (추가 시간 없음)</td>
+<td align="left">1024 MB</td>
+<td align="left">467</td>
+<td align="left">248</td>
+<td align="left">201</td>
+<td align="left">54.918%</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h3><p>요세푸스 문제는 다음과 같다.</p>
+<p>1번 사람 오른쪽에는 2번 사람이 앉아 있고, 2번 사람 오른쪽에는 3번 사람이 앉아 있고, 계속하여 같은 방식으로 N명의 사람들이 원을 이루며 앉아 있다. N번 사람 오른쪽에는 1번 사람이 앉아 있다. 이제 K(≤N)번 사람을 우선 제거하고, 이후 직전 제거된 사람의 오른쪽의 K번째 사람을 계속 제거해 나간다. 모든 사람이 제거되었을 때, 제거된 사람의 순서는 어떻게 될까?</p>
+<p>이 문제의 답을 <strong>(N, K)–요세푸스 순열</strong>이라고 하며, (7, 3)–요세푸스 순열은 ⟨3,6,2,7,5,1,4⟩가 된다.</p>
+<p>하지만 한 방향으로만 계속 돌아가는 건 너무 지루하다. 따라서 요세푸스 문제에 재미를 더하기 위해 M명의 사람이 제거될 때마다 원을 돌리는 방향을 계속해서 바꾸려고 한다. 이렇게 정의된 새로운 문제의 답을 <strong>(N, K, M)–반전 요세푸스 순열</strong>이라고 하며, (7, 3, 4)–반전 요세푸스 순열은 ⟨3,6,2,7,1,5,4⟩가 된다.</p>
+<p>N, K, M이 주어질 때, (N, K, M)–반전 요세푸스 순열을 계산해 보자.</p>
+<hr>
+<h3 id="입력"><a href="#입력" class="headerlink" title="입력"></a>입력</h3><p>첫째 줄에 정수 N, K, M이 주어진다. (1≤N≤5 000, 1≤K,M≤N)</p>
+<hr>
+<h3 id="출력"><a href="#출력" class="headerlink" title="출력"></a>출력</h3><p>(N, K, M)–반전 요세푸스 순열을 이루는 수들을 한 줄에 하나씩 순서대로 출력한다.</p>
+<hr>
+<h3 id="예제-입력-1"><a href="#예제-입력-1" class="headerlink" title="예제 입력 1"></a>예제 입력 1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">7 3 4</span><br></pre></td></tr></table></figure>
+
+<h3 id="예제-출력-1"><a href="#예제-출력-1" class="headerlink" title="예제 출력 1"></a>예제 출력 1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">3</span><br><span class="line">6</span><br><span class="line">2</span><br><span class="line">7</span><br><span class="line">1</span><br><span class="line">5</span><br><span class="line">4</span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<h3 id="출처"><a href="#출처" class="headerlink" title="출처"></a>출처</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/category/5">University</a> &gt; <a target="_blank" rel="noopener" href="https://www.acmicpc.net/category/83">서강대학교</a> &gt; <a target="_blank" rel="noopener" href="https://www.acmicpc.net/category/detail/2355">2020 Sogang Programming Contest (Master)</a> C번<ul>
+<li>문제를 검수한 사람: <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/gumgood">gumgood</a>, <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/jhnah917">jhnah917</a>, <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/pichulia">pichulia</a>, <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/QuqqU">QuqqU</a>, <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/rhs0266">rhs0266</a>, <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/shiftpsh">shiftpsh</a>, <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/sogangcse">sogangcse</a>, <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/woonikim">woonikim</a></li>
+<li>문제를 만든 사람: <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/sbrus_1213">sbrus_1213</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="알고리즘-분류"><a href="#알고리즘-분류" class="headerlink" title="알고리즘 분류"></a>알고리즘 분류</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/102">구현</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/175">자료 구조</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/141">시뮬레이션</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/73">덱</a></li>
+</ul>
+<hr>
+<h3 id="소스코드-최초"><a href="#소스코드-최초" class="headerlink" title="소스코드 (최초)"></a>소스코드 (최초)</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> deque</span><br><span class="line"></span><br><span class="line"><span class="built_in">input</span> = sys.stdin.readline</span><br><span class="line"></span><br><span class="line">N, K, M = <span class="built_in">map</span>(<span class="built_in">int</span>, <span class="built_in">input</span>().split())</span><br><span class="line"></span><br><span class="line">people = deque(x <span class="keyword">for</span> x <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, N + <span class="number">1</span>))</span><br><span class="line"></span><br><span class="line">count = <span class="number">0</span></span><br><span class="line">direction = <span class="number">1</span></span><br><span class="line"><span class="keyword">while</span> people:</span><br><span class="line">    <span class="keyword">if</span> direction:  <span class="comment"># 오른쪽</span></span><br><span class="line">        <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(K - <span class="number">1</span>):</span><br><span class="line">            people.append(people[<span class="number">0</span>])</span><br><span class="line">            people.popleft()</span><br><span class="line">    <span class="keyword">elif</span> <span class="keyword">not</span> direction:  <span class="comment"># 왼쪽</span></span><br><span class="line">        <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(K):</span><br><span class="line">            people.appendleft(people.pop())</span><br><span class="line"></span><br><span class="line">    <span class="built_in">print</span>(people.popleft())</span><br><span class="line">    count += <span class="number">1</span></span><br><span class="line">    <span class="keyword">if</span> count == M:</span><br><span class="line">        count = <span class="number">0</span></span><br><span class="line">        direction = <span class="keyword">not</span> direction</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="소스코드-수정"><a href="#소스코드-수정" class="headerlink" title="소스코드 (수정)"></a>소스코드 (수정)</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> deque</span><br><span class="line"></span><br><span class="line"><span class="built_in">input</span> = sys.stdin.readline</span><br><span class="line"></span><br><span class="line">N, K, M = <span class="built_in">map</span>(<span class="built_in">int</span>, <span class="built_in">input</span>().split())</span><br><span class="line"></span><br><span class="line">people = deque(x <span class="keyword">for</span> x <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, N + <span class="number">1</span>))</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> people:</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(M):</span><br><span class="line">        people.rotate(-(K - <span class="number">1</span>))  <span class="comment"># 오른쪽</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> people:</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">        <span class="built_in">print</span>(people.popleft())</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(M):</span><br><span class="line">        people.rotate(K)  <span class="comment"># 왼쪽</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> people:</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">        <span class="built_in">print</span>(people.popleft())</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</div></article></div><div class="card"><div class="card-image"><a class="image is-7by3" href="/categories/Algorithm/Python/BAEKJOON-2346-21-07-23/"><img class="fill" src="/images/posts/thumb/baekjoon.png" alt="[백준] 2346번 풍선 터뜨리기"></a></div><article class="card-content article" role="article"><div class="article-meta is-size-9 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><div>2021-07-23</div></span><span class="level-item"><a class="link-muted" href="/categories/Algorithm/">Algorithm</a><span> / </span><a class="link-muted" href="/categories/Algorithm/Python/">Python</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/categories/Algorithm/Python/BAEKJOON-2346-21-07-23/">[백준] 2346번 풍선 터뜨리기</a></p><div class="content"><p>출처: <a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/2346">[백준] 2346번 풍선 터뜨리기</a> </p>
+<hr>
+<table>
+<thead>
+<tr>
+<th align="left">시간 제한</th>
+<th align="left">메모리 제한</th>
+<th align="left">제출</th>
+<th align="left">정답</th>
+<th align="left">맞은 사람</th>
+<th align="left">정답 비율</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">2 초</td>
+<td align="left">4 MB</td>
+<td align="left">7479</td>
+<td align="left">2869</td>
+<td align="left">2217</td>
+<td align="left">40.464%</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h3><p>1번부터 N번까지 N개의 풍선이 원형으로 놓여 있고. i번 풍선의 오른쪽에는 i+1번 풍선이 있고, 왼쪽에는 i-1번 풍선이 있다. 단, 1번 풍선의 왼쪽에 N번 풍선이 있고, N번 풍선의 오른쪽에 1번 풍선이 있다. 각 풍선 안에는 종이가 하나 들어있고, 종이에는 -N보다 크거나 같고, N보다 작거나 같은 정수가 하나 적혀있다. 이 풍선들을 다음과 같은 규칙으로 터뜨린다.</p>
+<p>우선, 제일 처음에는 1번 풍선을 터뜨린다. 다음에는 풍선 안에 있는 종이를 꺼내어 그 종이에 적혀있는 값만큼 이동하여 다음 풍선을 터뜨린다. 양수가 적혀 있을 경우에는 오른쪽으로, 음수가 적혀 있을 때는 왼쪽으로 이동한다. 이동할 때에는 이미 터진 풍선은 빼고 이동한다.</p>
+<p>예를 들어 다섯 개의 풍선 안에 차례로 3, 2, 1, -3, -1이 적혀 있었다고 하자. 이 경우 3이 적혀 있는 1번 풍선, -3이 적혀 있는 4번 풍선, -1이 적혀 있는 5번 풍선, 1이 적혀 있는 3번 풍선, 2가 적혀 있는 2번 풍선의 순서대로 터지게 된다.</p>
+<hr>
+<h3 id="입력"><a href="#입력" class="headerlink" title="입력"></a>입력</h3><p>첫째 줄에 자연수 N(1 ≤ N ≤ 1,000)이 주어진다. 다음 줄에는 차례로 각 풍선 안의 종이에 적혀 있는 수가 주어진다. 종이에 0은 적혀있지 않다.</p>
+<hr>
+<h3 id="출력"><a href="#출력" class="headerlink" title="출력"></a>출력</h3><p>첫째 줄에 터진 풍선의 번호를 차례로 나열한다.</p>
+<hr>
+<h3 id="예제-입력-1"><a href="#예제-입력-1" class="headerlink" title="예제 입력 1"></a>예제 입력 1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">5</span><br><span class="line">3 2 1 -3 -1</span><br></pre></td></tr></table></figure>
+
+<h3 id="예제-출력-1"><a href="#예제-출력-1" class="headerlink" title="예제 출력 1"></a>예제 출력 1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1 4 5 3 2</span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<h3 id="출처"><a href="#출처" class="headerlink" title="출처"></a>출처</h3><ul>
+<li>잘못된 데이터를 찾은 사람: <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/tncks0121">tncks0121</a></li>
+</ul>
+<hr>
+<h3 id="알고리즘-분류"><a href="#알고리즘-분류" class="headerlink" title="알고리즘 분류"></a>알고리즘 분류</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/175">자료 구조</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/73">덱</a></li>
+</ul>
+<hr>
+<h3 id="소스코드"><a href="#소스코드" class="headerlink" title="소스코드"></a>소스코드</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> deque</span><br><span class="line"></span><br><span class="line"><span class="built_in">input</span> = sys.stdin.readline</span><br><span class="line"></span><br><span class="line">N = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line"></span><br><span class="line">balloons = [x <span class="keyword">for</span> x <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, N + <span class="number">1</span>)]</span><br><span class="line">papers = <span class="built_in">list</span>(<span class="built_in">map</span>(<span class="built_in">int</span>, <span class="built_in">input</span>().split()))</span><br><span class="line"></span><br><span class="line">bomb = deque()</span><br><span class="line"><span class="keyword">for</span> balloon, paper <span class="keyword">in</span> <span class="built_in">zip</span>(balloons, papers):</span><br><span class="line">    bomb.append([balloon, paper])</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> bomb:</span><br><span class="line">    balloon, paper = bomb.popleft()</span><br><span class="line">    <span class="built_in">print</span>(balloon, end=<span class="string">&quot; &quot;</span>)</span><br><span class="line">    <span class="keyword">if</span> bomb:</span><br><span class="line">        <span class="keyword">if</span> paper &gt; <span class="number">0</span>:</span><br><span class="line">            <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(paper - <span class="number">1</span>):</span><br><span class="line">                bomb.append(bomb.popleft())</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(-paper):</span><br><span class="line">                bomb.appendleft(bomb.pop())</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</div></article></div><div class="card"><div class="card-image"><a class="image is-7by3" href="/categories/Programming/SpringBoot/SPRINGBOOT-DB-Isolation-21-07-22/"><img class="fill" src="/images/posts/thumb/springboot.png" alt="[Spring Boot] 데이터베이스 격리수준: Database Isolation Level"></a></div><article class="card-content article" role="article"><div class="article-meta is-size-9 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><div>2021-07-22</div></span><span class="level-item"><a class="link-muted" href="/categories/Programming/">Programming</a><span> / </span><a class="link-muted" href="/categories/Programming/Spring-Boot/">Spring Boot</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/categories/Programming/SpringBoot/SPRINGBOOT-DB-Isolation-21-07-22/">[Spring Boot] 데이터베이스 격리수준: Database Isolation Level</a></p><div class="content"><h2 id="트랜잭션"><a href="#트랜잭션" class="headerlink" title="트랜잭션"></a>트랜잭션</h2><p>일이 처리되기 위한 가장 작은 단위  </p>
+<p>트랜잭션들이 모여 하나의 트랜잭션을 이룰 수 있고, 서비스가 된다.</p>
+<p>→ <strong>하나의 작업을 수행하기 위해 필요한 데이터베이스의 연산들을 모아놓은 것</strong></p>
+<hr>
+<h2 id="DB-격리수준"><a href="#DB-격리수준" class="headerlink" title="DB 격리수준"></a>DB 격리수준</h2><ul>
+<li>오라클 기본 격리수준 (Read Committed)</li>
+</ul>
+<h3 id="READ-COMMIT"><a href="#READ-COMMIT" class="headerlink" title="READ COMMIT"></a>READ COMMIT</h3><p><img src="https://chlee1001.github.io/images/posts/programming/springboot/DB/isolation1.png"></p>
+<pre><code>T1: 트랜잭션 시작 → Update문 (테이블 내의 정보 수정 - 222.Busan -&gt; 222.Jeju)
+
+T2: T1이  Update하는 동안 그 부분을 Select를 하면 T2는 수정되기 전의 정보를 Select한다.
+222.Busan (Undo영역 수정 전)
+
+-------------------------
+
+T1: Update한 것을 Commit  (Undo영역이 수정 됨)
+
+T2: T1이 commit하기 전에는 수정하기 전 정보를 Select하게 되고, Commit 이후에 Select하면 수정 된 정보를 볼 수 있다.
+222.Jeju (Undo영역 수정 됨)
+</code></pre>
+<h3 id="READ-COMMIT-정합성-문제"><a href="#READ-COMMIT-정합성-문제" class="headerlink" title="READ COMMIT 정합성 문제"></a>READ COMMIT 정합성 문제</h3><p><img src="https://chlee1001.github.io/images/posts/programming/springboot/DB/isolation2.png"></p>
+<pre><code>T2는 트랜잭션을 실행하지않고, Select만 한다.
+Busan이 나오다가 갑자기 Jeju가 나와버렸다.
+
+만약에, T2입장에서 T1과 비슷한 시기에 트랜잭션을 실행하고, Select를 계속 한다.
+그리고 마지막에 그 Select한 결과들을 모아 Insert연산을 하고 Commit을 한다면...
+
+중간에 데이터가 변경되어 결과가 예상과 달라져버리면 문제가 된다.
+</code></pre>
+<p>이런 문제는 금전적인 처리에서 주로 발생한다.</p>
+<p>총 3번 각각 만원씩 Select를 할려고 했는데, 마지막 Select에서 2만원이 나오면,</p>
+<p>예상은 3만원 Insert를 하려고 했는데, 4만원이 Insert - Commit이 되어버린다.</p>
+<h5 id="→-정합성이-깨진다-부정합-똑같은-Select에서-다른-것이-나왔을-때"><a href="#→-정합성이-깨진다-부정합-똑같은-Select에서-다른-것이-나왔을-때" class="headerlink" title="→ 정합성이 깨진다 &#x3D; 부정합, 똑같은 Select에서 다른 것이 나왔을 때"></a>→ <strong>정합성이 깨진다 &#x3D; 부정합</strong>, 똑같은 Select에서 다른 것이 나왔을 때</h5><h4 id="➡-PHANTOM-READ-데이터가-보였다-안보였다-아에-결과가-없을-때"><a href="#➡-PHANTOM-READ-데이터가-보였다-안보였다-아에-결과가-없을-때" class="headerlink" title="➡ PHANTOM READ(데이터가 보였다 안보였다), 아에 결과가 없을 때"></a>➡ <strong>PHANTOM READ</strong>(데이터가 보였다 안보였다), 아에 결과가 없을 때</h4><p>이를 해결하기 위해 REPEATABLE READ방식을 사용해야한다.</p>
+<hr>
+<ul>
+<li>MySQL 기본 격리수준 (Repeatable Read 이상) –&gt; 부정합 발생 X</li>
+</ul>
+<p>transaction Id부여</p>
+<p><img src="https://chlee1001.github.io/images/posts/programming/springboot/DB/isolation2.png"></p>
+<pre><code>T2가 먼저 Transaction 시작(Id=10)
+222를 Select하면 Busan
+
+T1이 Transaction 시작 (Id=12)
+222.Busan --&gt; Jeju upate
+commit
+
+하지만 T2입장에서는 아직 자신의 Transaction이 종료되지 않았기 때문에, 항상 동일한 결과를 보여준다.
+그래서 시작했을 때는 Busan이 나왔으므로, 끝까지 Busan이 나온다.
+
+자신의 Transaction Id보다 작은 Undo로그를 보고 select한다.
+</code></pre>
+<h1 id="Spring에서는"><a href="#Spring에서는" class="headerlink" title="Spring에서는"></a>Spring에서는</h1><h3 id="CRUD"><a href="#CRUD" class="headerlink" title="CRUD"></a>CRUD</h3><pre><code>C(Insert), U(Update), D(Delete) --&gt; commit이 필요하므로
+@Transactional 붙인다.
+
+R(Select)는 보통 붙이지 않는데, 정합성을 위해 꼭 @Transactional을 붙여서
+트랜잭션을 타게 해준다.
+</code></pre>
+</div></article></div><div class="card"><div class="card-image"><a class="image is-7by3" href="/categories/Algorithm/Python/BAEKJOON-5464-21-07-22/"><img class="fill" src="/images/posts/thumb/baekjoon.png" alt="[백준] 5464번 주차장"></a></div><article class="card-content article" role="article"><div class="article-meta is-size-9 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><div>2021-07-22</div></span><span class="level-item"><a class="link-muted" href="/categories/Algorithm/">Algorithm</a><span> / </span><a class="link-muted" href="/categories/Algorithm/Python/">Python</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/categories/Algorithm/Python/BAEKJOON-5464-21-07-22/">[백준] 5464번 주차장</a></p><div class="content"><p>출처: <a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/5464">[백준] 5464번 주차장</a> </p>
+<hr>
+<table>
+<thead>
+<tr>
+<th align="left">시간 제한</th>
+<th align="left">메모리 제한</th>
+<th align="left">제출</th>
+<th align="left">정답</th>
+<th align="left">맞은 사람</th>
+<th align="left">정답 비율</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1 초</td>
+<td align="left">128 MB</td>
+<td align="left">186</td>
+<td align="left">109</td>
+<td align="left">96</td>
+<td align="left">61.146%</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h3><p>시내 주차장은 1부터 N까지 번호가 매겨진 N개의 주차 공간을 가지고 있다. 이 주차장은 매일 아침 모든 주차 공간이 비어 있는 상태에서 영업을 시작하며, 하룻동안 다음과 같은 방식으로 운영된다. 차가 주차장에 도착하면, 주차장 관리인이 비어있는 주차 공간이 있는지를 검사한다. 만일 비어있는 공간이 없으면, 차량을 빈 공간이 생길 때까지 입구에서 기다리게 한다. 만일 빈 주차 공간이 하나만 있거나 또는 빈 주차 공간이 없다가 한 대의 차량이 주차장을 떠나면 곧바로 그 장소에 주차를 하게 한다. 만일 빈 주차 공간이 여러 곳이 있으면, 그 중 번호가 가장 작은 주차 공간에 주차하도록 한다. 만일 주차장에 여러 대의 차량이 도착하면, 일단 도착한 순서대로 입구의 대기장소에서 줄을 서서 기다려야 한다. 대기장소는 큐(queue)와 같이, 먼저 대기한 차량부터 주차한다.</p>
+<p>주차료는 주차한 시간이 아닌 차량의 무게에 비례하는 방식으로 책정된다. 주차료는 차랑의 무게에다 주차 공간마다 따로 책정된 단위 무게당 요금을 곱한 가격이다.</p>
+<p>주차장 관리원은 오늘 M대의 차량이 주차장을 이용할 것이라는 것을 알고 있다. 또한, 차량들이 들어오고 나가는 순서도 알고 있다.</p>
+<p>주차 공간별 요금과 차량들의 무게와 출입 순서가 주어질 때, 오늘 하룻동안 주차장이 벌어들일 총 수입을 계산하는 프로그램을 작성하라.</p>
+<hr>
+<h3 id="입력"><a href="#입력" class="headerlink" title="입력"></a>입력</h3><p>반드시 표준 입력으로부터 다음의 데이터를 읽어야 한다.</p>
+<ul>
+<li><p>첫 번째 줄에는 정수 N과 M이 빈칸을 사이에 두고 주어진다.</p>
+</li>
+<li><p>그 다음 N개의 줄에는 주차 공간들의 단위 무게당 요금을 나타내는 정수들이 주어진다. 그 중 s번째 줄에는 주차 공간 s의 단위 무게당 요금 Rs가 들어있다.</p>
+</li>
+<li><p>그 다음 M개의 줄에는 차량들의 무게를 나타내는 정수들이 주어진다. 차량들은 1 부터 M 까지 번호로 구분되고, 이 번호는 출입 순서와는 상관없다. 이 M개의 줄 중 k번째 줄에는 차량 k의 무게를 나타내는 정수 Wk가 들어있다.</p>
+</li>
+<li><p>그 다음 2*M 개의 줄에는 차량들의 주차장 출입 순서를 나타내는 정수들이 한 줄에 하나씩 주어진다. 양의 정수 i는 차량 i가 주차장에 들어오는 것을 의미하고, 음의 정수 -i는 차량 i가 주차장에서 나가는 것을 의미한다. 주차장에 들어오지 않은 차량이 주차장에서 나가는 경우는 없다. 1 번부터 M 번까지 모든 차량은 정확하게 한 번씩 주차장에 들어오고, 한 번씩 주차장에서 나간다. 또한 입구에서 대기 중인 차량이 주차를 하지 못하고 나가는 경우는 없다.</p>
+</li>
+<li><p>1 ≤ N ≤ 100 주차 공간의 수</p>
+</li>
+<li><p>1 ≤ M ≤ 2,000 차량의 수</p>
+</li>
+<li><p>1 ≤ Rs ≤ 100 주차 공간 s의 단위 무게당 요금</p>
+</li>
+<li><p>1 ≤ Wk ≤ 10,000 차량 k의 무게</p>
+</li>
+</ul>
+<hr>
+<h3 id="출력"><a href="#출력" class="headerlink" title="출력"></a>출력</h3><p>출력은 반드시 표준 출력으로 하여야 하며, 하나의 줄에 한 개의 정수를 출력한다. 이 정수는 오늘 하룻동안 주차장이 벌어들인 총 수입이다.</p>
+<hr>
+<h3 id="예제-입력-1"><a href="#예제-입력-1" class="headerlink" title="예제 입력 1"></a>예제 입력 1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">3 4</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">5</span><br><span class="line">200</span><br><span class="line">100</span><br><span class="line">300</span><br><span class="line">800</span><br><span class="line">3</span><br><span class="line">2</span><br><span class="line">-3</span><br><span class="line">1</span><br><span class="line">4</span><br><span class="line">-4</span><br><span class="line">-2</span><br><span class="line">-1</span><br></pre></td></tr></table></figure>
+
+<h3 id="예제-출력-1"><a href="#예제-출력-1" class="headerlink" title="예제 출력 1"></a>예제 출력 1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">5300</span><br></pre></td></tr></table></figure>
+
+<h3 id="예제-입력-2"><a href="#예제-입력-2" class="headerlink" title="예제 입력 2"></a>예제 입력 2</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">2 4</span><br><span class="line">5</span><br><span class="line">2</span><br><span class="line">100</span><br><span class="line">500</span><br><span class="line">1000</span><br><span class="line">2000</span><br><span class="line">3</span><br><span class="line">1</span><br><span class="line">2</span><br><span class="line">4</span><br><span class="line">-1</span><br><span class="line">-3</span><br><span class="line">-2</span><br><span class="line">-4</span><br></pre></td></tr></table></figure>
+
+<h3 id="예제-출력-2"><a href="#예제-출력-2" class="headerlink" title="예제 출력 2"></a>예제 출력 2</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">16200</span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<h3 id="힌트"><a href="#힌트" class="headerlink" title="힌트"></a>힌트</h3><ul>
+<li>차량 3이 주차 공간 1에 주차한다. 주차료는 300 * 2 &#x3D; 600 이다.</li>
+<li>차량 2가 주차 공간 2에 주차한다. 주차료는 100 * 3 &#x3D; 300 이다.</li>
+<li>차량 1이 차랑 3이 떠난 주차공간 1에 주차한다. 주차료는 200 * 2 &#x3D; 400 이다.</li>
+<li>차량 4가 마지막 남은 주차 공간 3에 주차한다. 주차료는 800 * 5 &#x3D; 4,000 이다.</li>
+</ul>
+<hr>
+<h3 id="출처"><a href="#출처" class="headerlink" title="출처"></a>출처</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/category/2">Olympiad</a> &gt; <a target="_blank" rel="noopener" href="https://www.acmicpc.net/category/99">International Olympiad in Informatics</a> &gt; <a target="_blank" rel="noopener" href="https://www.acmicpc.net/category/detail/526">IOI 2009</a> 5번</li>
+</ul>
+<hr>
+<h3 id="알고리즘-분류"><a href="#알고리즘-분류" class="headerlink" title="알고리즘 분류"></a>알고리즘 분류</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/102">구현</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/175">자료 구조</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/141">시뮬레이션</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/72">큐</a></li>
+</ul>
+<hr>
+<h3 id="소스코드"><a href="#소스코드" class="headerlink" title="소스코드"></a>소스코드</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> deque</span><br><span class="line"><span class="keyword">import</span> heapq</span><br><span class="line"></span><br><span class="line"><span class="built_in">input</span> = sys.stdin.readline</span><br><span class="line"></span><br><span class="line">N, M = <span class="built_in">map</span>(<span class="built_in">int</span>, <span class="built_in">input</span>().split())</span><br><span class="line"><span class="comment"># N~: 단위 무게당 요금을 나타내는 정수, N: 주차공간 1,2,3....</span></span><br><span class="line"><span class="comment"># M~: 차량들의 무게</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">fees = [<span class="built_in">int</span>(<span class="built_in">input</span>()) <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(N)]</span><br><span class="line">weights = [<span class="built_in">int</span>(<span class="built_in">input</span>()) <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(M)]</span><br><span class="line"></span><br><span class="line">parking = &#123;&#125;</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(M + <span class="number">1</span>):</span><br><span class="line">    parking[i + <span class="number">1</span>] = []</span><br><span class="line"></span><br><span class="line">waiting = deque()</span><br><span class="line">total_fee = <span class="number">0</span></span><br><span class="line"></span><br><span class="line">parking_idx = [x <span class="keyword">for</span> x <span class="keyword">in</span> <span class="built_in">range</span>(N)]</span><br><span class="line">heapq.heapify(parking_idx)</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2</span> * M):</span><br><span class="line">    <span class="keyword">if</span> parking_idx <span class="keyword">and</span> waiting:</span><br><span class="line">        car_num = waiting.popleft()</span><br><span class="line">        idx = heapq.heappop(parking_idx)</span><br><span class="line">        parking[car_num] = [idx, fees[idx], weights[car_num - <span class="number">1</span>]]</span><br><span class="line"></span><br><span class="line">    car_num = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line">    <span class="keyword">if</span> car_num &gt; <span class="number">0</span>:  <span class="comment"># 입차</span></span><br><span class="line">        <span class="keyword">if</span> parking_idx:</span><br><span class="line">            idx = heapq.heappop(parking_idx)</span><br><span class="line">            parking[car_num] = [idx, fees[idx], weights[car_num - <span class="number">1</span>]]</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            waiting.append(car_num)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        car_num = <span class="built_in">abs</span>(car_num)</span><br><span class="line">        idx = parking[car_num][<span class="number">0</span>]</span><br><span class="line">        fee = parking[car_num][<span class="number">1</span>]</span><br><span class="line">        weight = parking[car_num][<span class="number">2</span>]</span><br><span class="line">        total_fee += fee * weight</span><br><span class="line">        heapq.heappush(parking_idx, idx)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(total_fee)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</div></article></div><div class="card"><div class="card-image"><a class="image is-7by3" href="/categories/Algorithm/Python/BAEKJOON-3190-21-07-22/"><img class="fill" src="/images/posts/thumb/baekjoon.png" alt="[백준] 3190번 뱀"></a></div><article class="card-content article" role="article"><div class="article-meta is-size-9 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><div>2021-07-22</div></span><span class="level-item"><a class="link-muted" href="/categories/Algorithm/">Algorithm</a><span> / </span><a class="link-muted" href="/categories/Algorithm/Python/">Python</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/categories/Algorithm/Python/BAEKJOON-3190-21-07-22/">[백준] 3190번 뱀</a></p><div class="content"><p>출처: <a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/3190">[백준] 3190번 뱀</a> </p>
+<hr>
+<table>
+<thead>
+<tr>
+<th align="left">시간 제한</th>
+<th align="left">메모리 제한</th>
+<th align="left">제출</th>
+<th align="left">정답</th>
+<th align="left">맞은 사람</th>
+<th align="left">정답 비율</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1 초</td>
+<td align="left">128 MB</td>
+<td align="left">36404</td>
+<td align="left">14381</td>
+<td align="left">9512</td>
+<td align="left">37.674%</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h3><p> ‘Dummy’ 라는 도스게임이 있다. 이 게임에는 뱀이 나와서 기어다니는데, 사과를 먹으면 뱀 길이가 늘어난다. 뱀이 이리저리 기어다니다가 벽 또는 자기자신의 몸과 부딪히면 게임이 끝난다.</p>
+<p>게임은 NxN 정사각 보드위에서 진행되고, 몇몇 칸에는 사과가 놓여져 있다. 보드의 상하좌우 끝에 벽이 있다. 게임이 시작할때 뱀은 맨위 맨좌측에 위치하고 뱀의 길이는 1 이다. 뱀은 처음에 오른쪽을 향한다.</p>
+<p>뱀은 매 초마다 이동을 하는데 다음과 같은 규칙을 따른다.</p>
+<ul>
+<li>먼저 뱀은 몸길이를 늘려 머리를 다음칸에 위치시킨다.</li>
+<li>만약 이동한 칸에 사과가 있다면, 그 칸에 있던 사과가 없어지고 꼬리는 움직이지 않는다.</li>
+<li>만약 이동한 칸에 사과가 없다면, 몸길이를 줄여서 꼬리가 위치한 칸을 비워준다. 즉, 몸길이는 변하지 않는다.</li>
+</ul>
+<p>사과의 위치와 뱀의 이동경로가 주어질 때 이 게임이 몇 초에 끝나는지 계산하라.</p>
+<hr>
+<h3 id="입력"><a href="#입력" class="headerlink" title="입력"></a>입력</h3><p>첫째 줄에 보드의 크기 N이 주어진다. (2 ≤ N ≤ 100) 다음 줄에 사과의 개수 K가 주어진다. (0 ≤ K ≤ 100)</p>
+<p>다음 K개의 줄에는 사과의 위치가 주어지는데, 첫 번째 정수는 행, 두 번째 정수는 열 위치를 의미한다. 사과의 위치는 모두 다르며, 맨 위 맨 좌측 (1행 1열) 에는 사과가 없다.</p>
+<p>다음 줄에는 뱀의 방향 변환 횟수 L 이 주어진다. (1 ≤ L ≤ 100)</p>
+<p>다음 L개의 줄에는 뱀의 방향 변환 정보가 주어지는데,  정수 X와 문자 C로 이루어져 있으며. 게임 시작 시간으로부터 X초가 끝난 뒤에 왼쪽(C가 ‘L’) 또는 오른쪽(C가 ‘D’)로 90도 방향을 회전시킨다는 뜻이다. X는 10,000 이하의 양의 정수이며, 방향 전환 정보는 X가 증가하는 순으로 주어진다.</p>
+<hr>
+<h3 id="출력"><a href="#출력" class="headerlink" title="출력"></a>출력</h3><p>첫째 줄에 게임이 몇 초에 끝나는지 출력한다.</p>
+<hr>
+<h3 id="예제-입력-1"><a href="#예제-입력-1" class="headerlink" title="예제 입력 1"></a>예제 입력 1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">6</span><br><span class="line">3</span><br><span class="line">3 4</span><br><span class="line">2 5</span><br><span class="line">5 3</span><br><span class="line">3</span><br><span class="line">3 D</span><br><span class="line">15 L</span><br><span class="line">17 D</span><br></pre></td></tr></table></figure>
+
+<h3 id="예제-출력-1"><a href="#예제-출력-1" class="headerlink" title="예제 출력 1"></a>예제 출력 1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">9</span><br></pre></td></tr></table></figure>
+
+<h3 id="예제-입력-2"><a href="#예제-입력-2" class="headerlink" title="예제 입력 2"></a>예제 입력 2</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">10</span><br><span class="line">4</span><br><span class="line">1 2</span><br><span class="line">1 3</span><br><span class="line">1 4</span><br><span class="line">1 5</span><br><span class="line">4</span><br><span class="line">8 D</span><br><span class="line">10 D</span><br><span class="line">11 D</span><br><span class="line">13 L</span><br></pre></td></tr></table></figure>
+
+<h3 id="예제-출력-2"><a href="#예제-출력-2" class="headerlink" title="예제 출력 2"></a>예제 출력 2</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">21</span><br></pre></td></tr></table></figure>
+
+<h3 id="예제-입력-3"><a href="#예제-입력-3" class="headerlink" title="예제 입력 3"></a>예제 입력 3</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">10</span><br><span class="line">5</span><br><span class="line">1 5</span><br><span class="line">1 3</span><br><span class="line">1 2</span><br><span class="line">1 6</span><br><span class="line">1 7</span><br><span class="line">4</span><br><span class="line">8 D</span><br><span class="line">10 D</span><br><span class="line">11 D</span><br><span class="line">13 L</span><br></pre></td></tr></table></figure>
+
+<h3 id="예제-출력-3"><a href="#예제-출력-3" class="headerlink" title="예제 출력 3"></a>예제 출력 3</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">13</span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<h3 id="출처"><a href="#출처" class="headerlink" title="출처"></a>출처</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/category/2">Olympiad</a> &gt; <a target="_blank" rel="noopener" href="https://www.acmicpc.net/category/25">Croatian Highschool Competitions in Informatics</a> &gt; <a target="_blank" rel="noopener" href="https://www.acmicpc.net/category/50">2005</a> &gt; <a target="_blank" rel="noopener" href="https://www.acmicpc.net/category/detail/285">National Competition #1 - Juniors</a> 2번<ul>
+<li>문제의 오타를 찾은 사람: <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/dlwocks31">dlwocks31</a>, <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/hax3">hax3</a></li>
+<li>빠진 조건을 찾은 사람: <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/doju">doju</a>, <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/joonas">joonas</a>, <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/zhsks311">zhsks311</a></li>
+<li>문제를 번역한 사람: <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/sehun">sehun</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="알고리즘-분류"><a href="#알고리즘-분류" class="headerlink" title="알고리즘 분류"></a>알고리즘 분류</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/102">구현</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/175">자료 구조</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/141">시뮬레이션</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/73">덱</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/72">큐</a></li>
+</ul>
+<hr>
+<h3 id="소스코드"><a href="#소스코드" class="headerlink" title="소스코드"></a>소스코드</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> deque</span><br><span class="line"></span><br><span class="line"><span class="built_in">input</span> = sys.stdin.readline</span><br><span class="line"></span><br><span class="line">N = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line">board = [[<span class="number">0</span>] * (N) <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(N)]  <span class="comment"># NxN 보드 생성</span></span><br><span class="line"></span><br><span class="line">K = <span class="built_in">int</span>(<span class="built_in">input</span>())  <span class="comment"># 사과 개수</span></span><br><span class="line"><span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(K):  <span class="comment"># 사과 위치 지정 0:없음, 1:있음</span></span><br><span class="line">    y, x = <span class="built_in">map</span>(<span class="built_in">int</span>, <span class="built_in">input</span>().split())</span><br><span class="line">    board[y - <span class="number">1</span>][x - <span class="number">1</span>] = <span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 우, 하, 좌, 상 // 시계방향</span></span><br><span class="line">dx = [<span class="number">1</span>, <span class="number">0</span>, -<span class="number">1</span>, <span class="number">0</span>]</span><br><span class="line">dy = [<span class="number">0</span>, <span class="number">1</span>, <span class="number">0</span>, -<span class="number">1</span>]</span><br><span class="line"></span><br><span class="line">L = <span class="built_in">int</span>(<span class="built_in">input</span>())  <span class="comment"># 방향 전환 횟수</span></span><br><span class="line">times = deque()</span><br><span class="line">directions = deque()</span><br><span class="line"><span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(L):</span><br><span class="line">    time, dire = <span class="built_in">input</span>().rstrip().split()</span><br><span class="line">    times.append(<span class="built_in">int</span>(time))</span><br><span class="line">    directions.append(dire)</span><br><span class="line"></span><br><span class="line">count = <span class="number">0</span></span><br><span class="line">direction = <span class="number">0</span></span><br><span class="line">nx, ny = <span class="number">0</span>, <span class="number">0</span>  <span class="comment"># 초기위치</span></span><br><span class="line">visited = deque([[ny, nx]])</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    count += <span class="number">1</span></span><br><span class="line">    <span class="comment"># 칸 이동</span></span><br><span class="line">    nx += dx[direction]</span><br><span class="line">    ny += dy[direction]</span><br><span class="line">    <span class="keyword">if</span> <span class="number">0</span> &lt;= nx &lt; N <span class="keyword">and</span> <span class="number">0</span> &lt;= ny &lt; N <span class="keyword">and</span> board[ny][nx] != <span class="number">1</span>:  <span class="comment"># 보드 체크</span></span><br><span class="line">        <span class="comment"># 사과가 있으면 그냥 추가, 없으면 꼬리 제거하고 추가</span></span><br><span class="line">        <span class="keyword">if</span> board[ny][nx] == <span class="number">0</span>:  <span class="comment"># 사과가 없으면</span></span><br><span class="line">            temp_y, temp_x = visited.popleft()</span><br><span class="line">            board[temp_y][temp_x] = <span class="number">0</span>  <span class="comment"># 꼬리 줄어듬</span></span><br><span class="line">        board[ny][nx] = <span class="number">1</span></span><br><span class="line">        visited.append([ny, nx])</span><br><span class="line"></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">print</span>(count)</span><br><span class="line">        exit(<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> count <span class="keyword">in</span> times:</span><br><span class="line">        dire = directions.popleft()</span><br><span class="line">        <span class="keyword">if</span> dire == <span class="string">&#x27;D&#x27;</span>:</span><br><span class="line">            direction += <span class="number">1</span></span><br><span class="line">            <span class="keyword">if</span> direction &gt; <span class="number">3</span>:</span><br><span class="line">                direction = <span class="number">0</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            direction -= <span class="number">1</span></span><br><span class="line">            <span class="keyword">if</span> direction &lt; <span class="number">0</span>:</span><br><span class="line">                direction = <span class="number">3</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</div></article></div><div class="card"><div class="card-image"><a class="image is-7by3" href="/categories/Programming/SpringBoot/SPRINGBOOT-AJAX-21-07-21/"><img class="fill" src="/images/posts/thumb/springboot.png" alt="[Spring Boot] Ajax 사용하는 이유"></a></div><article class="card-content article" role="article"><div class="article-meta is-size-9 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><div>2021-07-22</div></span><span class="level-item"><a class="link-muted" href="/categories/Programming/">Programming</a><span> / </span><a class="link-muted" href="/categories/Programming/Spring-Boot/">Spring Boot</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/categories/Programming/SpringBoot/SPRINGBOOT-AJAX-21-07-21/">[Spring Boot] Ajax 사용하는 이유</a></p><div class="content"><h1 id="회원가입-시-Ajax를-사용하는-이유"><a href="#회원가입-시-Ajax를-사용하는-이유" class="headerlink" title="회원가입 시 Ajax를 사용하는 이유"></a>회원가입 시 Ajax를 사용하는 이유</h1><h2 id=""><a href="#" class="headerlink" title=""></a></h2><h2 id="요청에-대한-응답을-HTML이-아닌-Data-JSON-로-받기-위해서"><a href="#요청에-대한-응답을-HTML이-아닌-Data-JSON-로-받기-위해서" class="headerlink" title="요청에 대한 응답을 HTML이 아닌 Data(JSON)로 받기 위해서"></a>요청에 대한 응답을 HTML이 아닌 Data(JSON)로 받기 위해서</h2><p>클라이언트 (브라우저)는 서버에 요청을 하고, 서버는 클라이언트에게 응답한다.</p>
+<p>클라이언트가 서버에게 화면을 요청하면, 서버가 .html로 응답하여 브라우저는 그 html 파일을 읽는다.</p>
+<p>메인화면에서 회원가입 수행을 요청하면, 서버는 DB에 회원가입을 수행하고 완료하면 다시 메인화면으로 돌아올 것이고, 결국 html로 응답해줘야하는데…</p>
+<p>그 클라이언트가 꼭 브라우저인 것은 아니다. 앱일 경우, html를 반환해주면 이해하지 못한다.</p>
+<p>그래서 Data만 반환해주고, 화면을 앱안에서 자체적으로 띄운다.</p>
+<p>➡ 브라우저를 위한 서버, 앱을 위한 서버 두개를 따로 만들어야하지만, <u>차라리, Data를 반환해주는 서버 하나를 만들면 되지 않을까…</u></p>
+<p><strong>서버는 브라우저&#x2F;앱에게 정상이라는 Data를 반환해준다.</strong></p>
+<p>브라우저는 다시 서버에서 request를 보내 html파일을 반환하게 한다.</p>
+<p>앱은 자체적으로 화면이동을 한다.</p>
+<p><strong>그래서 Data를 Ajax를 사용한다.</strong></p>
+<hr>
+<h2 id="비동기-통신을-하기-위해서"><a href="#비동기-통신을-하기-위해서" class="headerlink" title="비동기 통신을 하기 위해서"></a>비동기 통신을 하기 위해서</h2><p>보통 일을 수행할 때 1, 2, 3, 4, 5, … 순서대로 실행-종료,실행-종료… 절차적으로 수행한다.</p>
+<p>그리고 1: 화면에 그림(내장), 2: 연산, 3: 그림 다운로드(외장), 4: 그림을 그림, 5: 화면에 그림(내장) 이라는 상황일 때, 1,2번이 수행되고, 3번 다운로드하는 10초 pending동안 앱은 멈춰있을 것이다.. 10초 다운로드가 끝나면 4,5번이 수행된다.  <strong>이 결과 UX가 나빠진다. 프로그램을 사용하고 싶지 않을 듯</strong></p>
+<p>비동기 통신은  절차적으로 일을 수행하는데, 일의 순서에 상관없이 수행한다.</p>
+<p>1,2 수행하고, 3번을 비동기 처리하고 4번은 3번이 수행되어야 동작할 수 있기때문에, 5번을 수행하고 있는다.</p>
+<p>3번 다운로드하는 동안 4번은 3번을 기다리고, 5번 그림 그리기 수행</p>
+<ul>
+<li>5번 수행중 3번이 완료되면 4번으로 <strong>콜백</strong>한다. 4번이 완료되면 5번 멈췄던 지점부터 다시 시작한다.</li>
+<li>5번이 끝난 후에 3번이 완료되면 4번으로 돌아간다.</li>
+</ul>
+<p>➡  비동기라고 한다.</p>
+</div></article></div><div class="card"><div class="card-image"><a class="image is-7by3" href="/categories/Programming/GIT/GITHUB-Korean-21-07-21/"><img class="fill" src="/images/posts/thumb/git_cover.png" alt="[Git] git status 한글 깨짐 해결하기"></a></div><article class="card-content article" role="article"><div class="article-meta is-size-9 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><div>2021-07-21</div></span><span class="level-item"><a class="link-muted" href="/categories/Programming/">Programming</a><span> / </span><a class="link-muted" href="/categories/Programming/Git-Github/">Git/Github</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/categories/Programming/GIT/GITHUB-Korean-21-07-21/">[Git] git status 한글 깨짐 해결하기</a></p><div class="content"><p>git status나 commit 할 때, 한글이름을 가지는 파일일 경우에 \352\271\200\ 이런식으로 파일명이 깨지는 경우가 있다.</p>
+<p><img src="https://chlee1001.github.io/images/posts/git/git_korean1.png"></p>
+<hr>
+<p>위 사진처럼 한글이 깨진다면, 아래 코드 한줄을 입력한다.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global core.quotepath <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<p>다시 확인해보면, 아래 사진과 같이 파일명이 잘 나오는 것을 볼 수 잇다.</p>
+<p><img src="https://chlee1001.github.io/images/posts/git/git_korean2.png"></p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-9 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><div>2021-07-21</div></span><span class="level-item"><a class="link-muted" href="/categories/IT%EC%A0%95%EB%B3%B4/">IT정보</a><span> / </span><a class="link-muted" href="/categories/IT%EC%A0%95%EB%B3%B4/%EB%A7%A4%EC%9D%BC30%EB%B6%84-IT%EB%89%B4%EC%8A%A4/">매일30분 IT뉴스</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/categories/IT%EC%A0%95%EB%B3%B4/%EB%A7%A4%EC%9D%BC30%EB%B6%84%20IT%EB%89%B4%EC%8A%A4/21-07-21-IT_News/">2021년 07월 21일 수요일 IT뉴스</a></p><div class="content"><h2 id="1-네이버-CJ-풀필먼트-센터-확충…’당일배송·새벽배송’-뛰어든다-종합"><a href="#1-네이버-CJ-풀필먼트-센터-확충…’당일배송·새벽배송’-뛰어든다-종합" class="headerlink" title="1. 네이버-CJ, 풀필먼트 센터 확충…’당일배송·새벽배송’ 뛰어든다(종합)"></a>1. 네이버-CJ, 풀필먼트 센터 확충…’당일배송·새벽배송’ 뛰어든다(종합)</h2><p><a target="_blank" rel="noopener" href="https://news.naver.com/main/read.naver?mode=LSD&mid=shm&sid1=105&oid=421&aid=0005491448">네이버-CJ, 풀필먼트 센터 확충…’당일배송·새벽배송’ 뛰어든다(종합)</a></p>
+<p>네이버는 CJ대한통운과 함께 네이버 스마트스토어 판매자를 중심으로 전국 빠른 배송 서비스를 구축한다고 21일 밝혔고, 기존 네이버 스마트스토어를 중심으로 운영해온 곤지암·용인·군포 풀필먼트 센터에 이어 추가로 20만평 규모의 풀필먼트 센터를 설립한다. </p>
+<p>네이버는 지난 12일 풀필먼트 데이터 플랫폼 ‘NFA’를 열었고, 이어 네이버는 지난 20일 특수 물류 전문 업체 발렉스와 손잡고 프리미엄 배송 실험을 시작했으며,  ‘희망일 배송’까지 네이버의 NFA를 통해 다양한 배송 서비스 지원을 확대할 계획이다.</p>
+<ul>
+<li>풀필먼트는 물류 전문업체가 판매자 대신 주문의 포장과 배송까지 담당하는 서비스를 말한다.</li>
+<li>NFA는 네이버의 인공지능(AI)을 기술력을 이용해 물류 데이터 분석, 사업자별 물류 수요예측 등의 기능을 제공하는 서비스다.</li>
+<li>프리미엄 서비스는 고가의 전자제품을 금고와 폐쇄회로(CC)TV, GPS 등이 설치된 보안 차량으로 상품을 안전하게 배송하는 서비스다.</li>
+</ul>
+<hr>
+<h2 id="2-암-진단-AI-‘왓슨’-빈자리-누가-채우나…치료까지-넘보는-한국-AI스타트업"><a href="#2-암-진단-AI-‘왓슨’-빈자리-누가-채우나…치료까지-넘보는-한국-AI스타트업" class="headerlink" title="2. 암 진단 AI ‘왓슨’ 빈자리 누가 채우나…치료까지 넘보는 한국 AI스타트업"></a>2. 암 진단 AI ‘왓슨’ 빈자리 누가 채우나…치료까지 넘보는 한국 AI스타트업</h2><p><a target="_blank" rel="noopener" href="https://news.naver.com/main/read.naver?mode=LSD&mid=shm&sid1=105&oid=243&aid=0000014647">암 진단 AI ‘왓슨’ 빈자리 누가 채우나…치료까지 넘보는 한국 AI스타트업</a></p>
+<p><img src="https://imgnews.pstatic.net/image/243/2021/07/21/0000014647_001_20210721094008677.jpg?type=w647" alt="유방암·폐암 진단보조 AI &#39;루닛 인사이트&#39;(왼쪽)와 항암제 반응 예측 AI &#39;루닛 스코프&#39;. [사진 루닛]"></p>
+<p>지난 2011년 IBM이 선보였던 인공지능(AI) 왓슨은 암 진단 정확도를 높일 주역으로 주목받았지만, 10년이 지난 현재, 기대만 못 한 정확도에 위기를 겪고 있으며, 의료AI 스타트업들이 암 치료에 도전하면서 왓슨이 설 자리는 더 좁아진 모양새다.</p>
+<p>대표적인 곳이 국내 의료AI 스타트업인 루닛으로, 지난 19일 루닛은 미국의 바이오 헬스케어기업인 ‘가던트헬스(Guardant Health)’로부터 약 300억원 규모의 시리즈C 후속 투자를 받았다. 가던트헬스는 암 정밀 분석법인 액체생검 분야에서 선도적인 위치에 있으며,  미국 혈액종양내과 전문의 중 80%가 이곳 제품을 쓰는 것으로 알려져 있다. </p>
+<hr>
+<h2 id="3-마이크로소프트-윈도365로-기업-업무환경-바꾼다"><a href="#3-마이크로소프트-윈도365로-기업-업무환경-바꾼다" class="headerlink" title="3. 마이크로소프트, 윈도365로 기업 업무환경 바꾼다"></a>3. 마이크로소프트, 윈도365로 기업 업무환경 바꾼다</h2><p><a target="_blank" rel="noopener" href="https://news.naver.com/main/read.naver?mode=LSD&mid=shm&sid1=105&oid=092&aid=0002228341">마이크로소프트, 윈도365로 기업 업무환경 바꾼다</a></p>
+<p><img src="https://imgnews.pstatic.net/image/092/2021/07/21/0002228341_001_20210721091708197.jpg?type=w647" alt="마이크로소프트가 공개한 윈도365 개념도."></p>
+<p>윈도365는 윈도10 환경을 클라우드서비스 애저에 구축하고, 웹브라우저를 통해 접속하는 가상데스크톱인프라(VDI) 서비스로, PC가 아닌 맥, 아이패드, 안드로이드 스마트폰 등에서도 웹브라우저를 통해 윈도 환경에 접근해 업무를 수행할 수 있고 하드웨어의 종류나 성능, 장소 제약 없이 윈도를 사용할 수 있어 원격 업무환경 지원에 용이하다.</p>
+<p>대기업에서 필요한 재택근무 시스템은 윈도와 문서도구 외에도, 전사적자원관리(ERP), 공급망관리(SCM), 고객관계관리(SCM) 등 대규모 IT서비스와 연계가 필요하여  파트너사에 의뢰해 직접 VDI를 구축하거나, 윈도365에 필요한 기능을 더하는 추가 작업이 필수적이다. </p>
+<p>나무기술의 권세창 과장은 “대기업과 금융권에서 VDI를 사용하기 위해선 윈도10 외에도 수백 종의 협업 도구를 포함하고 있어 윈도365 단독으로 제공하긴 어려울 것”이라며 “IT서비스 기업에게 윈도365는 대기업 VDI 구성을 위한 하나의 옵션으로 보는 것이 더 적합할 것”이라고 설명했다.</p>
+<hr>
+<h2 id="4-유튜피아-진격의-‘틱톡’에-따라잡힌-유튜브…’틱톡-따라하기’-맞불"><a href="#4-유튜피아-진격의-‘틱톡’에-따라잡힌-유튜브…’틱톡-따라하기’-맞불" class="headerlink" title="4. [유튜피아] 진격의 ‘틱톡’에 따라잡힌 유튜브…’틱톡 따라하기’ 맞불"></a>4. [유튜피아] 진격의 ‘틱톡’에 따라잡힌 유튜브…’틱톡 따라하기’ 맞불</h2><p><a target="_blank" rel="noopener" href="https://news.naver.com/main/read.naver?mode=LSD&mid=shm&sid1=105&oid=421&aid=0005490996">[유튜피아] 진격의 ‘틱톡’에 따라잡힌 유튜브…’틱톡 따라하기’ 맞불</a></p>
+<p>동영상 플랫폼 절대 강자 ‘유튜브’가 흔들리고 있다. 이미 일부 국가의 경우 ‘틱톡’의 이용시간이 유튜브를 앞지른 것으로 나타났다.</p>
+<p><img src="https://imgnews.pstatic.net/image/421/2021/07/21/0005490996_002_20210721073017575.jpg?type=w647" alt="미국·영국·한국의 틱톡, 유튜브 월평균 소비 시간 (앱애니 블로그 캡처) © 뉴스1"></p>
+<p>유튜브가 ‘숏폼’ 콘텐츠를 전면에 내세우며 틱톡 따라잡기에 나섰다면, 틱톡은 동영상의 제한 길이를 늘려 ‘유튜브’ 따라잡기에 나섰다. 틱톡은 지난 1일 영상의 길이 제한을 기존 1분에서 3분으로 대폭 늘린다는 계획을 내놨다. 15초 길이의 짧은 영상에서 60초까지 영상 길이를 늘렸던 틱톡이 3분짜리 동영상으로 유튜브를 정조준한 것이다.</p>
+<hr>
+<h2 id="5-“왜-불편하게-바꾸나”-T멤버십-놓고-와글와글"><a href="#5-“왜-불편하게-바꾸나”-T멤버십-놓고-와글와글" class="headerlink" title="5. “왜 불편하게 바꾸나” T멤버십 놓고 와글와글"></a>5. “왜 불편하게 바꾸나” T멤버십 놓고 와글와글</h2><p><a target="_blank" rel="noopener" href="https://news.naver.com/main/read.naver?mode=LSD&mid=shm&sid1=105&oid=023&aid=0003628250">“왜 불편하게 바꾸나” T멤버십 놓고 와글와글</a></p>
+<p>현재 SK텔레콤 T멤버십 프로그램은 제휴 브랜드인 파리바게뜨·CU 등에서 1000원 상당의 물품을 구매하고 등급에 따라 50~100원 할인된 금액만을 결제하는 방식이지만, 앞으로는 할인 금액만큼의 포인트를 우선 적립하고, 원하는 제휴 브랜드 매장만을 골라서 적립한 금액을 한 번에 사용할 수 있다.</p>
+<p>김대종 세종대 경영학부 교수는 “포인트 적립으로 멤버십을 바꾸는 것은 포인트가 몇 년 후 소멸된다는 점, 구매 당시 바로 할인을 받을 수 없다는 점에서 당연히 소비자에게 불리한 방식”이라고 말했다.</p>
+<p>일각에서는 일정 수준 이상 포인트를 모아야 사용할 수 있는 ‘최소 사용 금액’ 도입을 우려하는 목소리도 나온다. 예컨대 제휴 브랜드에서 적립된 포인트를 사용하려고 해도 ‘포인트 1000원 이상 사용 가능’ 같은 기준이 정해져 있어 이 금액을 넘는 적립액을 쌓기 위한 소비를 지속적으로 해야 한다는 것이다. </p>
+<p><img src="https://imgnews.pstatic.net/image/023/2021/07/21/0003628250_002_20210721065705176.jpg?type=w647"></p>
+</div></article></div><div class="card"><div class="card-image"><a class="image is-7by3" href="/categories/Algorithm/Python/BAEKJOON-11116-21-07-21/"><img class="fill" src="/images/posts/thumb/baekjoon.png" alt="[백준] 11116번 교통량"></a></div><article class="card-content article" role="article"><div class="article-meta is-size-9 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><div>2021-07-21</div></span><span class="level-item"><a class="link-muted" href="/categories/Algorithm/">Algorithm</a><span> / </span><a class="link-muted" href="/categories/Algorithm/Python/">Python</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/categories/Algorithm/Python/BAEKJOON-11116-21-07-21/">[백준] 11116번 교통량</a></p><div class="content"><p>출처: <a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/11116">[백준] 11116번 교통량</a> </p>
+<hr>
+<table>
+<thead>
+<tr>
+<th align="left">시간 제한</th>
+<th align="left">메모리 제한</th>
+<th align="left">제출</th>
+<th align="left">정답</th>
+<th align="left">맞은 사람</th>
+<th align="left">정답 비율</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">1 초</td>
+<td align="left">256 MB</td>
+<td align="left">55</td>
+<td align="left">35</td>
+<td align="left">31</td>
+<td align="left">62.000%</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h3><p>승민이는 마포대교의 교통량이 얼마인지를 측정하고있다. 승민이는 도로 맞은 편을 잇는 두개의 끈을 일정 간격 사이로 매달아 놓았다. 그리고 자동차가 끈위로 지나갈때 끈 끝에 있는 작은 박스에는 그 때 의 시간이 기록된다. </p>
+<p>예를 들어, 자동차가 왼쪽에서 올 때 네 번의 기록을 얻게 된다.</p>
+<ul>
+<li>왼쪽 줄 위로 앞 바퀴가 지나 간 시간 t</li>
+<li>왼쪽 줄 위로 뒷 바퀴가 지나 간 시간 t + 500</li>
+<li>오른쪽 줄 위로 앞 바퀴가 지나 간 시간 t + 1000</li>
+<li>오른쪽 줄 위로 뒷 바퀴가 지나 간 시간 t + 1500</li>
+</ul>
+<p>자동차가 오른쪽에서 올 때도 같은 규칙으로 오른쪽과 왼쪽을 바꾸어 측정하면 된다. 주어진 두개의 시간 기록으로 왼쪽에서 얼마나 많은 차가 왔는지 알아내면 된다. 한 끈 위에는 많아야 한 대의 차량이 지나가고 있다.</p>
+<hr>
+<h3 id="입력"><a href="#입력" class="headerlink" title="입력"></a>입력</h3><p>첫 번째 줄에 n (1 ≤ n ≤ 100) 까지의 테스트 케이스의 개수를 입력 한다.  각각의 테스트 케이스에는 박스에서 측정 된 시간 기록의 개수 m (m ≤ 200)을 입력한다. 다음 줄에는 왼쪽 박스에서 측정된 109 보다 작은 시간 기록 m개를 입력한다. 그 다음 줄에는 오른쪽 박스에서 측정된 109 보다 작은 시간 기록 m개를 입력한다.</p>
+<hr>
+<h3 id="출력"><a href="#출력" class="headerlink" title="출력"></a>출력</h3><p>각각의 테스트케이스에 대해 왼쪽에서 오는 차의 숫자를 출력한다.</p>
+<hr>
+<h3 id="예제-입력-1"><a href="#예제-입력-1" class="headerlink" title="예제 입력 1"></a>예제 입력 1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">2</span><br><span class="line">4</span><br><span class="line">17 517 1432 1932</span><br><span class="line">432 932 1017 1517</span><br><span class="line">6</span><br><span class="line">235 451 735 951 2351 2851</span><br><span class="line">1235 1351 1451 1735 1851 1951</span><br></pre></td></tr></table></figure>
+
+<h3 id="예제-출력-1"><a href="#예제-출력-1" class="headerlink" title="예제 출력 1"></a>예제 출력 1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<h3 id="힌트"><a href="#힌트" class="headerlink" title="힌트"></a>힌트</h3><p>예제의 첫 번째 테스트 케이스인 Case #1은 문제에서 예로들어서 설명한 세 개의 물품에 대한 정상가격과 할인가격 6개입니다. 또한 예제의 Case #2에서는 여러 품목이 동일한 가격을 가질 수 있고, 어떤 품목의 할인가격이 다른 품목 정상가격과 같을 수도 있습니다.</p>
+<hr>
+<h3 id="출처"><a href="#출처" class="headerlink" title="출처"></a>출처</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/category/45">Contest</a> &gt; <a target="_blank" rel="noopener" href="https://www.acmicpc.net/category/326">IDI Open Contest</a> &gt; <a target="_blank" rel="noopener" href="https://www.acmicpc.net/category/detail/1375">IDI Open 2008</a> I번<ul>
+<li>문제를 번역한 사람: <a target="_blank" rel="noopener" href="https://www.acmicpc.net/user/tols91">tols91</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="알고리즘-분류"><a href="#알고리즘-분류" class="headerlink" title="알고리즘 분류"></a>알고리즘 분류</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/102">구현</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/175">자료 구조</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/72">큐</a></li>
+</ul>
+<hr>
+<h3 id="소스코드"><a href="#소스코드" class="headerlink" title="소스코드"></a>소스코드</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> deque</span><br><span class="line"></span><br><span class="line"><span class="built_in">input</span> = sys.stdin.readline</span><br><span class="line"></span><br><span class="line">N = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(N):</span><br><span class="line">    M = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line">    left_box = deque(<span class="built_in">map</span>(<span class="built_in">int</span>, <span class="built_in">input</span>().split()))</span><br><span class="line">    right_box = deque(<span class="built_in">map</span>(<span class="built_in">int</span>, <span class="built_in">input</span>().split()))</span><br><span class="line"></span><br><span class="line">    car_count = <span class="number">0</span></span><br><span class="line">    count = <span class="number">0</span></span><br><span class="line">    <span class="keyword">while</span> left_box:</span><br><span class="line">        temp = left_box.popleft()</span><br><span class="line">        <span class="keyword">if</span> temp + <span class="number">1000</span> <span class="keyword">in</span> right_box:</span><br><span class="line">            count += <span class="number">1</span></span><br><span class="line">        <span class="keyword">if</span> count == <span class="number">2</span>:</span><br><span class="line">            count = <span class="number">0</span></span><br><span class="line">            car_count += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">print</span>(car_count)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</div></article></div><div class="card"><div class="card-image"><a class="image is-7by3" href="/categories/Algorithm/Python/BAEKJOON-12034-21-07-21/"><img class="fill" src="/images/posts/thumb/baekjoon.png" alt="[백준] 12034번 김인천씨의 식료품가게 (Large)"></a></div><article class="card-content article" role="article"><div class="article-meta is-size-9 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><div>2021-07-21</div></span><span class="level-item"><a class="link-muted" href="/categories/Algorithm/">Algorithm</a><span> / </span><a class="link-muted" href="/categories/Algorithm/Python/">Python</a></span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/categories/Algorithm/Python/BAEKJOON-12034-21-07-21/">[백준] 12034번 김인천씨의 식료품가게 (Large)</a></p><div class="content"><p>출처: <a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/12034">[백준] 12034번 김인천씨의 식료품가게 (Large)</a> </p>
+<hr>
+<table>
+<thead>
+<tr>
+<th align="left">시간 제한</th>
+<th align="left">메모리 제한</th>
+<th align="left">제출</th>
+<th align="left">정답</th>
+<th align="left">맞은 사람</th>
+<th align="left">정답 비율</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">5 초</td>
+<td align="left">512 MB</td>
+<td align="left">253</td>
+<td align="left">128</td>
+<td align="left">118</td>
+<td align="left">50.862%</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="문제"><a href="#문제" class="headerlink" title="문제"></a>문제</h3><p>전설적인 인천 식료품가게의 주인인 김인천 씨는 대대적인 할인행사를 계획하고 있습니다. 계산을 단순하게하기 위해 그는 25% 할인된 가격으로 상점의 모든 품목을 판매하기로 결정했습니다. 즉, 각 품목의 판매 가격은 정상 가격의 정확히 75 %입니다. 우연하게도 인천 식료품가게에서 판매하는 모든 물건의 정상가는 4의 배수인 정수이고, 할인된 가격 역시 편리하게도 모두 정수입니다.</p>
+<p>김인천씨는 이 할인행사를 준비하기위해서 먼저 모든 판매물품의 할인된 판매가격을 프린터로 출력을 실행했고, 또한 할인행사 종료후 다시 쓸 모든 품목에 정상가격표 역시 출력을 실행하였습니다.</p>
+<p>손님이 찾아와 잠깐 자리를 비웠던 김인천씨가 다시 가격표의 출력을 확인하기 위해서 프린터로 돌아와보니, 공교롭게 프린터는 모든 물품의 할인가격과 정상가격을 따로 구분하지 않고 오름차순으로 정렬한 뒤 순서대로 출력하여 하나의 출력물 더미를 만들었습니다. 각 품목의 할인가격표와 정상가격표 모두가 출력물 더미의 어딘가에 있습니다. 그러나 두 유형(할인가격, 정상가격)의 가격표는 비슷하게 보이고, 모든 품목의 가격을 기억하지 못하기 때문에 김인천씨는 어느 가격표가 할인가격표인지 확신할 수 없습니다. 이 상황에서 김인천씨는 무엇이 할인가격표인지 구분해낼 수 있을까요?</p>
+<p>예를 들어, 정상가격이 20, 80, 100 인 경우 할인가격은 15, 60, 75이며 프린터의 인쇄출력더미는 오름차순으로 정렬된 15, 20, 60, 75, 80, 100 가격표들로 구성됩니다.</p>
+<hr>
+<h3 id="입력"><a href="#입력" class="headerlink" title="입력"></a>입력</h3><p>입력의 첫 번째 라인(줄)은 테스트 사례의 케이스의 수 T를 나타냅니다. 이후의 라인은 T개의 테스트 케이스가 이어집니다. 각 테스트 케이스는 두 줄로 구성됩니다. 첫 번째 줄에는 INU 식료품가게에 존재하는 상품수인 단일 정수 N이 포함됩니다. 두 번째 줄에는 프린터에서 가격의 오름차순으로 인쇄한 2N개의 정수 P1, P2, …, P2N이 주어집니다.</p>
+<p>입력값의 제한은 아래와 같습니다</p>
+<ul>
+<li>1 ≤ T ≤ 100.</li>
+<li>모든 i에 대해서 1 ≤ Pi ≤ 109.</li>
+<li>모든 i에 대해서 Pi ≤ Pi+1. (가격은 오름차순으로 존재)</li>
+<li>정답은 단 하나만 존재하는것이 보장되어 있음.</li>
+<li>1 ≤ N ≤ 100</li>
+</ul>
+<hr>
+<h3 id="출력"><a href="#출력" class="headerlink" title="출력"></a>출력</h3><p>개별 테스트 케이스에 대해서 출력라인은 “Case #x: y” 형식(큰 따옴표는 제외)으로 출력하며,  x는 1부터 시작하는 테스트 케이스의 번호 (인덱스)이며, y는 할인가격에 해당하는 오름차순으로 정렬된 N개의 정수들이다.</p>
+<hr>
+<h3 id="예제-입력-1"><a href="#예제-입력-1" class="headerlink" title="예제 입력 1"></a>예제 입력 1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">2</span><br><span class="line">3</span><br><span class="line">15 20 60 75 80 100</span><br><span class="line">4</span><br><span class="line">9 9 12 12 12 15 16 20</span><br></pre></td></tr></table></figure>
+
+<h3 id="예제-출력-1"><a href="#예제-출력-1" class="headerlink" title="예제 출력 1"></a>예제 출력 1</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Case #1: 15 60 75</span><br><span class="line">Case #2: 9 9 12 15</span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<h3 id="힌트"><a href="#힌트" class="headerlink" title="힌트"></a>힌트</h3><p>예제의 첫 번째 테스트 케이스인 Case #1은 문제에서 예로들어서 설명한 세 개의 물품에 대한 정상가격과 할인가격 6개입니다. 또한 예제의 Case #2에서는 여러 품목이 동일한 가격을 가질 수 있고, 어떤 품목의 할인가격이 다른 품목 정상가격과 같을 수도 있습니다.</p>
+<hr>
+<h3 id="출처"><a href="#출처" class="headerlink" title="출처"></a>출처</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/category/45">Contest</a> &gt; <a target="_blank" rel="noopener" href="https://www.acmicpc.net/category/369">Google Code Jam</a> &gt; <a target="_blank" rel="noopener" href="https://www.acmicpc.net/category/371">Code Jam to I&#x2F;O 2016 for Women</a> &gt; <a target="_blank" rel="noopener" href="https://www.acmicpc.net/category/detail/1615">Code Jam</a> A2번</li>
+</ul>
+<hr>
+<h3 id="알고리즘-분류"><a href="#알고리즘-분류" class="headerlink" title="알고리즘 분류"></a>알고리즘 분류</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/102">구현</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/175">자료 구조</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.acmicpc.net/problem/tag/72">큐</a></li>
+</ul>
+<hr>
+<h3 id="소스코드"><a href="#소스코드" class="headerlink" title="소스코드"></a>소스코드</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="built_in">input</span> = sys.stdin.readline</span><br><span class="line"></span><br><span class="line">T = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> t <span class="keyword">in</span> <span class="built_in">range</span>(T):</span><br><span class="line">    N = <span class="built_in">int</span>(<span class="built_in">input</span>())</span><br><span class="line">    price_list = <span class="built_in">sorted</span>(<span class="built_in">map</span>(<span class="built_in">int</span>, <span class="built_in">input</span>().split()), reverse=<span class="literal">True</span>)</span><br><span class="line">    dc_list = []</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> price_list:</span><br><span class="line">        price = price_list.pop()</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> price * <span class="number">100</span> // <span class="number">75</span> <span class="keyword">in</span> price_list:</span><br><span class="line">            dc_list.append(price)</span><br><span class="line">            price_list.remove(price * <span class="number">100</span> // <span class="number">75</span>)</span><br><span class="line"></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Case #&#123;0&#125;: &quot;</span>.<span class="built_in">format</span>(t + <span class="number">1</span>), end=<span class="string">&quot;&quot;</span>)</span><br><span class="line">    <span class="built_in">print</span>(*dc_list)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</div></article></div><nav class="pagination" role="navigation" aria-label="pagination"><div class="pagination-previous"><a href="/page/7/">이전</a></div><div class="pagination-next"><a href="/page/9/">다음</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link" href="/">1</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/page/7/">7</a></li><li><a class="pagination-link is-current" href="/page/8/">8</a></li><li><a class="pagination-link" href="/page/9/">9</a></li><li><span class="pagination-ellipsis">&hellip;</span></li><li><a class="pagination-link" href="/page/34/">34</a></li></ul></nav></div><div class="column column-left is-3-tablet is-3-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image mx-auto mb-2" style="width:256px;height:256px;"><img class="avatar is-rounded" src="https://avatars.githubusercontent.com/u/2025813?v=4" alt="이채현"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">이채현</p><p class="is-size-6 is-block">Software Engineer</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>서울시</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">포스트</p><a href="/archives/"><p class="title">331</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">카테고리</p><a href="/categories/"><p class="title">21</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">태그</p><a href="/tags/"><p class="title">619</p></a></div></div></nav><div class="level"><a class="level-item button is-info is-outlined is-rounded" href="https://github.com/chlee1001" target="_blank" rel="me noopener">팔로우</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Github" href="https://github.com/chlee1001"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="RSS" href="/feed.xml"><i class="fas fa-rss"></i></a></div></div></div><!--!--><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">카테고리</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/Algorithm/"><span class="level-start"><span class="level-item">Algorithm</span></span><span class="level-end"><span class="level-item tag">188</span></span></a><ul><li><a class="level is-mobile" href="/categories/Algorithm/C/"><span class="level-start"><span class="level-item">C++</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile" href="/categories/Algorithm/Javascript/"><span class="level-start"><span class="level-item">Javascript</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/Algorithm/Python/"><span class="level-start"><span class="level-item">Python</span></span><span class="level-end"><span class="level-item tag">182</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/DevOps/"><span class="level-start"><span class="level-item">DevOps</span></span><span class="level-end"><span class="level-item tag">9</span></span></a><ul><li><a class="level is-mobile" href="/categories/DevOps/AWS/"><span class="level-start"><span class="level-item">AWS</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/categories/DevOps/Fastlane/"><span class="level-start"><span class="level-item">Fastlane</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/DevOps/MySQL/"><span class="level-start"><span class="level-item">MySQL</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/DevOps/Raspberry-Pi/"><span class="level-start"><span class="level-item">Raspberry Pi</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/DevOps/Ubuntu/"><span class="level-start"><span class="level-item">Ubuntu</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/Essay/"><span class="level-start"><span class="level-item">Essay</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/IT%EC%A0%95%EB%B3%B4/"><span class="level-start"><span class="level-item">IT정보</span></span><span class="level-end"><span class="level-item tag">92</span></span></a><ul><li><a class="level is-mobile" href="/categories/IT%EC%A0%95%EB%B3%B4/%EB%A7%A4%EC%9D%BC30%EB%B6%84-IT%EB%89%B4%EC%8A%A4/"><span class="level-start"><span class="level-item">매일30분 IT뉴스</span></span><span class="level-end"><span class="level-item tag">85</span></span></a></li><li><a class="level is-mobile" href="/categories/IT%EC%A0%95%EB%B3%B4/%EC%A3%BC%EA%B0%84-IT%EC%A0%95%EB%A6%AC/"><span class="level-start"><span class="level-item">주간 IT정리</span></span><span class="level-end"><span class="level-item tag">7</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/Programming/"><span class="level-start"><span class="level-item">Programming</span></span><span class="level-end"><span class="level-item tag">17</span></span></a><ul><li><a class="level is-mobile" href="/categories/Programming/Git-Github/"><span class="level-start"><span class="level-item">Git/Github</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/Programming/Spring-Boot/"><span class="level-start"><span class="level-item">Spring Boot</span></span><span class="level-end"><span class="level-item tag">14</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/Web-App/"><span class="level-start"><span class="level-item">Web/App</span></span><span class="level-end"><span class="level-item tag">24</span></span></a><ul><li><a class="level is-mobile" href="/categories/Web-App/CSS/"><span class="level-start"><span class="level-item">CSS</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/Web-App/Javascript/"><span class="level-start"><span class="level-item">Javascript</span></span><span class="level-end"><span class="level-item tag">22</span></span></a></li><li><a class="level is-mobile" href="/categories/Web-App/React/"><span class="level-start"><span class="level-item">React</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">최근 글</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2025-08-26T14:30:50.000Z">2025-08-26</time></p><p class="title"><a href="/categories/%EC%9D%BC%EC%83%81/essay-250826/">FECConf 2025 다녀와서, 드디어 블로그를 시작하기로 했다</a></p><p class="categories"><a href="/categories/Essay/">Essay</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-07-11T02:03:00.000Z">2022-07-11</time></p><p class="title"><a href="/categories/%EC%9B%B9%EC%95%B1/Javascript/JS-ES2022-1-22-07-11%20/">[JS] ES2022 신기능 중 4가지 </a></p><p class="categories"><a href="/categories/Web-App/">Web/App</a> / <a href="/categories/Web-App/Javascript/">Javascript</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-07-07T06:35:00.000Z">2022-07-07</time></p><p class="title"><a href="/categories/%EC%9B%B9%EC%95%B1/Javascript/JS-ESLint-1-22-07-07/">[JS] ESLint 알고쓰기 : 설정 설명</a></p><p class="categories"><a href="/categories/Web-App/">Web/App</a> / <a href="/categories/Web-App/Javascript/">Javascript</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-07-06T06:28:00.000Z">2022-07-06</time></p><p class="title"><a href="/categories/%EC%9B%B9%EC%95%B1/Javascript/JS-Babel-3-22-07-06/">[JS] 선언한 모듈로 이동하기 (alias) - Go to declaration</a></p><p class="categories"><a href="/categories/Web-App/">Web/App</a> / <a href="/categories/Web-App/Javascript/">Javascript</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-07-06T03:28:00.000Z">2022-07-06</time></p><p class="title"><a href="/categories/%EC%9B%B9%EC%95%B1/Javascript/JS-Babel-2-22-07-06/">[JS] babelrc와 webpack.config</a></p><p class="categories"><a href="/categories/Web-App/">Web/App</a> / <a href="/categories/Web-App/Javascript/">Javascript</a></p></div></article></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">태그</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/"><span class="tag">알고리즘</span><span class="tag">190</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Python/"><span class="tag">Python</span><span class="tag">182</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%B0%B1%EC%A4%80/"><span class="tag">백준</span><span class="tag">172</span></a></div><div class="control"><a class="tags has-addons" href="/tags/IT%EB%89%B4%EC%8A%A4/"><span class="tag">IT뉴스</span><span class="tag">92</span></a></div><div class="control"><a class="tags has-addons" href="/tags/IT-Issues/"><span class="tag">IT Issues</span><span class="tag">92</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EA%B5%AC%ED%98%84/"><span class="tag">구현</span><span class="tag">65</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/"><span class="tag">자료구조</span><span class="tag">55</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%84%A4%EC%9D%B4%EB%B2%84/"><span class="tag">네이버</span><span class="tag">39</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%B9%B4%EC%B9%B4%EC%98%A4/"><span class="tag">카카오</span><span class="tag">30</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%8A%A4%ED%83%9D/"><span class="tag">스택</span><span class="tag">26</span></a></div><div class="control"><a class="tags has-addons" href="/tags/JS/"><span class="tag">JS</span><span class="tag">24</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Javascript/"><span class="tag">Javascript</span><span class="tag">24</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8/"><span class="tag">자바스크립트</span><span class="tag">24</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%81%90/"><span class="tag">큐</span><span class="tag">22</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%AC%B8%EC%9E%90%EC%97%B4/"><span class="tag">문자열</span><span class="tag">20</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Programming/"><span class="tag">Programming</span><span class="tag">16</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%88%98%ED%95%99/"><span class="tag">수학</span><span class="tag">16</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EC%95%A0%ED%94%8C/"><span class="tag">애플</span><span class="tag">15</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EA%B7%B8%EB%9E%98%ED%94%84-%ED%83%90%EC%83%89/"><span class="tag">그래프 탐색</span><span class="tag">15</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%95%B4%EC%8B%9C/"><span class="tag">해시</span><span class="tag">15</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Spring-Boot/"><span class="tag">Spring Boot</span><span class="tag">14</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Java/"><span class="tag">Java</span><span class="tag">14</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EB%84%88%EB%B9%84-%EC%9A%B0%EC%84%A0-%ED%83%90%EC%83%89/"><span class="tag">너비 우선 탐색</span><span class="tag">14</span></a></div><div class="control"><a class="tags has-addons" href="/tags/BFS/"><span class="tag">BFS</span><span class="tag">14</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4/"><span class="tag">프로그래머스</span><span class="tag">14</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%ED%95%80%ED%85%8C%ED%81%AC/"><span class="tag">핀테크</span><span class="tag">14</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EA%B7%B8%EB%9E%98%ED%94%84/"><span class="tag">그래프</span><span class="tag">13</span></a></div><div class="control"><a class="tags has-addons" href="/tags/DFS/"><span class="tag">DFS</span><span class="tag">13</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Spring/"><span class="tag">Spring</span><span class="tag">12</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EA%B5%AC%EA%B8%80/"><span class="tag">구글</span><span class="tag">12</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/logo.svg" alt="CH Blog | 기술 블로그" height="28"></a><p class="is-size-7">© 2022 Chaehyeon Lee</p></div><div class="level-end"></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("ko");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script data-pjax src="/js/column.js"></script><a id="back-to-top" title="맨 위로" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script data-pjax src="/js/back_to_top.js" defer></script><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "이 웹 사이트는 귀하의 경험을 향상시키기 위해 Cookie를 사용합니다.",
+          dismiss: "무시",
+          allow: "허용",
+          deny: "거부",
+          link: "더 알아보기",
+          policy: "Cookie 정책",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/mhchem.min.js" defer></script><script>window.addEventListener("load", function() {
+            document.querySelectorAll('[role="article"] > .content').forEach(function(element) {
+                renderMathInElement(element);
+            });
+        });</script><script type="text/javascript" id="MathJax-script" async>MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      },
+      svg: {
+        fontCache: 'global'
+      },
+      chtml: {
+        matchFontHeight: false
+      }
+    };</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script src="/js/pjax.js"></script><!--!--><script data-pjax src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="입력 하세요..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script data-pjax src="/js/insight.js" defer></script><script data-pjax>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"입력 하세요...","untitled":"(제목 없음)","posts":"포스트","pages":"페이지","categories":"카테고리","tags":"태그"});
+        });</script></body></html>
